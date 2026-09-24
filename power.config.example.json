@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "appId": "00000000-0000-0000-0000-000000000000",
-  "appDisplayName": "Purchase Requisition App",
+  "appDisplayName": "Buy@Contoso - Purchase Requisitions",
   "region": "prod",
   "environmentId": "00000000-0000-0000-0000-000000000000",
   "description": " ",

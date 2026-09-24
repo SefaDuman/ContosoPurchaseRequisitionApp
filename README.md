@@ -112,11 +112,16 @@ useImageMap({ 'D0001': 'https://cdn.example.com/d0001.png' });
 
 ```powershell
 npm install
+copy power.config.example.json power.config.json   # then set appId + environmentId
 pac code run
 ```
 
 `pac code run` starts the Vite dev server and the Power Apps runtime so the
 Dataverse virtual‑entity calls are authenticated against your environment.
+
+> `power.config.json` holds your environment-specific `appId`/`environmentId`
+> and is gitignored. Copy `power.config.example.json` to `power.config.json` and
+> fill in your own values (or run `pac code init`) before running or pushing.
 
 > Plain `npm run dev` will serve the UI, but data calls require the Power Apps
 > runtime provided by `pac code run`.

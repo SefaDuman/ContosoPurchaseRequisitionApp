@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Environment-specific Power Apps config (contains real appId/environmentId).
+# Copy power.config.example.json to power.config.json and fill in your values.
+power.config.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

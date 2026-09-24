@@ -127,7 +127,7 @@ function renderRelayPrompt(): void {
   const button = document.createElement('button');
   button.textContent = 'Continue';
   button.style.cssText =
-    'background:#e2372a;color:#fff;border:none;border-radius:9999px;padding:10px 28px;font-size:15px;font-weight:600;cursor:pointer;';
+    'background:#6f4e37;color:#fff;border:none;border-radius:9999px;padding:10px 28px;font-size:15px;font-weight:600;cursor:pointer;';
   button.onclick = () => {
     button.disabled = true;
     button.textContent = 'Signing in…';

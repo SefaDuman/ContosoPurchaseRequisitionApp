@@ -29,8 +29,11 @@ function App() {
     <div className="app-shell">
       <header className="app-header">
         <div className="brand">
-          <span className="brand-mark">Buy@Contoso</span>
-          <span className="brand-sub">Procurement</span>
+          <span className="brand-logo" aria-hidden="true">☕</span>
+          <span className="brand-text">
+            <span className="brand-mark">Contoso Coffee</span>
+            <span className="brand-sub">Procurement</span>
+          </span>
         </div>
         <LegalEntitySelect />
         <nav className="app-nav" aria-label="Primary">

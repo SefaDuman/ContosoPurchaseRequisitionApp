@@ -1,0 +1,537 @@
+{
+  "name": "mserp_ecoresproductv2entity",
+  "title": "Products V2 (mserp)",
+  "schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "x-ms-dataverse-entity": true,
+      "x-ms-dataverse-entityset": "mserp_ecoresproductv2entities",
+      "x-ms-dataverse-primary-id": "mserp_ecoresproductv2entityid",
+      "x-ms-dataverse-primary-name": "mserp_productnumber",
+      "properties": {
+        "mserp_areidenticalconfigurationsallowed": {
+          "type": "string",
+          "title": "Allow identical configurations",
+          "x-ms-dataverse-attribute": "mserp_areidenticalconfigurationsallowed",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_areidenticalconfigurationsallowed",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_areidenticalconfigurationsallowedname": {
+          "type": "string",
+          "title": "mserp_areidenticalconfigurationsallowedname",
+          "x-ms-dataverse-attribute": "mserp_areidenticalconfigurationsallowedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_areidenticalconfigurationsallowedName",
+          "x-ms-read-only": true
+        },
+        "mserp_ecoresproductv2entityid": {
+          "type": "string",
+          "title": "Products V2 (mserp)",
+          "x-ms-dataverse-attribute": "mserp_ecoresproductv2entityid",
+          "x-ms-dataverse-type": "UniqueidentifierType",
+          "x-ms-schema-name": "mserp_ecoresproductv2entityId",
+          "x-ms-dataverse-primary-id": true,
+          "required": true,
+          "x-ms-keyType": "primary"
+        },
+        "mserp_engchgproductcategorydetailsname": {
+          "type": "string",
+          "title": "Name",
+          "x-ms-dataverse-attribute": "mserp_engchgproductcategorydetailsname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_engchgproductcategorydetailsname",
+          "maxLength": 254
+        },
+        "mserp_engchgproductownerid": {
+          "type": "string",
+          "title": "Product owner",
+          "x-ms-dataverse-attribute": "mserp_engchgproductownerid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_engchgproductownerid",
+          "maxLength": 90
+        },
+        "mserp_engchgproductreadinesspolicyname": {
+          "type": "string",
+          "title": "Product readiness policy name",
+          "x-ms-dataverse-attribute": "mserp_engchgproductreadinesspolicyname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_engchgproductreadinesspolicyname",
+          "maxLength": 60
+        },
+        "mserp_engchgproductreleasepolicyname": {
+          "type": "string",
+          "title": "Product release policy name",
+          "x-ms-dataverse-attribute": "mserp_engchgproductreleasepolicyname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_engchgproductreleasepolicyname",
+          "maxLength": 60
+        },
+        "mserp_fk_trackingdimensiongroup_id": {
+          "type": "string",
+          "title": "Tracking dimension groups",
+          "x-ms-dataverse-attribute": "mserp_fk_trackingdimensiongroup_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_TrackingDimensionGroup_id"
+        },
+        "mserp_fk_trackingdimensiongroup_idname": {
+          "type": "string",
+          "title": "mserp_fk_trackingdimensiongroup_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_trackingdimensiongroup_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_TrackingDimensionGroup_idName",
+          "x-ms-read-only": true,
+          "maxLength": 10
+        },
+        "mserp_harmonizedsystemcode": {
+          "type": "string",
+          "title": "Harmonized system",
+          "x-ms-dataverse-attribute": "mserp_harmonizedsystemcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_harmonizedsystemcode",
+          "maxLength": 16
+        },
+        "mserp_isautomaticvariantgenerationenabled": {
+          "type": "string",
+          "title": "Generate variants automatically",
+          "x-ms-dataverse-attribute": "mserp_isautomaticvariantgenerationenabled",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isautomaticvariantgenerationenabled",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isautomaticvariantgenerationenabledname": {
+          "type": "string",
+          "title": "mserp_isautomaticvariantgenerationenabledname",
+          "x-ms-dataverse-attribute": "mserp_isautomaticvariantgenerationenabledname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isautomaticvariantgenerationenabledName",
+          "x-ms-read-only": true
+        },
+        "mserp_iscatchweightproduct": {
+          "type": "string",
+          "title": "Catch weight product",
+          "x-ms-dataverse-attribute": "mserp_iscatchweightproduct",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_iscatchweightproduct",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_iscatchweightproductname": {
+          "type": "string",
+          "title": "mserp_iscatchweightproductname",
+          "x-ms-dataverse-attribute": "mserp_iscatchweightproductname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_iscatchweightproductName",
+          "x-ms-read-only": true
+        },
+        "mserp_isproductkit": {
+          "type": "string",
+          "title": "Product kit",
+          "x-ms-dataverse-attribute": "mserp_isproductkit",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isproductkit",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isproductkitname": {
+          "type": "string",
+          "title": "mserp_isproductkitname",
+          "x-ms-dataverse-attribute": "mserp_isproductkitname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isproductkitName",
+          "x-ms-read-only": true
+        },
+        "mserp_isproductvariantunitconversionenabled": {
+          "type": "string",
+          "title": "Enable product variant unit conversions",
+          "x-ms-dataverse-attribute": "mserp_isproductvariantunitconversionenabled",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isproductvariantunitconversionenabled",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isproductvariantunitconversionenabledname": {
+          "type": "string",
+          "title": "mserp_isproductvariantunitconversionenabledname",
+          "x-ms-dataverse-attribute": "mserp_isproductvariantunitconversionenabledname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isproductvariantunitconversionenabledName",
+          "x-ms-read-only": true
+        },
+        "mserp_nmfccode": {
+          "type": "string",
+          "title": "NMFC code",
+          "x-ms-dataverse-attribute": "mserp_nmfccode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_nmfccode",
+          "maxLength": 20
+        },
+        "mserp_productcolorgroupid": {
+          "type": "string",
+          "title": "Color group",
+          "x-ms-dataverse-attribute": "mserp_productcolorgroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productcolorgroupid",
+          "maxLength": 10
+        },
+        "mserp_productdescription": {
+          "type": "string",
+          "title": "Description",
+          "x-ms-dataverse-attribute": "mserp_productdescription",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productdescription",
+          "maxLength": 1000
+        },
+        "mserp_productdimensiongroupname": {
+          "type": "string",
+          "title": "Product dimension group",
+          "x-ms-dataverse-attribute": "mserp_productdimensiongroupname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productdimensiongroupname",
+          "maxLength": 10
+        },
+        "mserp_productname": {
+          "type": "string",
+          "title": "Product name",
+          "x-ms-dataverse-attribute": "mserp_productname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productname",
+          "maxLength": 60
+        },
+        "mserp_productnumber": {
+          "type": "string",
+          "title": "Product number",
+          "x-ms-dataverse-attribute": "mserp_productnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productnumber",
+          "x-ms-dataverse-primary-name": true,
+          "maxLength": 70
+        },
+        "mserp_productsearchname": {
+          "type": "string",
+          "title": "Search name",
+          "x-ms-dataverse-attribute": "mserp_productsearchname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productsearchname",
+          "maxLength": 20
+        },
+        "mserp_productsizegroupid": {
+          "type": "string",
+          "title": "Size group",
+          "x-ms-dataverse-attribute": "mserp_productsizegroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productsizegroupid",
+          "maxLength": 10
+        },
+        "mserp_productstylegroupid": {
+          "type": "string",
+          "title": "Style group",
+          "x-ms-dataverse-attribute": "mserp_productstylegroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productstylegroupid",
+          "maxLength": 10
+        },
+        "mserp_productsubtype": {
+          "type": "string",
+          "title": "Product subtype",
+          "x-ms-dataverse-attribute": "mserp_productsubtype",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_productsubtype",
+          "enum": [
+            "Product",
+            "Product master",
+            "Product variant"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "6c9cb752-7d02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Product subtype (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_productsubtypename": {
+          "type": "string",
+          "title": "mserp_productsubtypename",
+          "x-ms-dataverse-attribute": "mserp_productsubtypename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_productsubtypeName",
+          "x-ms-read-only": true
+        },
+        "mserp_producttype": {
+          "type": "string",
+          "title": "Product type",
+          "x-ms-dataverse-attribute": "mserp_producttype",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_producttype",
+          "required": true,
+          "enum": [
+            "Item",
+            "Service"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "6252b12f-7d02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Product type (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_producttypename": {
+          "type": "string",
+          "title": "mserp_producttypename",
+          "x-ms-dataverse-attribute": "mserp_producttypename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_producttypeName",
+          "x-ms-read-only": true
+        },
+        "mserp_productvariantnamenomenclaturename": {
+          "type": "string",
+          "title": "Product variant name nomenclature",
+          "x-ms-dataverse-attribute": "mserp_productvariantnamenomenclaturename",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productvariantnamenomenclaturename",
+          "maxLength": 60
+        },
+        "mserp_productvariantnumbernomenclaturename": {
+          "type": "string",
+          "title": "Product variant number nomenclature",
+          "x-ms-dataverse-attribute": "mserp_productvariantnumbernomenclaturename",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productvariantnumbernomenclaturename",
+          "maxLength": 60
+        },
+        "mserp_retailproductcategoryname": {
+          "type": "string",
+          "title": "Retail category",
+          "x-ms-dataverse-attribute": "mserp_retailproductcategoryname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_retailproductcategoryname",
+          "maxLength": 254
+        },
+        "mserp_servicetype": {
+          "type": "string",
+          "title": "Product service type",
+          "x-ms-dataverse-attribute": "mserp_servicetype",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_servicetype",
+          "enum": [
+            "Not specified",
+            "Warranty"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "6752b12f-7d02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Product service type (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_servicetypename": {
+          "type": "string",
+          "title": "mserp_servicetypename",
+          "x-ms-dataverse-attribute": "mserp_servicetypename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_servicetypeName",
+          "x-ms-read-only": true
+        },
+        "mserp_stcccode": {
+          "type": "string",
+          "title": "STCC code",
+          "x-ms-dataverse-attribute": "mserp_stcccode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_stcccode",
+          "maxLength": 7
+        },
+        "mserp_storagedimensiongroupname": {
+          "type": "string",
+          "title": "Storage dimension group",
+          "x-ms-dataverse-attribute": "mserp_storagedimensiongroupname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_storagedimensiongroupname",
+          "maxLength": 10
+        },
+        "mserp_trackingdimensiongroupname": {
+          "type": "string",
+          "title": "Tracking dimension group",
+          "x-ms-dataverse-attribute": "mserp_trackingdimensiongroupname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_trackingdimensiongroupname",
+          "maxLength": 10
+        },
+        "mserp_variantconfigurationtechnology": {
+          "type": "string",
+          "title": "Configuration technology",
+          "x-ms-dataverse-attribute": "mserp_variantconfigurationtechnology",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_variantconfigurationtechnology",
+          "enum": [
+            "Predefined variant",
+            "Dimension-based configuration",
+            "Constraint-based configuration"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "779cb752-7d02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Configuration technology (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_variantconfigurationtechnologyname": {
+          "type": "string",
+          "title": "mserp_variantconfigurationtechnologyname",
+          "x-ms-dataverse-attribute": "mserp_variantconfigurationtechnologyname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_variantconfigurationtechnologyName",
+          "x-ms-read-only": true
+        },
+        "mserp_warrantydurationtime": {
+          "type": "string",
+          "title": "Length of time",
+          "x-ms-dataverse-attribute": "mserp_warrantydurationtime",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "mserp_warrantydurationtime"
+        },
+        "mserp_warrantydurationtimeunit": {
+          "type": "string",
+          "title": "Unit of time",
+          "x-ms-dataverse-attribute": "mserp_warrantydurationtimeunit",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_warrantydurationtimeunit",
+          "enum": [
+            "Day(s)",
+            "Week(s)",
+            "Month(s)",
+            "Year(s)"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "7252b12f-7d02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Unit of time (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_warrantydurationtimeunitname": {
+          "type": "string",
+          "title": "mserp_warrantydurationtimeunitname",
+          "x-ms-dataverse-attribute": "mserp_warrantydurationtimeunitname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_warrantydurationtimeunitName",
+          "x-ms-read-only": true
+        }
+      },
+      "required": [
+        "mserp_ecoresproductv2entityid",
+        "mserp_producttype"
+      ]
+    }
+  }
+}

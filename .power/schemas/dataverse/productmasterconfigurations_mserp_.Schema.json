@@ -1,0 +1,88 @@
+{
+  "name": "mserp_ecoresproductmasterconfigurationentity",
+  "title": "Product master configurations (mserp)",
+  "schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "x-ms-dataverse-entity": true,
+      "x-ms-dataverse-entityset": "mserp_ecoresproductmasterconfigurationentities",
+      "x-ms-dataverse-primary-id": "mserp_ecoresproductmasterconfigurationentityid",
+      "x-ms-dataverse-primary-name": "mserp_primaryfield",
+      "properties": {
+        "mserp_containerunitsymbol": {
+          "type": "string",
+          "title": "Container unit",
+          "x-ms-dataverse-attribute": "mserp_containerunitsymbol",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_containerunitsymbol",
+          "maxLength": 10
+        },
+        "mserp_displaysequencenumber": {
+          "type": "string",
+          "title": "Display order",
+          "x-ms-dataverse-attribute": "mserp_displaysequencenumber",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_displaysequencenumber"
+        },
+        "mserp_ecoresproductmasterconfigurationentityid": {
+          "type": "string",
+          "title": "Product master configurations (mserp)",
+          "x-ms-dataverse-attribute": "mserp_ecoresproductmasterconfigurationentityid",
+          "x-ms-dataverse-type": "UniqueidentifierType",
+          "x-ms-schema-name": "mserp_ecoresproductmasterconfigurationentityId",
+          "x-ms-dataverse-primary-id": true,
+          "required": true,
+          "x-ms-keyType": "primary"
+        },
+        "mserp_primaryfield": {
+          "type": "string",
+          "title": "Primary Field",
+          "x-ms-dataverse-attribute": "mserp_primaryfield",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryfield",
+          "x-ms-dataverse-primary-name": true,
+          "maxLength": 256
+        },
+        "mserp_productconfigurationid": {
+          "type": "string",
+          "title": "Configuration",
+          "x-ms-dataverse-attribute": "mserp_productconfigurationid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productconfigurationid",
+          "required": true,
+          "maxLength": 50
+        },
+        "mserp_productmasternumber": {
+          "type": "string",
+          "title": "Product number",
+          "x-ms-dataverse-attribute": "mserp_productmasternumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productmasternumber",
+          "required": true,
+          "maxLength": 70
+        },
+        "mserp_replenishmentweight": {
+          "type": "string",
+          "title": "Replenishment weight",
+          "x-ms-dataverse-attribute": "mserp_replenishmentweight",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "mserp_replenishmentweight"
+        },
+        "versionnumber": {
+          "type": "string",
+          "title": "Version Number",
+          "x-ms-dataverse-attribute": "versionnumber",
+          "x-ms-dataverse-type": "BigIntType",
+          "x-ms-schema-name": "VersionNumber",
+          "x-ms-read-only": true
+        }
+      },
+      "required": [
+        "mserp_ecoresproductmasterconfigurationentityid",
+        "mserp_productconfigurationid",
+        "mserp_productmasternumber"
+      ]
+    }
+  }
+}

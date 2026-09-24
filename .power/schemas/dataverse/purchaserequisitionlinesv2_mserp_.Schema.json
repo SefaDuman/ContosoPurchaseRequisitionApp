@@ -1,0 +1,1243 @@
+{
+  "name": "mserp_purchaserequisitionlinev2entity",
+  "title": "Purchase requisition lines V2 (mserp)",
+  "schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "x-ms-dataverse-entity": true,
+      "x-ms-dataverse-entityset": "mserp_purchaserequisitionlinev2entities",
+      "x-ms-dataverse-primary-id": "mserp_purchaserequisitionlinev2entityid",
+      "x-ms-dataverse-primary-name": "mserp_primaryfield",
+      "properties": {
+        "mserp_accountingdate": {
+          "type": "string",
+          "title": "Accounting date",
+          "x-ms-dataverse-attribute": "mserp_accountingdate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_accountingdate"
+        },
+        "mserp_accountingdistributiontemplatename": {
+          "type": "string",
+          "title": "Financial dimensions template",
+          "x-ms-dataverse-attribute": "mserp_accountingdistributiontemplatename",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_accountingdistributiontemplatename",
+          "maxLength": 40
+        },
+        "mserp_budgetreservationdocumentnumber": {
+          "type": "string",
+          "title": "Document number",
+          "x-ms-dataverse-attribute": "mserp_budgetreservationdocumentnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_budgetreservationdocumentnumber",
+          "maxLength": 20
+        },
+        "mserp_budgetreservationlinenumber": {
+          "type": "string",
+          "title": "Line number",
+          "x-ms-dataverse-attribute": "mserp_budgetreservationlinenumber",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "mserp_budgetreservationlinenumber"
+        },
+        "mserp_businessjustificationcode": {
+          "type": "string",
+          "title": "Business justification",
+          "x-ms-dataverse-attribute": "mserp_businessjustificationcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_businessjustificationcode",
+          "maxLength": 10
+        },
+        "mserp_businessjustificationdetails": {
+          "type": "string",
+          "title": "Business justification details",
+          "x-ms-dataverse-attribute": "mserp_businessjustificationdetails",
+          "x-ms-dataverse-type": "MemoType",
+          "x-ms-schema-name": "mserp_businessjustificationdetails",
+          "maxLength": 1048576
+        },
+        "mserp_buyinglegalentityid": {
+          "type": "string",
+          "title": "Buying legal entity",
+          "x-ms-dataverse-attribute": "mserp_buyinglegalentityid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_buyinglegalentityid",
+          "required": true,
+          "maxLength": 4
+        },
+        "mserp_currencycode": {
+          "type": "string",
+          "title": "Currency",
+          "x-ms-dataverse-attribute": "mserp_currencycode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_currencycode",
+          "maxLength": 3
+        },
+        "mserp_defaultledgerdimensiondisplayvalue": {
+          "type": "string",
+          "title": "Financial dimensions",
+          "x-ms-dataverse-attribute": "mserp_defaultledgerdimensiondisplayvalue",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaultledgerdimensiondisplayvalue",
+          "maxLength": 500
+        },
+        "mserp_deliveryaddressbuildingcompliment": {
+          "type": "string",
+          "title": "Building complement",
+          "x-ms-dataverse-attribute": "mserp_deliveryaddressbuildingcompliment",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_deliveryaddressbuildingcompliment",
+          "maxLength": 60
+        },
+        "mserp_deliveryaddresscity": {
+          "type": "string",
+          "title": "City",
+          "x-ms-dataverse-attribute": "mserp_deliveryaddresscity",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_deliveryaddresscity",
+          "maxLength": 60
+        },
+        "mserp_deliveryaddresscountryregionid": {
+          "type": "string",
+          "title": "Country/region",
+          "x-ms-dataverse-attribute": "mserp_deliveryaddresscountryregionid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_deliveryaddresscountryregionid",
+          "maxLength": 10
+        },
+        "mserp_deliveryaddresscountryregionisocode": {
+          "type": "string",
+          "title": "Country/region ISO",
+          "x-ms-dataverse-attribute": "mserp_deliveryaddresscountryregionisocode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_deliveryaddresscountryregionisocode",
+          "maxLength": 2
+        },
+        "mserp_deliveryaddresscountyid": {
+          "type": "string",
+          "title": "County",
+          "x-ms-dataverse-attribute": "mserp_deliveryaddresscountyid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_deliveryaddresscountyid",
+          "maxLength": 30
+        },
+        "mserp_deliveryaddressdescription": {
+          "type": "string",
+          "title": "Name or description",
+          "x-ms-dataverse-attribute": "mserp_deliveryaddressdescription",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_deliveryaddressdescription",
+          "maxLength": 60
+        },
+        "mserp_deliveryaddressdistrictname": {
+          "type": "string",
+          "title": "District",
+          "x-ms-dataverse-attribute": "mserp_deliveryaddressdistrictname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_deliveryaddressdistrictname",
+          "maxLength": 60
+        },
+        "mserp_deliveryaddressdunsnumber": {
+          "type": "string",
+          "title": "DUNS number",
+          "x-ms-dataverse-attribute": "mserp_deliveryaddressdunsnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_deliveryaddressdunsnumber",
+          "maxLength": 9
+        },
+        "mserp_deliveryaddresslatitude": {
+          "type": "string",
+          "title": "Latitude",
+          "x-ms-dataverse-attribute": "mserp_deliveryaddresslatitude",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_deliveryaddresslatitude"
+        },
+        "mserp_deliveryaddresslocationid": {
+          "type": "string",
+          "title": "Location ID",
+          "x-ms-dataverse-attribute": "mserp_deliveryaddresslocationid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_deliveryaddresslocationid",
+          "maxLength": 40
+        },
+        "mserp_deliveryaddresslongitude": {
+          "type": "string",
+          "title": "Longitude",
+          "x-ms-dataverse-attribute": "mserp_deliveryaddresslongitude",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_deliveryaddresslongitude"
+        },
+        "mserp_deliveryaddressname": {
+          "type": "string",
+          "title": "Delivery address name",
+          "x-ms-dataverse-attribute": "mserp_deliveryaddressname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_deliveryaddressname",
+          "maxLength": 160
+        },
+        "mserp_deliveryaddresspostbox": {
+          "type": "string",
+          "title": "Post box",
+          "x-ms-dataverse-attribute": "mserp_deliveryaddresspostbox",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_deliveryaddresspostbox",
+          "maxLength": 20
+        },
+        "mserp_deliveryaddressstateid": {
+          "type": "string",
+          "title": "State",
+          "x-ms-dataverse-attribute": "mserp_deliveryaddressstateid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_deliveryaddressstateid",
+          "maxLength": 10
+        },
+        "mserp_deliveryaddressstreet": {
+          "type": "string",
+          "title": "Street",
+          "x-ms-dataverse-attribute": "mserp_deliveryaddressstreet",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_deliveryaddressstreet",
+          "maxLength": 250
+        },
+        "mserp_deliveryaddressstreetnumber": {
+          "type": "string",
+          "title": "Street number",
+          "x-ms-dataverse-attribute": "mserp_deliveryaddressstreetnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_deliveryaddressstreetnumber",
+          "maxLength": 20
+        },
+        "mserp_deliveryaddresstimezone": {
+          "type": "string",
+          "title": "Time zone",
+          "x-ms-dataverse-attribute": "mserp_deliveryaddresstimezone",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_deliveryaddresstimezone",
+          "enum": [
+            "(GMT-12:00) International Date Line West",
+            "(GMT-11:00) Coordinated Universal Time-11",
+            "(GMT-10:00) Hawaii",
+            "(GMT-09:00) Alaska",
+            "(GMT-08:00) Pacific Time (US & Canada)",
+            "(GMT-08:00) Tijuana, Baja California",
+            "(GMT-07:00) Arizona",
+            "(GMT-07:00) Mountain Time (US & Canada)",
+            "(GMT-07:00) Chihuahua, La Paz, Mazatlan",
+            "(GMT-06:00) Central America",
+            "(GMT-06:00) Central Time (US & Canada)",
+            "(GMT-06:00) Guadalajara, Mexico City, Monterrey",
+            "(GMT-06:00) Saskatchewan",
+            "(GMT-05:00) Bogota, Lima, Quito, Rio Branco",
+            "(GMT-05:00) Chetumal",
+            "(GMT-05:00) Eastern Time (US & Canada)",
+            "(GMT-05:00) Indiana (East)",
+            "(GMT-04:30) Caracas",
+            "(GMT-04:00) Asuncion",
+            "(GMT-04:00) Atlantic Time (Canada)",
+            "(GMT-04:00) La Paz",
+            "(GMT-04:00) Manaus",
+            "(GMT-04:00) Santiago",
+            "(GMT-03:30) Newfoundland",
+            "(GMT-03:00) Brasilia",
+            "(GMT-03:00) Buenos Aires",
+            "(GMT-03:00) Buenos Aires, Georgetown",
+            "(GMT-03:00) Greenland",
+            "(GMT-03:00) Montevideo",
+            "(GMT-03:00) Salvador",
+            "(GMT-02:00) Mid-Atlantic",
+            "(GMT-01:00) Azores",
+            "(GMT-01:00) Cabo Verde Is.",
+            "(GMT) Casablanca",
+            "(GMT) Coordinated Universal Time",
+            "(GMT) Casablanca, Monrovia, Reykjavik",
+            "(GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London",
+            "(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna",
+            "(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague",
+            "(GMT+01:00) Brussels, Copenhagen, Madrid, Paris",
+            "(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb",
+            "(GMT+01:00) Tripoli",
+            "(GMT+01:00) West Central Africa",
+            "(GMT+02:00) Amman",
+            "(GMT+02:00) Athens, Bucharest, Istanbul",
+            "(GMT+02:00) Beirut",
+            "(GMT+02:00) Minsk",
+            "(GMT+02:00) Cairo",
+            "(GMT+02:00) Damascus",
+            "(GMT+02:00) Harare, Pretoria",
+            "(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius",
+            "(GMT+02:00) Jerusalem",
+            "(GMT+02:00) Windhoek",
+            "(GMT+03:00) Istanbul",
+            "(GMT+02:00) Kaliningrad (RTZ 1)",
+            "(GMT+03:00) Baghdad",
+            "(GMT+03:00) Kuwait, Riyadh",
+            "(GMT+03:00) Moscow, St. Petersburg, Volgograd (RTZ 2)",
+            "(GMT+04:00) Port Louis",
+            "(GMT+03:00) Nairobi",
+            "(GMT+03:00) Tbilisi",
+            "(GMT+03:30) Tehran",
+            "(GMT+04:00) Abu Dhabi, Muscat",
+            "(GMT+04:00) Baku",
+            "(GMT+04:00) Izhevsk, Samara (RTZ 3)",
+            "(GMT+04:00) Yerevan",
+            "(GMT+04:00) Yerevan (Do not use)",
+            "(GMT+04:30) Kabul",
+            "(GMT+05:00) Ekaterinburg (RTZ 4)",
+            "(GMT+05:00) Islamabad, Karachi",
+            "(GMT+05:00) Toshkent",
+            "(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi",
+            "(GMT+05:30) Sri Jayawardenepura",
+            "(GMT+05:45) Kathmandu",
+            "(GMT+06:00) Nur-Sultan, Dhaka",
+            "(GMT+06:00) Dhaka",
+            "(GMT+06:00) Novosibirsk (RTZ 5)",
+            "(GMT+06:30) Yangon (Rangoon)",
+            "(GMT+07:00) Bangkok, Hanoi, Jakarta",
+            "(GMT+07:00) Krasnoyarsk (RTZ 6)",
+            "(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi",
+            "(GMT+08:00) Irkutsk (RTZ 7)",
+            "(GMT+08:00) Ulaanbaatar",
+            "(GMT+08:00) Kuala Lumpur, Singapore",
+            "(GMT+08:00) Perth",
+            "(GMT+08:00) Taipei",
+            "(GMT+09:00) Osaka, Sapporo, Tokyo",
+            "(GMT+09:00) Seoul",
+            "(GMT+09:00) Yakutsk (RTZ 8)",
+            "(GMT+09:30) Adelaide",
+            "(GMT+09:30) Darwin",
+            "(GMT+10:00) Brisbane",
+            "(GMT+10:00) Canberra, Melbourne, Sydney",
+            "(GMT+10:00) Guam, Port Moresby",
+            "(GMT+10:00) Hobart",
+            "(GMT+10:00) Vladivostok, Magadan (RTZ 9)",
+            "(GMT+11:00) Chokurdakh (RTZ 10)",
+            "(GMT+11:00) Magadan, Solomon Is., New Caledonia",
+            "(GMT+12:00) Magadan (Do not use)",
+            "(GMT+12:00) Anadyr, Petropavlovsk-Kamchatsky (RTZ 11)",
+            "(GMT+12:00) Auckland, Wellington",
+            "(GMT+12:00) Coordinated Universal Time+12",
+            "(GMT+12:00) Fiji, Kamchatka, Marshall Is.",
+            "(GMT+13:00) Samoa",
+            "(GMT+13:00) Nuku'alofa"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003,
+            200000004,
+            200000005,
+            200000006,
+            200000007,
+            200000008,
+            200000009,
+            200000010,
+            200000011,
+            200000012,
+            200000013,
+            200000014,
+            200000015,
+            200000016,
+            200000017,
+            200000018,
+            200000019,
+            200000020,
+            200000021,
+            200000022,
+            200000023,
+            200000024,
+            200000025,
+            200000026,
+            200000027,
+            200000028,
+            200000029,
+            200000030,
+            200000031,
+            200000032,
+            200000033,
+            200000034,
+            200000035,
+            200000036,
+            200000037,
+            200000038,
+            200000039,
+            200000040,
+            200000041,
+            200000042,
+            200000043,
+            200000044,
+            200000045,
+            200000046,
+            200000047,
+            200000048,
+            200000049,
+            200000050,
+            200000051,
+            200000052,
+            200000053,
+            200000054,
+            200000055,
+            200000056,
+            200000057,
+            200000058,
+            200000059,
+            200000060,
+            200000061,
+            200000062,
+            200000063,
+            200000064,
+            200000065,
+            200000066,
+            200000067,
+            200000068,
+            200000069,
+            200000070,
+            200000071,
+            200000072,
+            200000073,
+            200000074,
+            200000075,
+            200000076,
+            200000077,
+            200000078,
+            200000079,
+            200000080,
+            200000081,
+            200000082,
+            200000083,
+            200000084,
+            200000085,
+            200000086,
+            200000087,
+            200000088,
+            200000089,
+            200000090,
+            200000091,
+            200000092,
+            200000093,
+            200000094,
+            200000095,
+            200000096,
+            200000097,
+            200000098,
+            200000099,
+            200000100,
+            200000101,
+            200000102,
+            200000103,
+            200000104
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "edebfe1d-7202-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Timezone (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_deliveryaddresstimezonename": {
+          "type": "string",
+          "title": "mserp_deliveryaddresstimezonename",
+          "x-ms-dataverse-attribute": "mserp_deliveryaddresstimezonename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_deliveryaddresstimezoneName",
+          "x-ms-read-only": true
+        },
+        "mserp_deliveryaddresszipcode": {
+          "type": "string",
+          "title": "ZIP/postal code",
+          "x-ms-dataverse-attribute": "mserp_deliveryaddresszipcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_deliveryaddresszipcode",
+          "maxLength": 10
+        },
+        "mserp_deliveryattentioninformation": {
+          "type": "string",
+          "title": "Attention information",
+          "x-ms-dataverse-attribute": "mserp_deliveryattentioninformation",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_deliveryattentioninformation",
+          "maxLength": 255
+        },
+        "mserp_deliverycityinkana": {
+          "type": "string",
+          "title": "City in Kana",
+          "x-ms-dataverse-attribute": "mserp_deliverycityinkana",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_deliverycityinkana",
+          "maxLength": 60
+        },
+        "mserp_deliverystreetinkana": {
+          "type": "string",
+          "title": "Street in Kana",
+          "x-ms-dataverse-attribute": "mserp_deliverystreetinkana",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_deliverystreetinkana",
+          "maxLength": 250
+        },
+        "mserp_externalitemnumber": {
+          "type": "string",
+          "title": "External item number",
+          "x-ms-dataverse-attribute": "mserp_externalitemnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_externalitemnumber",
+          "maxLength": 20
+        },
+        "mserp_fixedassetgroupid": {
+          "type": "string",
+          "title": "Asset group",
+          "x-ms-dataverse-attribute": "mserp_fixedassetgroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_fixedassetgroupid",
+          "x-ms-read-only": true,
+          "maxLength": 10
+        },
+        "mserp_fixedassetreasoncode": {
+          "type": "string",
+          "title": "Reason code",
+          "x-ms-dataverse-attribute": "mserp_fixedassetreasoncode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_fixedassetreasoncode",
+          "maxLength": 10
+        },
+        "mserp_fixedassetrulequalifieroptionname": {
+          "type": "string",
+          "title": "Name",
+          "x-ms-dataverse-attribute": "mserp_fixedassetrulequalifieroptionname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_fixedassetrulequalifieroptionname",
+          "maxLength": 30
+        },
+        "mserp_fixedpricecharges": {
+          "type": "string",
+          "title": "Charges on purchases",
+          "x-ms-dataverse-attribute": "mserp_fixedpricecharges",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_fixedpricecharges"
+        },
+        "mserp_fk_purchaserequisitionheaderv2_id": {
+          "type": "string",
+          "title": "Purchase requisitions V2",
+          "x-ms-dataverse-attribute": "mserp_fk_purchaserequisitionheaderv2_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_PurchaseRequisitionHeaderV2_id"
+        },
+        "mserp_fk_purchaserequisitionheaderv2_idname": {
+          "type": "string",
+          "title": "mserp_fk_purchaserequisitionheaderv2_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_purchaserequisitionheaderv2_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_PurchaseRequisitionHeaderV2_idName",
+          "x-ms-read-only": true,
+          "maxLength": 25
+        },
+        "mserp_formatteddeliveryaddress": {
+          "type": "string",
+          "title": "Address",
+          "x-ms-dataverse-attribute": "mserp_formatteddeliveryaddress",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_formatteddeliveryaddress",
+          "x-ms-read-only": true,
+          "maxLength": 250
+        },
+        "mserp_isdeliveryaddressorderspecific": {
+          "type": "string",
+          "title": "One time delivery address",
+          "x-ms-dataverse-attribute": "mserp_isdeliveryaddressorderspecific",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isdeliveryaddressorderspecific",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isdeliveryaddressorderspecificname": {
+          "type": "string",
+          "title": "mserp_isdeliveryaddressorderspecificname",
+          "x-ms-dataverse-attribute": "mserp_isdeliveryaddressorderspecificname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isdeliveryaddressorderspecificName",
+          "x-ms-read-only": true
+        },
+        "mserp_isdeliveryaddressprivate": {
+          "type": "string",
+          "title": "Is delivery address private",
+          "x-ms-dataverse-attribute": "mserp_isdeliveryaddressprivate",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isdeliveryaddressprivate",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isdeliveryaddressprivatename": {
+          "type": "string",
+          "title": "mserp_isdeliveryaddressprivatename",
+          "x-ms-dataverse-attribute": "mserp_isdeliveryaddressprivatename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isdeliveryaddressprivateName",
+          "x-ms-read-only": true
+        },
+        "mserp_ispartialdeliveryprevented": {
+          "type": "string",
+          "title": "Prevent partial delivery",
+          "x-ms-dataverse-attribute": "mserp_ispartialdeliveryprevented",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_ispartialdeliveryprevented",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_ispartialdeliverypreventedname": {
+          "type": "string",
+          "title": "mserp_ispartialdeliverypreventedname",
+          "x-ms-dataverse-attribute": "mserp_ispartialdeliverypreventedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_ispartialdeliverypreventedName",
+          "x-ms-read-only": true
+        },
+        "mserp_isprepaymentrequired": {
+          "type": "string",
+          "title": "Prepayment required",
+          "x-ms-dataverse-attribute": "mserp_isprepaymentrequired",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isprepaymentrequired",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isprepaymentrequiredname": {
+          "type": "string",
+          "title": "mserp_isprepaymentrequiredname",
+          "x-ms-dataverse-attribute": "mserp_isprepaymentrequiredname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isprepaymentrequiredName",
+          "x-ms-read-only": true
+        },
+        "mserp_itembatchnumber": {
+          "type": "string",
+          "title": "Batch number",
+          "x-ms-dataverse-attribute": "mserp_itembatchnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_itembatchnumber",
+          "maxLength": 20
+        },
+        "mserp_itemnumber": {
+          "type": "string",
+          "title": "Item number",
+          "x-ms-dataverse-attribute": "mserp_itemnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_itemnumber",
+          "maxLength": 20
+        },
+        "mserp_lineamount": {
+          "type": "string",
+          "title": "Net amount",
+          "x-ms-dataverse-attribute": "mserp_lineamount",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_lineamount"
+        },
+        "mserp_linedescription": {
+          "type": "string",
+          "title": "Item description",
+          "x-ms-dataverse-attribute": "mserp_linedescription",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_linedescription",
+          "maxLength": 1000
+        },
+        "mserp_linediscountamount": {
+          "type": "string",
+          "title": "Discount",
+          "x-ms-dataverse-attribute": "mserp_linediscountamount",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_linediscountamount"
+        },
+        "mserp_linediscountpercentage": {
+          "type": "string",
+          "title": "Discount percent",
+          "x-ms-dataverse-attribute": "mserp_linediscountpercentage",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_linediscountpercentage"
+        },
+        "mserp_linestatus": {
+          "type": "string",
+          "title": "Status",
+          "x-ms-dataverse-attribute": "mserp_linestatus",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_linestatus",
+          "x-ms-read-only": true,
+          "enum": [
+            "Draft",
+            "In review",
+            "Rejected",
+            "Approved",
+            "Cancelled",
+            "Closed",
+            "Budget reserved"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003,
+            200000004,
+            200000005,
+            200000006
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "db04c941-af02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Status (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_linestatusname": {
+          "type": "string",
+          "title": "mserp_linestatusname",
+          "x-ms-dataverse-attribute": "mserp_linestatusname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_linestatusName",
+          "x-ms-read-only": true
+        },
+        "mserp_linetype": {
+          "type": "string",
+          "title": "Line type",
+          "x-ms-dataverse-attribute": "mserp_linetype",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_linetype",
+          "enum": [
+            "Internal catalog item",
+            "Non catalog item",
+            "External catalog item"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "c704c941-af02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Line type (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_linetypename": {
+          "type": "string",
+          "title": "mserp_linetypename",
+          "x-ms-dataverse-attribute": "mserp_linetypename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_linetypeName",
+          "x-ms-read-only": true
+        },
+        "mserp_overridesalestax": {
+          "type": "string",
+          "title": "Override sales tax",
+          "x-ms-dataverse-attribute": "mserp_overridesalestax",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_overridesalestax",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_overridesalestaxname": {
+          "type": "string",
+          "title": "mserp_overridesalestaxname",
+          "x-ms-dataverse-attribute": "mserp_overridesalestaxname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_overridesalestaxName",
+          "x-ms-read-only": true
+        },
+        "mserp_prepaymentdetails": {
+          "type": "string",
+          "title": "Prepayment details",
+          "x-ms-dataverse-attribute": "mserp_prepaymentdetails",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_prepaymentdetails",
+          "maxLength": 40
+        },
+        "mserp_primaryfield": {
+          "type": "string",
+          "title": "Primary Field",
+          "x-ms-dataverse-attribute": "mserp_primaryfield",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryfield",
+          "x-ms-dataverse-primary-name": true,
+          "maxLength": 256
+        },
+        "mserp_procurementproductcategoryname": {
+          "type": "string",
+          "title": "Procurement category",
+          "x-ms-dataverse-attribute": "mserp_procurementproductcategoryname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_procurementproductcategoryname",
+          "maxLength": 254
+        },
+        "mserp_productcolorid": {
+          "type": "string",
+          "title": "Color",
+          "x-ms-dataverse-attribute": "mserp_productcolorid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productcolorid",
+          "maxLength": 10
+        },
+        "mserp_productconfigurationid": {
+          "type": "string",
+          "title": "Configuration",
+          "x-ms-dataverse-attribute": "mserp_productconfigurationid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productconfigurationid",
+          "maxLength": 50
+        },
+        "mserp_productname": {
+          "type": "string",
+          "title": "Product name",
+          "x-ms-dataverse-attribute": "mserp_productname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productname",
+          "maxLength": 60
+        },
+        "mserp_productsizeid": {
+          "type": "string",
+          "title": "Size",
+          "x-ms-dataverse-attribute": "mserp_productsizeid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productsizeid",
+          "maxLength": 10
+        },
+        "mserp_productstyleid": {
+          "type": "string",
+          "title": "Style",
+          "x-ms-dataverse-attribute": "mserp_productstyleid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productstyleid",
+          "maxLength": 10
+        },
+        "mserp_productversionid": {
+          "type": "string",
+          "title": "Version",
+          "x-ms-dataverse-attribute": "mserp_productversionid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productversionid",
+          "maxLength": 10
+        },
+        "mserp_projectactivitynumber": {
+          "type": "string",
+          "title": "Activity number",
+          "x-ms-dataverse-attribute": "mserp_projectactivitynumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_projectactivitynumber",
+          "maxLength": 50
+        },
+        "mserp_projectcategoryid": {
+          "type": "string",
+          "title": "Project category",
+          "x-ms-dataverse-attribute": "mserp_projectcategoryid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_projectcategoryid",
+          "maxLength": 30
+        },
+        "mserp_projectid": {
+          "type": "string",
+          "title": "Project ID",
+          "x-ms-dataverse-attribute": "mserp_projectid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_projectid",
+          "maxLength": 20
+        },
+        "mserp_projectlinepropertyid": {
+          "type": "string",
+          "title": "Line property",
+          "x-ms-dataverse-attribute": "mserp_projectlinepropertyid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_projectlinepropertyid",
+          "maxLength": 10
+        },
+        "mserp_projectsalescurrencycode": {
+          "type": "string",
+          "title": "Sales currency",
+          "x-ms-dataverse-attribute": "mserp_projectsalescurrencycode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_projectsalescurrencycode",
+          "maxLength": 3
+        },
+        "mserp_projectsalesprice": {
+          "type": "string",
+          "title": "Sales price",
+          "x-ms-dataverse-attribute": "mserp_projectsalesprice",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_projectsalesprice"
+        },
+        "mserp_projectsalesunitsymbol": {
+          "type": "string",
+          "title": "Project sales unit",
+          "x-ms-dataverse-attribute": "mserp_projectsalesunitsymbol",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_projectsalesunitsymbol",
+          "maxLength": 10
+        },
+        "mserp_projecttaxgroupcode": {
+          "type": "string",
+          "title": "Project sales tax group",
+          "x-ms-dataverse-attribute": "mserp_projecttaxgroupcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_projecttaxgroupcode",
+          "maxLength": 10
+        },
+        "mserp_projecttaxitemgroupcode": {
+          "type": "string",
+          "title": "Project item sales tax group",
+          "x-ms-dataverse-attribute": "mserp_projecttaxitemgroupcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_projecttaxitemgroupcode",
+          "maxLength": 10
+        },
+        "mserp_purchaseprice": {
+          "type": "string",
+          "title": "Unit price",
+          "x-ms-dataverse-attribute": "mserp_purchaseprice",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_purchaseprice"
+        },
+        "mserp_purchasepricequantity": {
+          "type": "string",
+          "title": "Price unit",
+          "x-ms-dataverse-attribute": "mserp_purchasepricequantity",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_purchasepricequantity"
+        },
+        "mserp_purchaserequisitionlinev2entityid": {
+          "type": "string",
+          "title": "Purchase requisition lines V2 (mserp)",
+          "x-ms-dataverse-attribute": "mserp_purchaserequisitionlinev2entityid",
+          "x-ms-dataverse-type": "UniqueidentifierType",
+          "x-ms-schema-name": "mserp_purchaserequisitionlinev2entityId",
+          "x-ms-dataverse-primary-id": true,
+          "required": true,
+          "x-ms-keyType": "primary"
+        },
+        "mserp_purchaseunitsymbol": {
+          "type": "string",
+          "title": "Unit",
+          "x-ms-dataverse-attribute": "mserp_purchaseunitsymbol",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_purchaseunitsymbol",
+          "maxLength": 10
+        },
+        "mserp_receivingoperatingunitnumber": {
+          "type": "string",
+          "title": "Receiving operating unit",
+          "x-ms-dataverse-attribute": "mserp_receivingoperatingunitnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_receivingoperatingunitnumber",
+          "maxLength": 30
+        },
+        "mserp_receivingsiteid": {
+          "type": "string",
+          "title": "Site",
+          "x-ms-dataverse-attribute": "mserp_receivingsiteid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_receivingsiteid",
+          "maxLength": 10
+        },
+        "mserp_receivingwarehouseid": {
+          "type": "string",
+          "title": "Warehouse",
+          "x-ms-dataverse-attribute": "mserp_receivingwarehouseid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_receivingwarehouseid",
+          "maxLength": 10
+        },
+        "mserp_requesteddate": {
+          "type": "string",
+          "title": "Requested date",
+          "x-ms-dataverse-attribute": "mserp_requesteddate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_requesteddate"
+        },
+        "mserp_requestedpurchasequantity": {
+          "type": "string",
+          "title": "Quantity",
+          "x-ms-dataverse-attribute": "mserp_requestedpurchasequantity",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_requestedpurchasequantity"
+        },
+        "mserp_requisitionerpersonnelnumber": {
+          "type": "string",
+          "title": "Requester personnel number",
+          "x-ms-dataverse-attribute": "mserp_requisitionerpersonnelnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_requisitionerpersonnelnumber",
+          "maxLength": 25
+        },
+        "mserp_requisitionlinenumber": {
+          "type": "string",
+          "title": "Line",
+          "x-ms-dataverse-attribute": "mserp_requisitionlinenumber",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "mserp_requisitionlinenumber",
+          "required": true
+        },
+        "mserp_requisitionnumber": {
+          "type": "string",
+          "title": "Purchase requisition",
+          "x-ms-dataverse-attribute": "mserp_requisitionnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_requisitionnumber",
+          "required": true,
+          "maxLength": 25
+        },
+        "mserp_rfqrequirementlevel": {
+          "type": "string",
+          "title": "RFQ requirement",
+          "x-ms-dataverse-attribute": "mserp_rfqrequirementlevel",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_rfqrequirementlevel",
+          "x-ms-read-only": true,
+          "enum": [
+            "None",
+            "Informal",
+            "Formal"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "df04c941-af02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "RFQ required (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_rfqrequirementlevelname": {
+          "type": "string",
+          "title": "mserp_rfqrequirementlevelname",
+          "x-ms-dataverse-attribute": "mserp_rfqrequirementlevelname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_rfqrequirementlevelName",
+          "x-ms-read-only": true
+        },
+        "mserp_salestaxgroupcode": {
+          "type": "string",
+          "title": "Sales tax group",
+          "x-ms-dataverse-attribute": "mserp_salestaxgroupcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_salestaxgroupcode",
+          "maxLength": 10
+        },
+        "mserp_salestaxitemgroupcode": {
+          "type": "string",
+          "title": "Item sales tax group",
+          "x-ms-dataverse-attribute": "mserp_salestaxitemgroupcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_salestaxitemgroupcode",
+          "maxLength": 10
+        },
+        "mserp_url": {
+          "type": "string",
+          "title": "Internet address",
+          "x-ms-dataverse-attribute": "mserp_url",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_url",
+          "maxLength": 255
+        },
+        "mserp_vendoraccountnumber": {
+          "type": "string",
+          "title": "Vendor account",
+          "x-ms-dataverse-attribute": "mserp_vendoraccountnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_vendoraccountnumber",
+          "maxLength": 20
+        }
+      },
+      "required": [
+        "mserp_buyinglegalentityid",
+        "mserp_purchaserequisitionlinev2entityid",
+        "mserp_requisitionlinenumber",
+        "mserp_requisitionnumber"
+      ]
+    }
+  }
+}

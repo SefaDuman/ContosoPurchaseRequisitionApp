@@ -1,0 +1,105 @@
+{
+  "name": "mserp_dirpersonuserentity",
+  "title": "User to person relationship (mserp)",
+  "schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "x-ms-dataverse-entity": true,
+      "x-ms-dataverse-entityset": "mserp_dirpersonuserentities",
+      "x-ms-dataverse-primary-id": "mserp_dirpersonuserentityid",
+      "x-ms-dataverse-primary-name": "mserp_primaryfield",
+      "properties": {
+        "mserp_dirpersonuserentityid": {
+          "type": "string",
+          "title": "User to person relationship (mserp)",
+          "x-ms-dataverse-attribute": "mserp_dirpersonuserentityid",
+          "x-ms-dataverse-type": "UniqueidentifierType",
+          "x-ms-schema-name": "mserp_dirpersonuserentityId",
+          "x-ms-dataverse-primary-id": true,
+          "required": true,
+          "x-ms-keyType": "primary"
+        },
+        "mserp_partynumber": {
+          "type": "string",
+          "title": "Party ID",
+          "x-ms-dataverse-attribute": "mserp_partynumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_partynumber",
+          "required": true,
+          "maxLength": 40
+        },
+        "mserp_personname": {
+          "type": "string",
+          "title": "Person name",
+          "x-ms-dataverse-attribute": "mserp_personname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_personname",
+          "x-ms-read-only": true,
+          "maxLength": 160
+        },
+        "mserp_personnamealias": {
+          "type": "string",
+          "title": "Search name",
+          "x-ms-dataverse-attribute": "mserp_personnamealias",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_personnamealias",
+          "maxLength": 20
+        },
+        "mserp_personprimaryemail": {
+          "type": "string",
+          "title": "Person primary email",
+          "x-ms-dataverse-attribute": "mserp_personprimaryemail",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_personprimaryemail",
+          "maxLength": 255
+        },
+        "mserp_primaryfield": {
+          "type": "string",
+          "title": "Primary Field",
+          "x-ms-dataverse-attribute": "mserp_primaryfield",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryfield",
+          "x-ms-dataverse-primary-name": true,
+          "maxLength": 256
+        },
+        "mserp_useremail": {
+          "type": "string",
+          "title": "User email",
+          "x-ms-dataverse-attribute": "mserp_useremail",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_useremail",
+          "maxLength": 255
+        },
+        "mserp_userid": {
+          "type": "string",
+          "title": "ID",
+          "x-ms-dataverse-attribute": "mserp_userid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_userid",
+          "required": true,
+          "maxLength": 20
+        },
+        "mserp_validfrom": {
+          "type": "string",
+          "title": "ValidFrom",
+          "x-ms-dataverse-attribute": "mserp_validfrom",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_validfrom"
+        },
+        "mserp_validto": {
+          "type": "string",
+          "title": "ValidTo",
+          "x-ms-dataverse-attribute": "mserp_validto",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_validto"
+        }
+      },
+      "required": [
+        "mserp_dirpersonuserentityid",
+        "mserp_partynumber",
+        "mserp_userid"
+      ]
+    }
+  }
+}

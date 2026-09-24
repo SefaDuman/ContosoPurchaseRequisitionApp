@@ -1,0 +1,314 @@
+{
+  "name": "mserp_ecoresreleasedproductdocumentattachmententity",
+  "title": "Released product document attachments (mserp)",
+  "schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "x-ms-dataverse-entity": true,
+      "x-ms-dataverse-entityset": "mserp_ecoresreleasedproductdocumentattachmententities",
+      "x-ms-dataverse-primary-id": "mserp_ecoresreleasedproductdocumentattachmententityid",
+      "x-ms-dataverse-primary-name": "mserp_primaryfield",
+      "properties": {
+        "mserp_accessrestriction": {
+          "type": "string",
+          "title": "Restriction",
+          "x-ms-dataverse-attribute": "mserp_accessrestriction",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_accessrestriction",
+          "enum": [
+            "Internal",
+            "External"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "2dec5772-7202-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Restriction (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_accessrestrictionname": {
+          "type": "string",
+          "title": "mserp_accessrestrictionname",
+          "x-ms-dataverse-attribute": "mserp_accessrestrictionname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_accessrestrictionName",
+          "x-ms-read-only": true
+        },
+        "mserp_attacheddatetime": {
+          "type": "string",
+          "title": "AttachedDateTime",
+          "x-ms-dataverse-attribute": "mserp_attacheddatetime",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_attacheddatetime"
+        },
+        "mserp_attachinguserid": {
+          "type": "string",
+          "title": "AttachingUserId",
+          "x-ms-dataverse-attribute": "mserp_attachinguserid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_attachinguserid",
+          "maxLength": 20
+        },
+        "mserp_attachment": {
+          "type": "string",
+          "title": "Bitmap",
+          "x-ms-dataverse-attribute": "mserp_attachment",
+          "x-ms-dataverse-type": "MemoType",
+          "x-ms-schema-name": "mserp_attachment",
+          "maxLength": 1048576
+        },
+        "mserp_attachmentdescription": {
+          "type": "string",
+          "title": "Description",
+          "x-ms-dataverse-attribute": "mserp_attachmentdescription",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_attachmentdescription",
+          "required": true,
+          "maxLength": 60
+        },
+        "mserp_dataareaid": {
+          "type": "string",
+          "title": "Company Code",
+          "x-ms-dataverse-attribute": "mserp_dataareaid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_dataareaid",
+          "maxLength": 4
+        },
+        "mserp_dataareaid_id": {
+          "type": "string",
+          "title": "Company",
+          "x-ms-dataverse-attribute": "mserp_dataareaid_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_dataAreaId_id"
+        },
+        "mserp_dataareaid_idname": {
+          "type": "string",
+          "title": "mserp_dataareaid_idname",
+          "x-ms-dataverse-attribute": "mserp_dataareaid_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_dataAreaId_idName",
+          "x-ms-read-only": true,
+          "maxLength": 20
+        },
+        "mserp_documentattachmenttypecode": {
+          "type": "string",
+          "title": "Type",
+          "x-ms-dataverse-attribute": "mserp_documentattachmenttypecode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_documentattachmenttypecode",
+          "required": true,
+          "maxLength": 20
+        },
+        "mserp_documentattachmenttypelegalentityid": {
+          "type": "string",
+          "title": "DocumentAttachmentTypeLegalEntityId",
+          "x-ms-dataverse-attribute": "mserp_documentattachmenttypelegalentityid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_documentattachmenttypelegalentityid",
+          "required": true,
+          "maxLength": 4
+        },
+        "mserp_ecoresreleasedproductdocumentattachmententityid": {
+          "type": "string",
+          "title": "Released product document attachments (mserp)",
+          "x-ms-dataverse-attribute": "mserp_ecoresreleasedproductdocumentattachmententityid",
+          "x-ms-dataverse-type": "UniqueidentifierType",
+          "x-ms-schema-name": "mserp_ecoresreleasedproductdocumentattachmententityId",
+          "x-ms-dataverse-primary-id": true,
+          "required": true,
+          "x-ms-keyType": "primary"
+        },
+        "mserp_filelocation": {
+          "type": "string",
+          "title": "File location",
+          "x-ms-dataverse-attribute": "mserp_filelocation",
+          "x-ms-dataverse-type": "MemoType",
+          "x-ms-schema-name": "mserp_filelocation",
+          "x-ms-read-only": true,
+          "maxLength": 1048576
+        },
+        "mserp_filetype": {
+          "type": "string",
+          "title": "File type",
+          "x-ms-dataverse-attribute": "mserp_filetype",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_filetype",
+          "maxLength": 259
+        },
+        "mserp_fk_documentattachmenttype_id": {
+          "type": "string",
+          "title": "Document types",
+          "x-ms-dataverse-attribute": "mserp_fk_documentattachmenttype_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_DocumentAttachmentType_id"
+        },
+        "mserp_fk_documentattachmenttype_idname": {
+          "type": "string",
+          "title": "mserp_fk_documentattachmenttype_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_documentattachmenttype_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_DocumentAttachmentType_idName",
+          "x-ms-read-only": true,
+          "maxLength": 20
+        },
+        "mserp_fk_releasedproductv2_id": {
+          "type": "string",
+          "title": "Released products V2",
+          "x-ms-dataverse-attribute": "mserp_fk_releasedproductv2_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_ReleasedProductV2_id"
+        },
+        "mserp_fk_releasedproductv2_idname": {
+          "type": "string",
+          "title": "mserp_fk_releasedproductv2_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_releasedproductv2_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_ReleasedProductV2_idName",
+          "x-ms-read-only": true,
+          "maxLength": 20
+        },
+        "mserp_isdefaultproductimage": {
+          "type": "string",
+          "title": "Default image",
+          "x-ms-dataverse-attribute": "mserp_isdefaultproductimage",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isdefaultproductimage",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isdefaultproductimagename": {
+          "type": "string",
+          "title": "mserp_isdefaultproductimagename",
+          "x-ms-dataverse-attribute": "mserp_isdefaultproductimagename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isdefaultproductimageName",
+          "x-ms-read-only": true
+        },
+        "mserp_isproductimage": {
+          "type": "string",
+          "title": "IsProductImage",
+          "x-ms-dataverse-attribute": "mserp_isproductimage",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isproductimage",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isproductimagename": {
+          "type": "string",
+          "title": "mserp_isproductimagename",
+          "x-ms-dataverse-attribute": "mserp_isproductimagename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isproductimageName",
+          "x-ms-read-only": true
+        },
+        "mserp_itemnumber": {
+          "type": "string",
+          "title": "Item number",
+          "x-ms-dataverse-attribute": "mserp_itemnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_itemnumber",
+          "required": true,
+          "maxLength": 20
+        },
+        "mserp_notes": {
+          "type": "string",
+          "title": "Note",
+          "x-ms-dataverse-attribute": "mserp_notes",
+          "x-ms-dataverse-type": "MemoType",
+          "x-ms-schema-name": "mserp_notes",
+          "maxLength": 1048576
+        },
+        "mserp_originalfilename": {
+          "type": "string",
+          "title": "Original file name",
+          "x-ms-dataverse-attribute": "mserp_originalfilename",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_originalfilename",
+          "maxLength": 259
+        },
+        "mserp_primaryfield": {
+          "type": "string",
+          "title": "Primary Field",
+          "x-ms-dataverse-attribute": "mserp_primaryfield",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryfield",
+          "x-ms-dataverse-primary-name": true,
+          "maxLength": 256
+        },
+        "mserp_productimageusage": {
+          "type": "string",
+          "title": "Media usage",
+          "x-ms-dataverse-attribute": "mserp_productimageusage",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_productimageusage",
+          "enum": [
+            "External",
+            "Internal"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "0326d5f6-7d0d-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Media usage (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_productimageusagename": {
+          "type": "string",
+          "title": "mserp_productimageusagename",
+          "x-ms-dataverse-attribute": "mserp_productimageusagename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_productimageusageName",
+          "x-ms-read-only": true
+        }
+      },
+      "required": [
+        "mserp_attachmentdescription",
+        "mserp_documentattachmenttypecode",
+        "mserp_documentattachmenttypelegalentityid",
+        "mserp_ecoresreleasedproductdocumentattachmententityid",
+        "mserp_itemnumber"
+      ]
+    }
+  }
+}

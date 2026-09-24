@@ -1,0 +1,114 @@
+{
+  "name": "mserp_ecoresproductcategoryhierarchyroleentity",
+  "title": "Product category hierarchy roles (mserp)",
+  "schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "x-ms-dataverse-entity": true,
+      "x-ms-dataverse-entityset": "mserp_ecoresproductcategoryhierarchyroleentities",
+      "x-ms-dataverse-primary-id": "mserp_ecoresproductcategoryhierarchyroleentityid",
+      "x-ms-dataverse-primary-name": "mserp_primaryfield",
+      "properties": {
+        "mserp_ecoresproductcategoryhierarchyroleentityid": {
+          "type": "string",
+          "title": "Product category hierarchy roles (mserp)",
+          "x-ms-dataverse-attribute": "mserp_ecoresproductcategoryhierarchyroleentityid",
+          "x-ms-dataverse-type": "UniqueidentifierType",
+          "x-ms-schema-name": "mserp_ecoresproductcategoryhierarchyroleentityId",
+          "x-ms-dataverse-primary-id": true,
+          "required": true,
+          "x-ms-keyType": "primary"
+        },
+        "mserp_hierarchyrole": {
+          "type": "string",
+          "title": "Category hierarchy type",
+          "x-ms-dataverse-attribute": "mserp_hierarchyrole",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_hierarchyrole",
+          "required": true,
+          "enum": [
+            "Procurement category hierarchy",
+            "Sales category hierarchy",
+            "Commerce product hierarchy",
+            "Commodity code hierarchy",
+            "Derived financial hierarchy",
+            "Supplemental retail hierarchy",
+            "Retail vendor product hierarchy",
+            "Retail channel navigation hierarchy",
+            "Packing material hierarchy",
+            "Common data service",
+            "Cost management hierarchy",
+            "Traceability hierarchy",
+            "Engineering Product Hierarchy"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003,
+            200000004,
+            200000005,
+            200000006,
+            200000007,
+            200000008,
+            200000009,
+            200000010,
+            200000011,
+            200000012
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "da6f075a-7d02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Category hierarchy type (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_hierarchyrolename": {
+          "type": "string",
+          "title": "mserp_hierarchyrolename",
+          "x-ms-dataverse-attribute": "mserp_hierarchyrolename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_hierarchyroleName",
+          "x-ms-read-only": true
+        },
+        "mserp_primaryfield": {
+          "type": "string",
+          "title": "Primary Field",
+          "x-ms-dataverse-attribute": "mserp_primaryfield",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryfield",
+          "x-ms-dataverse-primary-name": true,
+          "maxLength": 256
+        },
+        "mserp_productcategoryhierarchyname": {
+          "type": "string",
+          "title": "Name",
+          "x-ms-dataverse-attribute": "mserp_productcategoryhierarchyname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productcategoryhierarchyname",
+          "required": true,
+          "maxLength": 128
+        }
+      },
+      "required": [
+        "mserp_ecoresproductcategoryhierarchyroleentityid",
+        "mserp_hierarchyrole",
+        "mserp_productcategoryhierarchyname"
+      ]
+    }
+  }
+}

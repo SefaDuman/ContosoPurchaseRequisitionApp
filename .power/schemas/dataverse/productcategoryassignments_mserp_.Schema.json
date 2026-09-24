@@ -1,0 +1,107 @@
+{
+  "name": "mserp_ecoresproductcategoryassignmententity",
+  "title": "Product category assignments (mserp)",
+  "schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "x-ms-dataverse-entity": true,
+      "x-ms-dataverse-entityset": "mserp_ecoresproductcategoryassignmententities",
+      "x-ms-dataverse-primary-id": "mserp_ecoresproductcategoryassignmententityid",
+      "x-ms-dataverse-primary-name": "mserp_primaryfield",
+      "properties": {
+        "mserp_displayorder": {
+          "type": "string",
+          "title": "Product Display Order",
+          "x-ms-dataverse-attribute": "mserp_displayorder",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_displayorder"
+        },
+        "mserp_ecoresproductcategoryassignmententityid": {
+          "type": "string",
+          "title": "Product category assignments (mserp)",
+          "x-ms-dataverse-attribute": "mserp_ecoresproductcategoryassignmententityid",
+          "x-ms-dataverse-type": "UniqueidentifierType",
+          "x-ms-schema-name": "mserp_ecoresproductcategoryassignmententityId",
+          "x-ms-dataverse-primary-id": true,
+          "required": true,
+          "x-ms-keyType": "primary"
+        },
+        "mserp_fk_productcategory_id": {
+          "type": "string",
+          "title": "Product categories",
+          "x-ms-dataverse-attribute": "mserp_fk_productcategory_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_ProductCategory_id"
+        },
+        "mserp_fk_productcategory_idname": {
+          "type": "string",
+          "title": "mserp_fk_productcategory_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_productcategory_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_ProductCategory_idName",
+          "x-ms-read-only": true,
+          "maxLength": 256
+        },
+        "mserp_fk_productv2_id": {
+          "type": "string",
+          "title": "Products V2",
+          "x-ms-dataverse-attribute": "mserp_fk_productv2_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_ProductV2_id"
+        },
+        "mserp_fk_productv2_idname": {
+          "type": "string",
+          "title": "mserp_fk_productv2_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_productv2_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_ProductV2_idName",
+          "x-ms-read-only": true,
+          "maxLength": 70
+        },
+        "mserp_primaryfield": {
+          "type": "string",
+          "title": "Primary Field",
+          "x-ms-dataverse-attribute": "mserp_primaryfield",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryfield",
+          "x-ms-dataverse-primary-name": true,
+          "maxLength": 256
+        },
+        "mserp_productcategoryhierarchyname": {
+          "type": "string",
+          "title": "Product category hierarchy name",
+          "x-ms-dataverse-attribute": "mserp_productcategoryhierarchyname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productcategoryhierarchyname",
+          "required": true,
+          "maxLength": 128
+        },
+        "mserp_productcategoryname": {
+          "type": "string",
+          "title": "Product category name",
+          "x-ms-dataverse-attribute": "mserp_productcategoryname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productcategoryname",
+          "required": true,
+          "maxLength": 254
+        },
+        "mserp_productnumber": {
+          "type": "string",
+          "title": "Product number",
+          "x-ms-dataverse-attribute": "mserp_productnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productnumber",
+          "required": true,
+          "maxLength": 70
+        }
+      },
+      "required": [
+        "mserp_ecoresproductcategoryassignmententityid",
+        "mserp_productcategoryhierarchyname",
+        "mserp_productcategoryname",
+        "mserp_productnumber"
+      ]
+    }
+  }
+}

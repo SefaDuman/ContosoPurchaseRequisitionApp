@@ -1,0 +1,4434 @@
+{
+  "name": "mserp_ecoresreleasedproductv2entity",
+  "title": "Released products V2 (mserp)",
+  "schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "x-ms-dataverse-entity": true,
+      "x-ms-dataverse-entityset": "mserp_ecoresreleasedproductv2entities",
+      "x-ms-dataverse-primary-id": "mserp_ecoresreleasedproductv2entityid",
+      "x-ms-dataverse-primary-name": "mserp_itemnumber",
+      "properties": {
+        "mserp_alternativeitemnumber": {
+          "type": "string",
+          "title": "Alternative item number",
+          "x-ms-dataverse-attribute": "mserp_alternativeitemnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_alternativeitemnumber",
+          "maxLength": 20
+        },
+        "mserp_alternativeproductcolorid": {
+          "type": "string",
+          "title": "Alternative product color",
+          "x-ms-dataverse-attribute": "mserp_alternativeproductcolorid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_alternativeproductcolorid",
+          "maxLength": 10
+        },
+        "mserp_alternativeproductconfigurationid": {
+          "type": "string",
+          "title": "Alternative product configuration",
+          "x-ms-dataverse-attribute": "mserp_alternativeproductconfigurationid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_alternativeproductconfigurationid",
+          "maxLength": 50
+        },
+        "mserp_alternativeproductsizeid": {
+          "type": "string",
+          "title": "Alternative product size",
+          "x-ms-dataverse-attribute": "mserp_alternativeproductsizeid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_alternativeproductsizeid",
+          "maxLength": 10
+        },
+        "mserp_alternativeproductstyleid": {
+          "type": "string",
+          "title": "Alternative product style",
+          "x-ms-dataverse-attribute": "mserp_alternativeproductstyleid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_alternativeproductstyleid",
+          "maxLength": 10
+        },
+        "mserp_alternativeproductusagecondition": {
+          "type": "string",
+          "title": "When to use alternative product",
+          "x-ms-dataverse-attribute": "mserp_alternativeproductusagecondition",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_alternativeproductusagecondition",
+          "enum": [
+            "Never",
+            "Nothing in inventory",
+            "Always"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "b2c5a460-7d02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Alternative item number (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_alternativeproductusageconditionname": {
+          "type": "string",
+          "title": "mserp_alternativeproductusageconditionname",
+          "x-ms-dataverse-attribute": "mserp_alternativeproductusageconditionname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_alternativeproductusageconditionName",
+          "x-ms-read-only": true
+        },
+        "mserp_alternativeproductversionid": {
+          "type": "string",
+          "title": "Alternative product version",
+          "x-ms-dataverse-attribute": "mserp_alternativeproductversionid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_alternativeproductversionid",
+          "maxLength": 10
+        },
+        "mserp_approvedvendorcheckmethod": {
+          "type": "string",
+          "title": "Approved vendor check method",
+          "x-ms-dataverse-attribute": "mserp_approvedvendorcheckmethod",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_approvedvendorcheckmethod",
+          "enum": [
+            "No check",
+            "Warning only",
+            "Not allowed"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "18cfb266-7d02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Approved vendor check method (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_approvedvendorcheckmethodname": {
+          "type": "string",
+          "title": "mserp_approvedvendorcheckmethodname",
+          "x-ms-dataverse-attribute": "mserp_approvedvendorcheckmethodname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_approvedvendorcheckmethodName",
+          "x-ms-read-only": true
+        },
+        "mserp_approximatesalestaxpercentage": {
+          "type": "string",
+          "title": "Approximate tax percentage",
+          "x-ms-dataverse-attribute": "mserp_approximatesalestaxpercentage",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_approximatesalestaxpercentage"
+        },
+        "mserp_aretransportationmanagementprocessesenabled": {
+          "type": "string",
+          "title": "Use transportation management processes",
+          "x-ms-dataverse-attribute": "mserp_aretransportationmanagementprocessesenabled",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_aretransportationmanagementprocessesenabled",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_aretransportationmanagementprocessesenabledname": {
+          "type": "string",
+          "title": "mserp_aretransportationmanagementprocessesenabledname",
+          "x-ms-dataverse-attribute": "mserp_aretransportationmanagementprocessesenabledname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_aretransportationmanagementprocessesenabledName",
+          "x-ms-read-only": true
+        },
+        "mserp_arrivalhandlingtime": {
+          "type": "string",
+          "title": "Arrival handling time",
+          "x-ms-dataverse-attribute": "mserp_arrivalhandlingtime",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "mserp_arrivalhandlingtime"
+        },
+        "mserp_barcodesetupid": {
+          "type": "string",
+          "title": "Bar code setup",
+          "x-ms-dataverse-attribute": "mserp_barcodesetupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_barcodesetupid",
+          "maxLength": 10
+        },
+        "mserp_basepricepurchase": {
+          "type": "string",
+          "title": "Base price - purchase price",
+          "x-ms-dataverse-attribute": "mserp_basepricepurchase",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_basepricepurchase",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_basepricepurchasename": {
+          "type": "string",
+          "title": "mserp_basepricepurchasename",
+          "x-ms-dataverse-attribute": "mserp_basepricepurchasename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_basepricepurchaseName",
+          "x-ms-read-only": true
+        },
+        "mserp_basesalespricesource": {
+          "type": "string",
+          "title": "Source of base sales price",
+          "x-ms-dataverse-attribute": "mserp_basesalespricesource",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_basesalespricesource",
+          "enum": [
+            "Purchase price",
+            "Cost"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "2fcfb266-7d02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Base price (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_basesalespricesourcename": {
+          "type": "string",
+          "title": "mserp_basesalespricesourcename",
+          "x-ms-dataverse-attribute": "mserp_basesalespricesourcename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_basesalespricesourceName",
+          "x-ms-read-only": true
+        },
+        "mserp_batchmergedatecalculationmethod": {
+          "type": "string",
+          "title": "Batch merge date calculation method",
+          "x-ms-dataverse-attribute": "mserp_batchmergedatecalculationmethod",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_batchmergedatecalculationmethod",
+          "enum": [
+            "Manual",
+            "Earliest",
+            "Latest"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "bac5a460-7d02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Batch merge date calculation (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_batchmergedatecalculationmethodname": {
+          "type": "string",
+          "title": "mserp_batchmergedatecalculationmethodname",
+          "x-ms-dataverse-attribute": "mserp_batchmergedatecalculationmethodname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_batchmergedatecalculationmethodName",
+          "x-ms-read-only": true
+        },
+        "mserp_batchnumbergroupcode": {
+          "type": "string",
+          "title": "Batch number group",
+          "x-ms-dataverse-attribute": "mserp_batchnumbergroupcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_batchnumbergroupcode",
+          "maxLength": 10
+        },
+        "mserp_bestbeforeperioddays": {
+          "type": "string",
+          "title": "Best before period in days",
+          "x-ms-dataverse-attribute": "mserp_bestbeforeperioddays",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "mserp_bestbeforeperioddays"
+        },
+        "mserp_blockitemreturn": {
+          "type": "string",
+          "title": "Block item return",
+          "x-ms-dataverse-attribute": "mserp_blockitemreturn",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_blockitemreturn",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_blockitemreturnname": {
+          "type": "string",
+          "title": "mserp_blockitemreturnname",
+          "x-ms-dataverse-attribute": "mserp_blockitemreturnname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_blockitemreturnName",
+          "x-ms-read-only": true
+        },
+        "mserp_bomlevel": {
+          "type": "string",
+          "title": "BOM level",
+          "x-ms-dataverse-attribute": "mserp_bomlevel",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "mserp_bomlevel",
+          "x-ms-read-only": true
+        },
+        "mserp_bomunitsymbol": {
+          "type": "string",
+          "title": "BOM unit",
+          "x-ms-dataverse-attribute": "mserp_bomunitsymbol",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_bomunitsymbol",
+          "maxLength": 10
+        },
+        "mserp_bundle": {
+          "type": "string",
+          "title": "Product bundle",
+          "x-ms-dataverse-attribute": "mserp_bundle",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_bundle",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_bundlename": {
+          "type": "string",
+          "title": "mserp_bundlename",
+          "x-ms-dataverse-attribute": "mserp_bundlename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_bundleName",
+          "x-ms-read-only": true
+        },
+        "mserp_buyergroupid": {
+          "type": "string",
+          "title": "Buyer group",
+          "x-ms-dataverse-attribute": "mserp_buyergroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_buyergroupid",
+          "maxLength": 10
+        },
+        "mserp_carryingcostabccode": {
+          "type": "string",
+          "title": "ABC-code carrying cost",
+          "x-ms-dataverse-attribute": "mserp_carryingcostabccode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_carryingcostabccode",
+          "enum": [
+            "None",
+            "A",
+            "B",
+            "C"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "c32e32a9-7b02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "ABC code (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_carryingcostabccodename": {
+          "type": "string",
+          "title": "mserp_carryingcostabccodename",
+          "x-ms-dataverse-attribute": "mserp_carryingcostabccodename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_carryingcostabccodeName",
+          "x-ms-read-only": true
+        },
+        "mserp_catchweightitemhandlingpolicyname": {
+          "type": "string",
+          "title": "Catch weight item handling policy",
+          "x-ms-dataverse-attribute": "mserp_catchweightitemhandlingpolicyname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_catchweightitemhandlingpolicyname",
+          "maxLength": 20
+        },
+        "mserp_catchweightunitsymbol": {
+          "type": "string",
+          "title": "CW unit",
+          "x-ms-dataverse-attribute": "mserp_catchweightunitsymbol",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_catchweightunitsymbol",
+          "maxLength": 10
+        },
+        "mserp_cnpj": {
+          "type": "string",
+          "title": "CNPJ manufacturer",
+          "x-ms-dataverse-attribute": "mserp_cnpj",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_cnpj",
+          "maxLength": 20
+        },
+        "mserp_commissionproductgroupid": {
+          "type": "string",
+          "title": "Commission group",
+          "x-ms-dataverse-attribute": "mserp_commissionproductgroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_commissionproductgroupid",
+          "maxLength": 10
+        },
+        "mserp_commoditycodeid": {
+          "type": "string",
+          "title": "Commodity code",
+          "x-ms-dataverse-attribute": "mserp_commoditycodeid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_commoditycodeid",
+          "maxLength": 10
+        },
+        "mserp_comparisonpricebaseunitsymbol": {
+          "type": "string",
+          "title": "Comparison price base unit",
+          "x-ms-dataverse-attribute": "mserp_comparisonpricebaseunitsymbol",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_comparisonpricebaseunitsymbol",
+          "maxLength": 10
+        },
+        "mserp_constantscrapquantity": {
+          "type": "string",
+          "title": "Constant scrap",
+          "x-ms-dataverse-attribute": "mserp_constantscrapquantity",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_constantscrapquantity"
+        },
+        "mserp_continuityeventduration": {
+          "type": "string",
+          "title": "Event duration",
+          "x-ms-dataverse-attribute": "mserp_continuityeventduration",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "mserp_continuityeventduration"
+        },
+        "mserp_continuityscheduleid": {
+          "type": "string",
+          "title": "Schedule ID",
+          "x-ms-dataverse-attribute": "mserp_continuityscheduleid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_continuityscheduleid",
+          "maxLength": 20
+        },
+        "mserp_costcalculationbomlevel": {
+          "type": "string",
+          "title": "Cost calculation level",
+          "x-ms-dataverse-attribute": "mserp_costcalculationbomlevel",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "mserp_costcalculationbomlevel",
+          "x-ms-read-only": true
+        },
+        "mserp_costcalculationgroupid": {
+          "type": "string",
+          "title": "Calculation group",
+          "x-ms-dataverse-attribute": "mserp_costcalculationgroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_costcalculationgroupid",
+          "maxLength": 10
+        },
+        "mserp_costchargesquantity": {
+          "type": "string",
+          "title": "Cost charges quantity",
+          "x-ms-dataverse-attribute": "mserp_costchargesquantity",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_costchargesquantity"
+        },
+        "mserp_costgroupid": {
+          "type": "string",
+          "title": "Cost group",
+          "x-ms-dataverse-attribute": "mserp_costgroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_costgroupid",
+          "maxLength": 10
+        },
+        "mserp_customsdescription": {
+          "type": "string",
+          "title": "Customs description",
+          "x-ms-dataverse-attribute": "mserp_customsdescription",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_customsdescription",
+          "maxLength": 60
+        },
+        "mserp_customsexporttariffcode": {
+          "type": "string",
+          "title": "Tariff code",
+          "x-ms-dataverse-attribute": "mserp_customsexporttariffcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_customsexporttariffcode",
+          "maxLength": 15
+        },
+        "mserp_customsimporttariffcode": {
+          "type": "string",
+          "title": "Tariff code",
+          "x-ms-dataverse-attribute": "mserp_customsimporttariffcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_customsimporttariffcode",
+          "maxLength": 15
+        },
+        "mserp_dataareaid": {
+          "type": "string",
+          "title": "Company Code",
+          "x-ms-dataverse-attribute": "mserp_dataareaid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_dataareaid",
+          "maxLength": 4
+        },
+        "mserp_dataareaid_id": {
+          "type": "string",
+          "title": "Company",
+          "x-ms-dataverse-attribute": "mserp_dataareaid_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_dataAreaId_id"
+        },
+        "mserp_dataareaid_idname": {
+          "type": "string",
+          "title": "mserp_dataareaid_idname",
+          "x-ms-dataverse-attribute": "mserp_dataareaid_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_dataAreaId_idName",
+          "x-ms-read-only": true,
+          "maxLength": 20
+        },
+        "mserp_defaultdirectdeliverywarehouse": {
+          "type": "string",
+          "title": "Default direct delivery warehouse",
+          "x-ms-dataverse-attribute": "mserp_defaultdirectdeliverywarehouse",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaultdirectdeliverywarehouse",
+          "maxLength": 10
+        },
+        "mserp_defaultledgerdimensiondisplayvalue": {
+          "type": "string",
+          "title": "Default financial dimensions",
+          "x-ms-dataverse-attribute": "mserp_defaultledgerdimensiondisplayvalue",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaultledgerdimensiondisplayvalue",
+          "maxLength": 500
+        },
+        "mserp_defaultordertype": {
+          "type": "string",
+          "title": "Default order type",
+          "x-ms-dataverse-attribute": "mserp_defaultordertype",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_defaultordertype",
+          "enum": [
+            "Purchase order",
+            "Production",
+            "Transfer",
+            "Kanban"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "88c5a460-7d02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Planned order type (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_defaultordertypename": {
+          "type": "string",
+          "title": "mserp_defaultordertypename",
+          "x-ms-dataverse-attribute": "mserp_defaultordertypename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_defaultordertypeName",
+          "x-ms-read-only": true
+        },
+        "mserp_defaultproductcolorid": {
+          "type": "string",
+          "title": "Default color",
+          "x-ms-dataverse-attribute": "mserp_defaultproductcolorid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaultproductcolorid",
+          "maxLength": 10
+        },
+        "mserp_defaultproductconfigurationid": {
+          "type": "string",
+          "title": "Default configuration",
+          "x-ms-dataverse-attribute": "mserp_defaultproductconfigurationid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaultproductconfigurationid",
+          "maxLength": 50
+        },
+        "mserp_defaultproductsizeid": {
+          "type": "string",
+          "title": "Default size",
+          "x-ms-dataverse-attribute": "mserp_defaultproductsizeid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaultproductsizeid",
+          "maxLength": 10
+        },
+        "mserp_defaultproductstyleid": {
+          "type": "string",
+          "title": "Default style",
+          "x-ms-dataverse-attribute": "mserp_defaultproductstyleid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaultproductstyleid",
+          "maxLength": 10
+        },
+        "mserp_defaultproductversionid": {
+          "type": "string",
+          "title": "Default version",
+          "x-ms-dataverse-attribute": "mserp_defaultproductversionid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaultproductversionid",
+          "maxLength": 10
+        },
+        "mserp_defaultreceivingquantity": {
+          "type": "string",
+          "title": "Default production or receiving quantity",
+          "x-ms-dataverse-attribute": "mserp_defaultreceivingquantity",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_defaultreceivingquantity"
+        },
+        "mserp_dualusecode": {
+          "type": "string",
+          "title": "Dual Use Code",
+          "x-ms-dataverse-attribute": "mserp_dualusecode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_dualusecode",
+          "maxLength": 10
+        },
+        "mserp_ecoresreleasedproductv2entityid": {
+          "type": "string",
+          "title": "Released products V2 (mserp)",
+          "x-ms-dataverse-attribute": "mserp_ecoresreleasedproductv2entityid",
+          "x-ms-dataverse-type": "UniqueidentifierType",
+          "x-ms-schema-name": "mserp_ecoresreleasedproductv2entityId",
+          "x-ms-dataverse-primary-id": true,
+          "required": true,
+          "x-ms-keyType": "primary"
+        },
+        "mserp_eighthproductfiltercode": {
+          "type": "string",
+          "title": "Filter code",
+          "x-ms-dataverse-attribute": "mserp_eighthproductfiltercode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_eighthproductfiltercode",
+          "maxLength": 10
+        },
+        "mserp_exempt": {
+          "type": "string",
+          "title": "Exempt",
+          "x-ms-dataverse-attribute": "mserp_exempt",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_exempt",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_exemptname": {
+          "type": "string",
+          "title": "mserp_exemptname",
+          "x-ms-dataverse-attribute": "mserp_exemptname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_exemptName",
+          "x-ms-read-only": true
+        },
+        "mserp_fifthproductfiltercode": {
+          "type": "string",
+          "title": "Filter code",
+          "x-ms-dataverse-attribute": "mserp_fifthproductfiltercode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_fifthproductfiltercode",
+          "maxLength": 10
+        },
+        "mserp_firstproductfiltercode": {
+          "type": "string",
+          "title": "Filter code",
+          "x-ms-dataverse-attribute": "mserp_firstproductfiltercode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_firstproductfiltercode",
+          "maxLength": 10
+        },
+        "mserp_firstproductfiltergroupid": {
+          "type": "string",
+          "title": "FirstProductFilterGroupId",
+          "x-ms-dataverse-attribute": "mserp_firstproductfiltergroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_firstproductfiltergroupid",
+          "x-ms-read-only": true,
+          "maxLength": 60
+        },
+        "mserp_fixedcostcharges": {
+          "type": "string",
+          "title": "Cost charges",
+          "x-ms-dataverse-attribute": "mserp_fixedcostcharges",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_fixedcostcharges"
+        },
+        "mserp_fixedpurchasepricecharges": {
+          "type": "string",
+          "title": "Purchase price charges",
+          "x-ms-dataverse-attribute": "mserp_fixedpurchasepricecharges",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_fixedpurchasepricecharges"
+        },
+        "mserp_fixedsalespricecharges": {
+          "type": "string",
+          "title": "Sales price charges",
+          "x-ms-dataverse-attribute": "mserp_fixedsalespricecharges",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_fixedsalespricecharges"
+        },
+        "mserp_fk_alternativereleasedproductv2_id": {
+          "type": "string",
+          "title": "Released products V2",
+          "x-ms-dataverse-attribute": "mserp_fk_alternativereleasedproductv2_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_AlternativeReleasedProductV2_id"
+        },
+        "mserp_fk_alternativereleasedproductv2_idname": {
+          "type": "string",
+          "title": "mserp_fk_alternativereleasedproductv2_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_alternativereleasedproductv2_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_AlternativeReleasedProductV2_idName",
+          "x-ms-read-only": true,
+          "maxLength": 20
+        },
+        "mserp_fk_bomunitofmeasure_id": {
+          "type": "string",
+          "title": "Units",
+          "x-ms-dataverse-attribute": "mserp_fk_bomunitofmeasure_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_BOMUnitOfMeasure_id"
+        },
+        "mserp_fk_bomunitofmeasure_idname": {
+          "type": "string",
+          "title": "mserp_fk_bomunitofmeasure_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_bomunitofmeasure_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_BOMUnitOfMeasure_idName",
+          "x-ms-read-only": true,
+          "maxLength": 10
+        },
+        "mserp_fk_catchweightunitofmeasure_id": {
+          "type": "string",
+          "title": "Units",
+          "x-ms-dataverse-attribute": "mserp_fk_catchweightunitofmeasure_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_CatchWeightUnitOfMeasure_id"
+        },
+        "mserp_fk_catchweightunitofmeasure_idname": {
+          "type": "string",
+          "title": "mserp_fk_catchweightunitofmeasure_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_catchweightunitofmeasure_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_CatchWeightUnitOfMeasure_idName",
+          "x-ms-read-only": true,
+          "maxLength": 10
+        },
+        "mserp_fk_comparisonpricebaseunitofmeasure_id": {
+          "type": "string",
+          "title": "Units",
+          "x-ms-dataverse-attribute": "mserp_fk_comparisonpricebaseunitofmeasure_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_ComparisonPriceBaseUnitOfMeasure_id"
+        },
+        "mserp_fk_comparisonpricebaseunitofmeasure_idname": {
+          "type": "string",
+          "title": "mserp_fk_comparisonpricebaseunitofmeasure_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_comparisonpricebaseunitofmeasure_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_ComparisonPriceBaseUnitOfMeasure_idName",
+          "x-ms-read-only": true,
+          "maxLength": 10
+        },
+        "mserp_fk_defaultdirectdeliverywarehouse_id": {
+          "type": "string",
+          "title": "Warehouses",
+          "x-ms-dataverse-attribute": "mserp_fk_defaultdirectdeliverywarehouse_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_DefaultDirectDeliveryWarehouse_id"
+        },
+        "mserp_fk_defaultdirectdeliverywarehouse_idname": {
+          "type": "string",
+          "title": "mserp_fk_defaultdirectdeliverywarehouse_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_defaultdirectdeliverywarehouse_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_DefaultDirectDeliveryWarehouse_idName",
+          "x-ms-read-only": true,
+          "maxLength": 10
+        },
+        "mserp_fk_ecoresproductv2entity_id": {
+          "type": "string",
+          "title": "Products V2",
+          "x-ms-dataverse-attribute": "mserp_fk_ecoresproductv2entity_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_EcoResProductV2Entity_id"
+        },
+        "mserp_fk_ecoresproductv2entity_idname": {
+          "type": "string",
+          "title": "mserp_fk_ecoresproductv2entity_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_ecoresproductv2entity_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_EcoResProductV2Entity_idName",
+          "x-ms-read-only": true,
+          "maxLength": 70
+        },
+        "mserp_fk_inventoryunitofmeasure_id": {
+          "type": "string",
+          "title": "Units",
+          "x-ms-dataverse-attribute": "mserp_fk_inventoryunitofmeasure_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_InventoryUnitOfMeasure_id"
+        },
+        "mserp_fk_inventoryunitofmeasure_idname": {
+          "type": "string",
+          "title": "mserp_fk_inventoryunitofmeasure_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_inventoryunitofmeasure_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_InventoryUnitOfMeasure_idName",
+          "x-ms-read-only": true,
+          "maxLength": 10
+        },
+        "mserp_fk_origincountryregion_id": {
+          "type": "string",
+          "title": "Country/regions",
+          "x-ms-dataverse-attribute": "mserp_fk_origincountryregion_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_OriginCountryRegion_id"
+        },
+        "mserp_fk_origincountryregion_idname": {
+          "type": "string",
+          "title": "mserp_fk_origincountryregion_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_origincountryregion_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_OriginCountryRegion_idName",
+          "x-ms-read-only": true,
+          "maxLength": 10
+        },
+        "mserp_fk_originstate_id": {
+          "type": "string",
+          "title": "States",
+          "x-ms-dataverse-attribute": "mserp_fk_originstate_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_OriginState_id"
+        },
+        "mserp_fk_originstate_idname": {
+          "type": "string",
+          "title": "mserp_fk_originstate_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_originstate_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_OriginState_idName",
+          "x-ms-read-only": true,
+          "maxLength": 256
+        },
+        "mserp_fk_planningformulareleasedproductv2_id": {
+          "type": "string",
+          "title": "Released products V2",
+          "x-ms-dataverse-attribute": "mserp_fk_planningformulareleasedproductv2_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_PlanningFormulaReleasedProductV2_id"
+        },
+        "mserp_fk_planningformulareleasedproductv2_idname": {
+          "type": "string",
+          "title": "mserp_fk_planningformulareleasedproductv2_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_planningformulareleasedproductv2_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_PlanningFormulaReleasedProductV2_idName",
+          "x-ms-read-only": true,
+          "maxLength": 20
+        },
+        "mserp_fk_primaryvendorv2_id": {
+          "type": "string",
+          "title": "Vendors V2",
+          "x-ms-dataverse-attribute": "mserp_fk_primaryvendorv2_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_PrimaryVendorV2_id"
+        },
+        "mserp_fk_primaryvendorv2_idname": {
+          "type": "string",
+          "title": "mserp_fk_primaryvendorv2_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_primaryvendorv2_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_PrimaryVendorV2_idName",
+          "x-ms-read-only": true,
+          "maxLength": 20
+        },
+        "mserp_fk_purchaseunitofmeasure_id": {
+          "type": "string",
+          "title": "Units",
+          "x-ms-dataverse-attribute": "mserp_fk_purchaseunitofmeasure_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_PurchaseUnitOfMeasure_id"
+        },
+        "mserp_fk_purchaseunitofmeasure_idname": {
+          "type": "string",
+          "title": "mserp_fk_purchaseunitofmeasure_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_purchaseunitofmeasure_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_PurchaseUnitOfMeasure_idName",
+          "x-ms-read-only": true,
+          "maxLength": 10
+        },
+        "mserp_fk_salesunitofmeasure_id": {
+          "type": "string",
+          "title": "Units",
+          "x-ms-dataverse-attribute": "mserp_fk_salesunitofmeasure_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_SalesUnitOfMeasure_id"
+        },
+        "mserp_fk_salesunitofmeasure_idname": {
+          "type": "string",
+          "title": "mserp_fk_salesunitofmeasure_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_salesunitofmeasure_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_SalesUnitOfMeasure_idName",
+          "x-ms-read-only": true,
+          "maxLength": 10
+        },
+        "mserp_fk_trackingdimensiongroup_id": {
+          "type": "string",
+          "title": "Tracking dimension groups",
+          "x-ms-dataverse-attribute": "mserp_fk_trackingdimensiongroup_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_TrackingDimensionGroup_id"
+        },
+        "mserp_fk_trackingdimensiongroup_idname": {
+          "type": "string",
+          "title": "mserp_fk_trackingdimensiongroup_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_trackingdimensiongroup_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_TrackingDimensionGroup_idName",
+          "x-ms-read-only": true,
+          "maxLength": 10
+        },
+        "mserp_flushingprinciple": {
+          "type": "string",
+          "title": "Flushing principle",
+          "x-ms-dataverse-attribute": "mserp_flushingprinciple",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_flushingprinciple",
+          "enum": [
+            "Start",
+            "Finish",
+            "Manual",
+            "Available on location"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "02cfb266-7d02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Flushing principle (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_flushingprinciplename": {
+          "type": "string",
+          "title": "mserp_flushingprinciplename",
+          "x-ms-dataverse-attribute": "mserp_flushingprinciplename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_flushingprincipleName",
+          "x-ms-read-only": true
+        },
+        "mserp_fourthproductfiltercode": {
+          "type": "string",
+          "title": "Filter code",
+          "x-ms-dataverse-attribute": "mserp_fourthproductfiltercode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_fourthproductfiltercode",
+          "maxLength": 10
+        },
+        "mserp_freightallocationgroupid": {
+          "type": "string",
+          "title": "Freight allocation group",
+          "x-ms-dataverse-attribute": "mserp_freightallocationgroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_freightallocationgroupid",
+          "maxLength": 10
+        },
+        "mserp_grossdepth": {
+          "type": "string",
+          "title": "Gross depth",
+          "x-ms-dataverse-attribute": "mserp_grossdepth",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_grossdepth"
+        },
+        "mserp_grossproductheight": {
+          "type": "string",
+          "title": "Gross height",
+          "x-ms-dataverse-attribute": "mserp_grossproductheight",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_grossproductheight"
+        },
+        "mserp_grossproductwidth": {
+          "type": "string",
+          "title": "Gross width",
+          "x-ms-dataverse-attribute": "mserp_grossproductwidth",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_grossproductwidth"
+        },
+        "mserp_hsncode": {
+          "type": "string",
+          "title": "HSN codes",
+          "x-ms-dataverse-attribute": "mserp_hsncode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_hsncode",
+          "maxLength": 10
+        },
+        "mserp_intrastatchargepercentage": {
+          "type": "string",
+          "title": "Charges percentage for Intrastat",
+          "x-ms-dataverse-attribute": "mserp_intrastatchargepercentage",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_intrastatchargepercentage"
+        },
+        "mserp_intrastatcommoditycode": {
+          "type": "string",
+          "title": "Intrastat commodity code",
+          "x-ms-dataverse-attribute": "mserp_intrastatcommoditycode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_intrastatcommoditycode",
+          "maxLength": 20
+        },
+        "mserp_inventorycountingreasoncodepolicyname": {
+          "type": "string",
+          "title": "Inventory counting reason code policy name",
+          "x-ms-dataverse-attribute": "mserp_inventorycountingreasoncodepolicyname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_inventorycountingreasoncodepolicyname",
+          "maxLength": 60
+        },
+        "mserp_inventorygstreliefcategorycode": {
+          "type": "string",
+          "title": "GST relief category",
+          "x-ms-dataverse-attribute": "mserp_inventorygstreliefcategorycode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_inventorygstreliefcategorycode",
+          "x-ms-read-only": true,
+          "maxLength": 30
+        },
+        "mserp_inventoryreservationhierarchyname": {
+          "type": "string",
+          "title": "Reservation hierarchy",
+          "x-ms-dataverse-attribute": "mserp_inventoryreservationhierarchyname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_inventoryreservationhierarchyname",
+          "maxLength": 10
+        },
+        "mserp_inventoryunitsymbol": {
+          "type": "string",
+          "title": "Inventory unit",
+          "x-ms-dataverse-attribute": "mserp_inventoryunitsymbol",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_inventoryunitsymbol",
+          "maxLength": 10
+        },
+        "mserp_isbatchnumberactive": {
+          "type": "string",
+          "title": "Is batch number active",
+          "x-ms-dataverse-attribute": "mserp_isbatchnumberactive",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isbatchnumberactive",
+          "x-ms-read-only": true,
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isbatchnumberactivename": {
+          "type": "string",
+          "title": "mserp_isbatchnumberactivename",
+          "x-ms-dataverse-attribute": "mserp_isbatchnumberactivename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isbatchnumberactiveName",
+          "x-ms-read-only": true
+        },
+        "mserp_iscatchweightproduct": {
+          "type": "string",
+          "title": "CW product",
+          "x-ms-dataverse-attribute": "mserp_iscatchweightproduct",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_iscatchweightproduct",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_iscatchweightproductname": {
+          "type": "string",
+          "title": "mserp_iscatchweightproductname",
+          "x-ms-dataverse-attribute": "mserp_iscatchweightproductname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_iscatchweightproductName",
+          "x-ms-read-only": true
+        },
+        "mserp_isdelivereddirectly": {
+          "type": "string",
+          "title": "Direct delivery",
+          "x-ms-dataverse-attribute": "mserp_isdelivereddirectly",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isdelivereddirectly",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isdelivereddirectlyname": {
+          "type": "string",
+          "title": "mserp_isdelivereddirectlyname",
+          "x-ms-dataverse-attribute": "mserp_isdelivereddirectlyname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isdelivereddirectlyName",
+          "x-ms-read-only": true
+        },
+        "mserp_isdiscountposregistrationprohibited": {
+          "type": "string",
+          "title": "No discount allowed at POS register",
+          "x-ms-dataverse-attribute": "mserp_isdiscountposregistrationprohibited",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isdiscountposregistrationprohibited",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isdiscountposregistrationprohibitedname": {
+          "type": "string",
+          "title": "mserp_isdiscountposregistrationprohibitedname",
+          "x-ms-dataverse-attribute": "mserp_isdiscountposregistrationprohibitedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isdiscountposregistrationprohibitedName",
+          "x-ms-read-only": true
+        },
+        "mserp_isdualuseproduct": {
+          "type": "string",
+          "title": "Dual Use Products",
+          "x-ms-dataverse-attribute": "mserp_isdualuseproduct",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isdualuseproduct",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isdualuseproductname": {
+          "type": "string",
+          "title": "mserp_isdualuseproductname",
+          "x-ms-dataverse-attribute": "mserp_isdualuseproductname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isdualuseproductName",
+          "x-ms-read-only": true
+        },
+        "mserp_isexemptfromautomaticnotificationandcancellation": {
+          "type": "string",
+          "title": "Automatic notification and cancellation exempt",
+          "x-ms-dataverse-attribute": "mserp_isexemptfromautomaticnotificationandcancellation",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isexemptfromautomaticnotificationandcancellation",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isexemptfromautomaticnotificationandcancellationname": {
+          "type": "string",
+          "title": "mserp_isexemptfromautomaticnotificationandcancellationname",
+          "x-ms-dataverse-attribute": "mserp_isexemptfromautomaticnotificationandcancellationname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isexemptfromautomaticnotificationandcancellationName",
+          "x-ms-read-only": true
+        },
+        "mserp_ishazardousmaterial": {
+          "type": "string",
+          "title": "Hazardous material",
+          "x-ms-dataverse-attribute": "mserp_ishazardousmaterial",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_ishazardousmaterial",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_ishazardousmaterialname": {
+          "type": "string",
+          "title": "mserp_ishazardousmaterialname",
+          "x-ms-dataverse-attribute": "mserp_ishazardousmaterialname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_ishazardousmaterialName",
+          "x-ms-read-only": true
+        },
+        "mserp_isicmstaxappliedonservice": {
+          "type": "string",
+          "title": "ICMS on service",
+          "x-ms-dataverse-attribute": "mserp_isicmstaxappliedonservice",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isicmstaxappliedonservice",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isicmstaxappliedonservicename": {
+          "type": "string",
+          "title": "mserp_isicmstaxappliedonservicename",
+          "x-ms-dataverse-attribute": "mserp_isicmstaxappliedonservicename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isicmstaxappliedonserviceName",
+          "x-ms-read-only": true
+        },
+        "mserp_isinstallmenteligible": {
+          "type": "string",
+          "title": "Installment eligible",
+          "x-ms-dataverse-attribute": "mserp_isinstallmenteligible",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isinstallmenteligible",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isinstallmenteligiblename": {
+          "type": "string",
+          "title": "mserp_isinstallmenteligiblename",
+          "x-ms-dataverse-attribute": "mserp_isinstallmenteligiblename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isinstallmenteligibleName",
+          "x-ms-read-only": true
+        },
+        "mserp_isintercompanypurchaseusageblocked": {
+          "type": "string",
+          "title": "Block intercompany purchase",
+          "x-ms-dataverse-attribute": "mserp_isintercompanypurchaseusageblocked",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isintercompanypurchaseusageblocked",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isintercompanypurchaseusageblockedname": {
+          "type": "string",
+          "title": "mserp_isintercompanypurchaseusageblockedname",
+          "x-ms-dataverse-attribute": "mserp_isintercompanypurchaseusageblockedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isintercompanypurchaseusageblockedName",
+          "x-ms-read-only": true
+        },
+        "mserp_isintercompanysalesusageblocked": {
+          "type": "string",
+          "title": "Block intercompany sales",
+          "x-ms-dataverse-attribute": "mserp_isintercompanysalesusageblocked",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isintercompanysalesusageblocked",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isintercompanysalesusageblockedname": {
+          "type": "string",
+          "title": "mserp_isintercompanysalesusageblockedname",
+          "x-ms-dataverse-attribute": "mserp_isintercompanysalesusageblockedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isintercompanysalesusageblockedName",
+          "x-ms-read-only": true
+        },
+        "mserp_isintrastatexcluded": {
+          "type": "string",
+          "title": "Exclude",
+          "x-ms-dataverse-attribute": "mserp_isintrastatexcluded",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isintrastatexcluded",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isintrastatexcludedname": {
+          "type": "string",
+          "title": "mserp_isintrastatexcludedname",
+          "x-ms-dataverse-attribute": "mserp_isintrastatexcludedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isintrastatexcludedName",
+          "x-ms-read-only": true
+        },
+        "mserp_ismanualdiscountposregistrationprohibited": {
+          "type": "string",
+          "title": "No manual discount allowed at POS register",
+          "x-ms-dataverse-attribute": "mserp_ismanualdiscountposregistrationprohibited",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_ismanualdiscountposregistrationprohibited",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_ismanualdiscountposregistrationprohibitedname": {
+          "type": "string",
+          "title": "mserp_ismanualdiscountposregistrationprohibitedname",
+          "x-ms-dataverse-attribute": "mserp_ismanualdiscountposregistrationprohibitedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_ismanualdiscountposregistrationprohibitedName",
+          "x-ms-read-only": true
+        },
+        "mserp_isphantom": {
+          "type": "string",
+          "title": "Phantom",
+          "x-ms-dataverse-attribute": "mserp_isphantom",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isphantom",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isphantomname": {
+          "type": "string",
+          "title": "mserp_isphantomname",
+          "x-ms-dataverse-attribute": "mserp_isphantomname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isphantomName",
+          "x-ms-read-only": true
+        },
+        "mserp_isposregistrationblocked": {
+          "type": "string",
+          "title": "Block at POS register",
+          "x-ms-dataverse-attribute": "mserp_isposregistrationblocked",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isposregistrationblocked",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isposregistrationblockedname": {
+          "type": "string",
+          "title": "mserp_isposregistrationblockedname",
+          "x-ms-dataverse-attribute": "mserp_isposregistrationblockedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isposregistrationblockedName",
+          "x-ms-read-only": true
+        },
+        "mserp_isposregistrationquantitynegative": {
+          "type": "string",
+          "title": "Quantity becomes negative at POS register",
+          "x-ms-dataverse-attribute": "mserp_isposregistrationquantitynegative",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isposregistrationquantitynegative",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isposregistrationquantitynegativename": {
+          "type": "string",
+          "title": "mserp_isposregistrationquantitynegativename",
+          "x-ms-dataverse-attribute": "mserp_isposregistrationquantitynegativename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isposregistrationquantitynegativeName",
+          "x-ms-read-only": true
+        },
+        "mserp_ispurchasepriceautomaticallyupdated": {
+          "type": "string",
+          "title": "Update the product automatically with the latest purchase price",
+          "x-ms-dataverse-attribute": "mserp_ispurchasepriceautomaticallyupdated",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_ispurchasepriceautomaticallyupdated",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_ispurchasepriceautomaticallyupdatedname": {
+          "type": "string",
+          "title": "mserp_ispurchasepriceautomaticallyupdatedname",
+          "x-ms-dataverse-attribute": "mserp_ispurchasepriceautomaticallyupdatedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_ispurchasepriceautomaticallyupdatedName",
+          "x-ms-read-only": true
+        },
+        "mserp_ispurchasepriceincludingcharges": {
+          "type": "string",
+          "title": "Include charges in purchase price",
+          "x-ms-dataverse-attribute": "mserp_ispurchasepriceincludingcharges",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_ispurchasepriceincludingcharges",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_ispurchasepriceincludingchargesname": {
+          "type": "string",
+          "title": "mserp_ispurchasepriceincludingchargesname",
+          "x-ms-dataverse-attribute": "mserp_ispurchasepriceincludingchargesname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_ispurchasepriceincludingchargesName",
+          "x-ms-read-only": true
+        },
+        "mserp_ispurchasewithholdingtaxcalculated": {
+          "type": "string",
+          "title": "Calculate withholding tax",
+          "x-ms-dataverse-attribute": "mserp_ispurchasewithholdingtaxcalculated",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_ispurchasewithholdingtaxcalculated",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_ispurchasewithholdingtaxcalculatedname": {
+          "type": "string",
+          "title": "mserp_ispurchasewithholdingtaxcalculatedname",
+          "x-ms-dataverse-attribute": "mserp_ispurchasewithholdingtaxcalculatedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_ispurchasewithholdingtaxcalculatedName",
+          "x-ms-read-only": true
+        },
+        "mserp_isrestrictedforcoupons": {
+          "type": "string",
+          "title": "Restrict for coupons",
+          "x-ms-dataverse-attribute": "mserp_isrestrictedforcoupons",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isrestrictedforcoupons",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isrestrictedforcouponsname": {
+          "type": "string",
+          "title": "mserp_isrestrictedforcouponsname",
+          "x-ms-dataverse-attribute": "mserp_isrestrictedforcouponsname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isrestrictedforcouponsName",
+          "x-ms-read-only": true
+        },
+        "mserp_isretaildiscountposregistrationprohibited": {
+          "type": "string",
+          "title": "Prevent retail discounts",
+          "x-ms-dataverse-attribute": "mserp_isretaildiscountposregistrationprohibited",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isretaildiscountposregistrationprohibited",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isretaildiscountposregistrationprohibitedname": {
+          "type": "string",
+          "title": "mserp_isretaildiscountposregistrationprohibitedname",
+          "x-ms-dataverse-attribute": "mserp_isretaildiscountposregistrationprohibitedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isretaildiscountposregistrationprohibitedName",
+          "x-ms-read-only": true
+        },
+        "mserp_issalespriceadjustmentallowed": {
+          "type": "string",
+          "title": "Allow sales price adjustment",
+          "x-ms-dataverse-attribute": "mserp_issalespriceadjustmentallowed",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_issalespriceadjustmentallowed",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_issalespriceadjustmentallowedname": {
+          "type": "string",
+          "title": "mserp_issalespriceadjustmentallowedname",
+          "x-ms-dataverse-attribute": "mserp_issalespriceadjustmentallowedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_issalespriceadjustmentallowedName",
+          "x-ms-read-only": true
+        },
+        "mserp_issalespriceincludingcharges": {
+          "type": "string",
+          "title": "Include charges in sales price",
+          "x-ms-dataverse-attribute": "mserp_issalespriceincludingcharges",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_issalespriceincludingcharges",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_issalespriceincludingchargesname": {
+          "type": "string",
+          "title": "mserp_issalespriceincludingchargesname",
+          "x-ms-dataverse-attribute": "mserp_issalespriceincludingchargesname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_issalespriceincludingchargesName",
+          "x-ms-read-only": true
+        },
+        "mserp_issaleswithholdingtaxcalculated": {
+          "type": "string",
+          "title": "Calculate withholding tax",
+          "x-ms-dataverse-attribute": "mserp_issaleswithholdingtaxcalculated",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_issaleswithholdingtaxcalculated",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_issaleswithholdingtaxcalculatedname": {
+          "type": "string",
+          "title": "mserp_issaleswithholdingtaxcalculatedname",
+          "x-ms-dataverse-attribute": "mserp_issaleswithholdingtaxcalculatedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_issaleswithholdingtaxcalculatedName",
+          "x-ms-read-only": true
+        },
+        "mserp_isscaleproduct": {
+          "type": "string",
+          "title": "Scale product",
+          "x-ms-dataverse-attribute": "mserp_isscaleproduct",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isscaleproduct",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isscaleproductname": {
+          "type": "string",
+          "title": "mserp_isscaleproductname",
+          "x-ms-dataverse-attribute": "mserp_isscaleproductname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isscaleproductName",
+          "x-ms-read-only": true
+        },
+        "mserp_isselfcheckoutregistrationblocked": {
+          "type": "string",
+          "title": "Blocked at self-checkout",
+          "x-ms-dataverse-attribute": "mserp_isselfcheckoutregistrationblocked",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isselfcheckoutregistrationblocked",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isselfcheckoutregistrationblockedname": {
+          "type": "string",
+          "title": "mserp_isselfcheckoutregistrationblockedname",
+          "x-ms-dataverse-attribute": "mserp_isselfcheckoutregistrationblockedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isselfcheckoutregistrationblockedName",
+          "x-ms-read-only": true
+        },
+        "mserp_isserialnumberactive": {
+          "type": "string",
+          "title": "Is serial number active",
+          "x-ms-dataverse-attribute": "mserp_isserialnumberactive",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isserialnumberactive",
+          "x-ms-read-only": true,
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isserialnumberactivename": {
+          "type": "string",
+          "title": "mserp_isserialnumberactivename",
+          "x-ms-dataverse-attribute": "mserp_isserialnumberactivename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isserialnumberactiveName",
+          "x-ms-read-only": true
+        },
+        "mserp_isshipaloneenabled": {
+          "type": "string",
+          "title": "Ship alone",
+          "x-ms-dataverse-attribute": "mserp_isshipaloneenabled",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isshipaloneenabled",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isshipaloneenabledname": {
+          "type": "string",
+          "title": "mserp_isshipaloneenabledname",
+          "x-ms-dataverse-attribute": "mserp_isshipaloneenabledname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isshipaloneenabledName",
+          "x-ms-read-only": true
+        },
+        "mserp_istenderdiscountposregistrationprohibited": {
+          "type": "string",
+          "title": "Prevent tender based discounts",
+          "x-ms-dataverse-attribute": "mserp_istenderdiscountposregistrationprohibited",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_istenderdiscountposregistrationprohibited",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_istenderdiscountposregistrationprohibitedname": {
+          "type": "string",
+          "title": "mserp_istenderdiscountposregistrationprohibitedname",
+          "x-ms-dataverse-attribute": "mserp_istenderdiscountposregistrationprohibitedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_istenderdiscountposregistrationprohibitedName",
+          "x-ms-read-only": true
+        },
+        "mserp_isunitcostautomaticallyupdated": {
+          "type": "string",
+          "title": "Update the product automatically with the latest cost price",
+          "x-ms-dataverse-attribute": "mserp_isunitcostautomaticallyupdated",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isunitcostautomaticallyupdated",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isunitcostautomaticallyupdatedname": {
+          "type": "string",
+          "title": "mserp_isunitcostautomaticallyupdatedname",
+          "x-ms-dataverse-attribute": "mserp_isunitcostautomaticallyupdatedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isunitcostautomaticallyupdatedName",
+          "x-ms-read-only": true
+        },
+        "mserp_isunitcostincludingcharges": {
+          "type": "string",
+          "title": "Include charges in cost",
+          "x-ms-dataverse-attribute": "mserp_isunitcostincludingcharges",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isunitcostincludingcharges",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isunitcostincludingchargesname": {
+          "type": "string",
+          "title": "mserp_isunitcostincludingchargesname",
+          "x-ms-dataverse-attribute": "mserp_isunitcostincludingchargesname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isunitcostincludingchargesName",
+          "x-ms-read-only": true
+        },
+        "mserp_isunitcostproductvariantspecific": {
+          "type": "string",
+          "title": "Use cost price by variant",
+          "x-ms-dataverse-attribute": "mserp_isunitcostproductvariantspecific",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isunitcostproductvariantspecific",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isunitcostproductvariantspecificname": {
+          "type": "string",
+          "title": "mserp_isunitcostproductvariantspecificname",
+          "x-ms-dataverse-attribute": "mserp_isunitcostproductvariantspecificname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isunitcostproductvariantspecificName",
+          "x-ms-read-only": true
+        },
+        "mserp_isvariantshelflabelsprintingenabled": {
+          "type": "string",
+          "title": "Print variants shelf labels",
+          "x-ms-dataverse-attribute": "mserp_isvariantshelflabelsprintingenabled",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isvariantshelflabelsprintingenabled",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isvariantshelflabelsprintingenabledname": {
+          "type": "string",
+          "title": "mserp_isvariantshelflabelsprintingenabledname",
+          "x-ms-dataverse-attribute": "mserp_isvariantshelflabelsprintingenabledname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isvariantshelflabelsprintingenabledName",
+          "x-ms-read-only": true
+        },
+        "mserp_iszeropriceposregistrationallowed": {
+          "type": "string",
+          "title": "Allow zero price at POS register",
+          "x-ms-dataverse-attribute": "mserp_iszeropriceposregistrationallowed",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_iszeropriceposregistrationallowed",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_iszeropriceposregistrationallowedname": {
+          "type": "string",
+          "title": "mserp_iszeropriceposregistrationallowedname",
+          "x-ms-dataverse-attribute": "mserp_iszeropriceposregistrationallowedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_iszeropriceposregistrationallowedName",
+          "x-ms-read-only": true
+        },
+        "mserp_itemfiscalclassificationcode": {
+          "type": "string",
+          "title": "Fiscal classification code",
+          "x-ms-dataverse-attribute": "mserp_itemfiscalclassificationcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_itemfiscalclassificationcode",
+          "maxLength": 10
+        },
+        "mserp_itemfiscalclassificationexceptioncode": {
+          "type": "string",
+          "title": "Exception code",
+          "x-ms-dataverse-attribute": "mserp_itemfiscalclassificationexceptioncode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_itemfiscalclassificationexceptioncode",
+          "maxLength": 10
+        },
+        "mserp_itemmodelgroupid": {
+          "type": "string",
+          "title": "Item model group",
+          "x-ms-dataverse-attribute": "mserp_itemmodelgroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_itemmodelgroupid",
+          "maxLength": 10
+        },
+        "mserp_itemnumber": {
+          "type": "string",
+          "title": "Item number",
+          "x-ms-dataverse-attribute": "mserp_itemnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_itemnumber",
+          "x-ms-dataverse-primary-name": true,
+          "required": true,
+          "maxLength": 20
+        },
+        "mserp_itemoverunderdeliverytolerancegroupid": {
+          "type": "string",
+          "title": "Over/under tolerance group",
+          "x-ms-dataverse-attribute": "mserp_itemoverunderdeliverytolerancegroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_itemoverunderdeliverytolerancegroupid",
+          "maxLength": 10
+        },
+        "mserp_keyinpricerequirementsatposregister": {
+          "type": "string",
+          "title": "Key in price at POS register",
+          "x-ms-dataverse-attribute": "mserp_keyinpricerequirementsatposregister",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_keyinpricerequirementsatposregister",
+          "enum": [
+            "Not mandatory",
+            "Must key in new price",
+            "Must key in higher/equal price",
+            "Must key in lower/equal price",
+            "Must not key in price"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003,
+            200000004
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "b5f6af6c-7d02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "RetailPriceKeyingRequirement (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_keyinpricerequirementsatposregistername": {
+          "type": "string",
+          "title": "mserp_keyinpricerequirementsatposregistername",
+          "x-ms-dataverse-attribute": "mserp_keyinpricerequirementsatposregistername",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_keyinpricerequirementsatposregisterName",
+          "x-ms-read-only": true
+        },
+        "mserp_keyinquantityrequirementsatposregister": {
+          "type": "string",
+          "title": "Key in quantity at POS register",
+          "x-ms-dataverse-attribute": "mserp_keyinquantityrequirementsatposregister",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_keyinquantityrequirementsatposregister",
+          "enum": [
+            "Not mandatory",
+            "Must key in quantity",
+            "Must not key in quantity"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "baf6af6c-7d02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "RetailQtyKeyingRequirement (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_keyinquantityrequirementsatposregistername": {
+          "type": "string",
+          "title": "mserp_keyinquantityrequirementsatposregistername",
+          "x-ms-dataverse-attribute": "mserp_keyinquantityrequirementsatposregistername",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_keyinquantityrequirementsatposregisterName",
+          "x-ms-read-only": true
+        },
+        "mserp_landedcosttypegroupid": {
+          "type": "string",
+          "title": "Cost type group",
+          "x-ms-dataverse-attribute": "mserp_landedcosttypegroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_landedcosttypegroupid",
+          "maxLength": 20
+        },
+        "mserp_lowerwarrantablepricerangelimit": {
+          "type": "string",
+          "title": "Lower limit",
+          "x-ms-dataverse-attribute": "mserp_lowerwarrantablepricerangelimit",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_lowerwarrantablepricerangelimit"
+        },
+        "mserp_marginabccode": {
+          "type": "string",
+          "title": "ABC-code margin",
+          "x-ms-dataverse-attribute": "mserp_marginabccode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_marginabccode",
+          "enum": [
+            "None",
+            "A",
+            "B",
+            "C"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "c32e32a9-7b02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "ABC code (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_marginabccodename": {
+          "type": "string",
+          "title": "mserp_marginabccodename",
+          "x-ms-dataverse-attribute": "mserp_marginabccodename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_marginabccodeName",
+          "x-ms-read-only": true
+        },
+        "mserp_materialoverpickpercentage": {
+          "type": "string",
+          "title": "Material over picking (%)",
+          "x-ms-dataverse-attribute": "mserp_materialoverpickpercentage",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_materialoverpickpercentage"
+        },
+        "mserp_maximumcatchweightquantity": {
+          "type": "string",
+          "title": "Maximum quantity",
+          "x-ms-dataverse-attribute": "mserp_maximumcatchweightquantity",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_maximumcatchweightquantity"
+        },
+        "mserp_maximumpickquantity": {
+          "type": "string",
+          "title": "Maximum pick quantity",
+          "x-ms-dataverse-attribute": "mserp_maximumpickquantity",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_maximumpickquantity"
+        },
+        "mserp_minimumcatchweightquantity": {
+          "type": "string",
+          "title": "Minimum quantity",
+          "x-ms-dataverse-attribute": "mserp_minimumcatchweightquantity",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_minimumcatchweightquantity"
+        },
+        "mserp_mustkeyincommentatposregister": {
+          "type": "string",
+          "title": "Must key in comment at POS register",
+          "x-ms-dataverse-attribute": "mserp_mustkeyincommentatposregister",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_mustkeyincommentatposregister",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_mustkeyincommentatposregistername": {
+          "type": "string",
+          "title": "mserp_mustkeyincommentatposregistername",
+          "x-ms-dataverse-attribute": "mserp_mustkeyincommentatposregistername",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_mustkeyincommentatposregisterName",
+          "x-ms-read-only": true
+        },
+        "mserp_necessaryproductionworkingtimeschedulingpropertyid": {
+          "type": "string",
+          "title": "Necessary property when producing the item",
+          "x-ms-dataverse-attribute": "mserp_necessaryproductionworkingtimeschedulingpropertyid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_necessaryproductionworkingtimeschedulingpropertyid",
+          "maxLength": 10
+        },
+        "mserp_netproductweight": {
+          "type": "string",
+          "title": "Net weight",
+          "x-ms-dataverse-attribute": "mserp_netproductweight",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_netproductweight"
+        },
+        "mserp_ngpcode": {
+          "type": "string",
+          "title": "NGP",
+          "x-ms-dataverse-attribute": "mserp_ngpcode",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "mserp_ngpcode"
+        },
+        "mserp_ninthproductfiltercode": {
+          "type": "string",
+          "title": "Filter code",
+          "x-ms-dataverse-attribute": "mserp_ninthproductfiltercode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_ninthproductfiltercode",
+          "maxLength": 10
+        },
+        "mserp_nongst": {
+          "type": "string",
+          "title": "Non-GST",
+          "x-ms-dataverse-attribute": "mserp_nongst",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_nongst",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_nongstname": {
+          "type": "string",
+          "title": "mserp_nongstname",
+          "x-ms-dataverse-attribute": "mserp_nongstname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_nongstName",
+          "x-ms-read-only": true
+        },
+        "mserp_origincountryregionid": {
+          "type": "string",
+          "title": "Country/region of origin",
+          "x-ms-dataverse-attribute": "mserp_origincountryregionid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_origincountryregionid",
+          "maxLength": 10
+        },
+        "mserp_originstateid": {
+          "type": "string",
+          "title": "State of origin",
+          "x-ms-dataverse-attribute": "mserp_originstateid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_originstateid",
+          "maxLength": 10
+        },
+        "mserp_packageclassid": {
+          "type": "string",
+          "title": "Package class ID",
+          "x-ms-dataverse-attribute": "mserp_packageclassid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_packageclassid",
+          "maxLength": 20
+        },
+        "mserp_packagehandlingtime": {
+          "type": "string",
+          "title": "Package handling time",
+          "x-ms-dataverse-attribute": "mserp_packagehandlingtime",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "mserp_packagehandlingtime",
+          "x-ms-read-only": true
+        },
+        "mserp_packingdutyquantity": {
+          "type": "string",
+          "title": "Quantity of which packing duty is calculated",
+          "x-ms-dataverse-attribute": "mserp_packingdutyquantity",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_packingdutyquantity"
+        },
+        "mserp_packingmaterialgroupid": {
+          "type": "string",
+          "title": "Packing group",
+          "x-ms-dataverse-attribute": "mserp_packingmaterialgroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_packingmaterialgroupid",
+          "maxLength": 10
+        },
+        "mserp_packsizecategoryid": {
+          "type": "string",
+          "title": "Pack size category ID",
+          "x-ms-dataverse-attribute": "mserp_packsizecategoryid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_packsizecategoryid",
+          "maxLength": 20
+        },
+        "mserp_physicaldimensiongroupid": {
+          "type": "string",
+          "title": "Physical dimension group ID",
+          "x-ms-dataverse-attribute": "mserp_physicaldimensiongroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_physicaldimensiongroupid",
+          "maxLength": 20
+        },
+        "mserp_pkwiucode": {
+          "type": "string",
+          "title": "PKWiU",
+          "x-ms-dataverse-attribute": "mserp_pkwiucode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_pkwiucode",
+          "maxLength": 20
+        },
+        "mserp_planningformulaitemnumber": {
+          "type": "string",
+          "title": "Planning formula",
+          "x-ms-dataverse-attribute": "mserp_planningformulaitemnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_planningformulaitemnumber",
+          "maxLength": 20
+        },
+        "mserp_posregistrationactivationdate": {
+          "type": "string",
+          "title": "Date of activation at POS register",
+          "x-ms-dataverse-attribute": "mserp_posregistrationactivationdate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_posregistrationactivationdate"
+        },
+        "mserp_posregistrationblockeddate": {
+          "type": "string",
+          "title": "Date when the product was blocked at POS register",
+          "x-ms-dataverse-attribute": "mserp_posregistrationblockeddate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_posregistrationblockeddate"
+        },
+        "mserp_posregistrationplannedblockeddate": {
+          "type": "string",
+          "title": "Date when the product should be blocked at POS register",
+          "x-ms-dataverse-attribute": "mserp_posregistrationplannedblockeddate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_posregistrationplannedblockeddate"
+        },
+        "mserp_potencybaseattibutetargetvalue": {
+          "type": "string",
+          "title": "Target value for potency base attribute",
+          "x-ms-dataverse-attribute": "mserp_potencybaseattibutetargetvalue",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_potencybaseattibutetargetvalue"
+        },
+        "mserp_potencybaseattributevalueentryevent": {
+          "type": "string",
+          "title": "Record potency base attribute value at",
+          "x-ms-dataverse-attribute": "mserp_potencybaseattributevalueentryevent",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_potencybaseattributevalueentryevent",
+          "enum": [
+            "Receipt entry",
+            "Quality order result"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "13cfb266-7d02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Record the attribute value (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_potencybaseattributevalueentryeventname": {
+          "type": "string",
+          "title": "mserp_potencybaseattributevalueentryeventname",
+          "x-ms-dataverse-attribute": "mserp_potencybaseattributevalueentryeventname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_potencybaseattributevalueentryeventName",
+          "x-ms-read-only": true
+        },
+        "mserp_primaryvendoraccountnumber": {
+          "type": "string",
+          "title": "Vendor",
+          "x-ms-dataverse-attribute": "mserp_primaryvendoraccountnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryvendoraccountnumber",
+          "maxLength": 20
+        },
+        "mserp_productcoveragegroupid": {
+          "type": "string",
+          "title": "Coverage group",
+          "x-ms-dataverse-attribute": "mserp_productcoveragegroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productcoveragegroupid",
+          "maxLength": 10
+        },
+        "mserp_productdimensiongroupname": {
+          "type": "string",
+          "title": "Name",
+          "x-ms-dataverse-attribute": "mserp_productdimensiongroupname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productdimensiongroupname",
+          "maxLength": 10
+        },
+        "mserp_productfiscalinformationtype": {
+          "type": "string",
+          "title": "Product type",
+          "x-ms-dataverse-attribute": "mserp_productfiscalinformationtype",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productfiscalinformationtype",
+          "maxLength": 10
+        },
+        "mserp_productgroupid": {
+          "type": "string",
+          "title": "Item group",
+          "x-ms-dataverse-attribute": "mserp_productgroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productgroupid",
+          "maxLength": 10
+        },
+        "mserp_productionconsumptiondensityconversionfactor": {
+          "type": "string",
+          "title": "Density conversion factor for production consumption",
+          "x-ms-dataverse-attribute": "mserp_productionconsumptiondensityconversionfactor",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_productionconsumptiondensityconversionfactor"
+        },
+        "mserp_productionconsumptiondepthconversionfactor": {
+          "type": "string",
+          "title": "Depth conversion factor for production consumption",
+          "x-ms-dataverse-attribute": "mserp_productionconsumptiondepthconversionfactor",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_productionconsumptiondepthconversionfactor"
+        },
+        "mserp_productionconsumptionheightconversionfactor": {
+          "type": "string",
+          "title": "Height conversion factor for production consumption",
+          "x-ms-dataverse-attribute": "mserp_productionconsumptionheightconversionfactor",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_productionconsumptionheightconversionfactor"
+        },
+        "mserp_productionconsumptionwidthconversionfactor": {
+          "type": "string",
+          "title": "Width conversion factor for production consumption",
+          "x-ms-dataverse-attribute": "mserp_productionconsumptionwidthconversionfactor",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_productionconsumptionwidthconversionfactor"
+        },
+        "mserp_productiongroupid": {
+          "type": "string",
+          "title": "Production group",
+          "x-ms-dataverse-attribute": "mserp_productiongroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productiongroupid",
+          "maxLength": 10
+        },
+        "mserp_productionpoolid": {
+          "type": "string",
+          "title": "Production pool",
+          "x-ms-dataverse-attribute": "mserp_productionpoolid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productionpoolid",
+          "maxLength": 10
+        },
+        "mserp_productiontype": {
+          "type": "string",
+          "title": "Production type",
+          "x-ms-dataverse-attribute": "mserp_productiontype",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_productiontype",
+          "enum": [
+            "Co-product",
+            "By-product",
+            "None",
+            "Planning item",
+            "BOM",
+            "Formula"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003,
+            200000004,
+            200000005
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "20cfb266-7d02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Production type (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_productiontypename": {
+          "type": "string",
+          "title": "mserp_productiontypename",
+          "x-ms-dataverse-attribute": "mserp_productiontypename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_productiontypeName",
+          "x-ms-read-only": true
+        },
+        "mserp_productlifecycleseasoncode": {
+          "type": "string",
+          "title": "Product life cycle season",
+          "x-ms-dataverse-attribute": "mserp_productlifecycleseasoncode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productlifecycleseasoncode",
+          "maxLength": 10
+        },
+        "mserp_productlifecyclestateid": {
+          "type": "string",
+          "title": "Product lifecycle state",
+          "x-ms-dataverse-attribute": "mserp_productlifecyclestateid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productlifecyclestateid",
+          "maxLength": 60
+        },
+        "mserp_productlifecyclevalidfromdate": {
+          "type": "string",
+          "title": "Product life cycle valid from",
+          "x-ms-dataverse-attribute": "mserp_productlifecyclevalidfromdate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_productlifecyclevalidfromdate"
+        },
+        "mserp_productlifecyclevalidtodate": {
+          "type": "string",
+          "title": "Product life cycle valid to",
+          "x-ms-dataverse-attribute": "mserp_productlifecyclevalidtodate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_productlifecyclevalidtodate"
+        },
+        "mserp_productnumber": {
+          "type": "string",
+          "title": "Product number",
+          "x-ms-dataverse-attribute": "mserp_productnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productnumber",
+          "required": true,
+          "maxLength": 70
+        },
+        "mserp_productsearchname": {
+          "type": "string",
+          "title": "Search name",
+          "x-ms-dataverse-attribute": "mserp_productsearchname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productsearchname",
+          "x-ms-read-only": true,
+          "maxLength": 20
+        },
+        "mserp_productsubtype": {
+          "type": "string",
+          "title": "Product subtype",
+          "x-ms-dataverse-attribute": "mserp_productsubtype",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_productsubtype",
+          "x-ms-read-only": true,
+          "enum": [
+            "Product",
+            "Product master",
+            "Product variant"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "6c9cb752-7d02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Product subtype (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_productsubtypename": {
+          "type": "string",
+          "title": "mserp_productsubtypename",
+          "x-ms-dataverse-attribute": "mserp_productsubtypename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_productsubtypeName",
+          "x-ms-read-only": true
+        },
+        "mserp_producttaxationorigin": {
+          "type": "string",
+          "title": "Taxation origin",
+          "x-ms-dataverse-attribute": "mserp_producttaxationorigin",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_producttaxationorigin",
+          "enum": [
+            "National, not related to codes 3 to 5",
+            "Imported, direct import, not related to code 6",
+            "Imported, acquired in internal market, and not related to code 7",
+            "National, import content greater than 40 percent",
+            "National, production compliant with Decreto-Lei nº 288/67, and laws nºs 8.248/91, 8.387/91, 10.176/01 e 11.484/07",
+            "National, import content lower than or equal to 40 percent",
+            "Imported, direct import, no similar item in internal market, and included in the CAMEX list and natural gas",
+            "Imported, acquired in internal market, with no similar in country/region, and included in the CAMEX list and natural gas",
+            "National, import content greater than 70%"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003,
+            200000004,
+            200000005,
+            200000006,
+            200000007,
+            200000008
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "e9f6af6c-7d02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Taxation origin (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_producttaxationoriginname": {
+          "type": "string",
+          "title": "mserp_producttaxationoriginname",
+          "x-ms-dataverse-attribute": "mserp_producttaxationoriginname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_producttaxationoriginName",
+          "x-ms-read-only": true
+        },
+        "mserp_producttype": {
+          "type": "string",
+          "title": "Product type",
+          "x-ms-dataverse-attribute": "mserp_producttype",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_producttype",
+          "x-ms-read-only": true,
+          "enum": [
+            "Item",
+            "Service"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "6252b12f-7d02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Product type (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_producttypename": {
+          "type": "string",
+          "title": "mserp_producttypename",
+          "x-ms-dataverse-attribute": "mserp_producttypename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_producttypeName",
+          "x-ms-read-only": true
+        },
+        "mserp_productvolume": {
+          "type": "string",
+          "title": "Volume",
+          "x-ms-dataverse-attribute": "mserp_productvolume",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_productvolume"
+        },
+        "mserp_projectcategoryid": {
+          "type": "string",
+          "title": "Project category",
+          "x-ms-dataverse-attribute": "mserp_projectcategoryid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_projectcategoryid",
+          "maxLength": 30
+        },
+        "mserp_purchasechargeproductgroupid": {
+          "type": "string",
+          "title": "Purchase charges group",
+          "x-ms-dataverse-attribute": "mserp_purchasechargeproductgroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_purchasechargeproductgroupid",
+          "maxLength": 10
+        },
+        "mserp_purchasechargesquantity": {
+          "type": "string",
+          "title": "Purchase charges quantity",
+          "x-ms-dataverse-attribute": "mserp_purchasechargesquantity",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_purchasechargesquantity"
+        },
+        "mserp_purchasegstreliefcategorycode": {
+          "type": "string",
+          "title": "GST relief category",
+          "x-ms-dataverse-attribute": "mserp_purchasegstreliefcategorycode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_purchasegstreliefcategorycode",
+          "x-ms-read-only": true,
+          "maxLength": 30
+        },
+        "mserp_purchaseitemwithholdingtaxgroupcode": {
+          "type": "string",
+          "title": "Item withholding tax group",
+          "x-ms-dataverse-attribute": "mserp_purchaseitemwithholdingtaxgroupcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_purchaseitemwithholdingtaxgroupcode",
+          "maxLength": 10
+        },
+        "mserp_purchaselinediscountproductgroupcode": {
+          "type": "string",
+          "title": "Line discount group for purchases",
+          "x-ms-dataverse-attribute": "mserp_purchaselinediscountproductgroupcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_purchaselinediscountproductgroupcode",
+          "maxLength": 10
+        },
+        "mserp_purchasemultilinediscountproductgroupcode": {
+          "type": "string",
+          "title": "Multiline discount group for purchases",
+          "x-ms-dataverse-attribute": "mserp_purchasemultilinediscountproductgroupcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_purchasemultilinediscountproductgroupcode",
+          "maxLength": 10
+        },
+        "mserp_purchaseoverdeliverypercentage": {
+          "type": "string",
+          "title": "Overdelivery percentage for purchases",
+          "x-ms-dataverse-attribute": "mserp_purchaseoverdeliverypercentage",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_purchaseoverdeliverypercentage"
+        },
+        "mserp_purchaseprice": {
+          "type": "string",
+          "title": "Purchase price",
+          "x-ms-dataverse-attribute": "mserp_purchaseprice",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_purchaseprice"
+        },
+        "mserp_purchasepricedate": {
+          "type": "string",
+          "title": "Purchase price date",
+          "x-ms-dataverse-attribute": "mserp_purchasepricedate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_purchasepricedate"
+        },
+        "mserp_purchasepricequantity": {
+          "type": "string",
+          "title": "Purchase price quantity",
+          "x-ms-dataverse-attribute": "mserp_purchasepricequantity",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_purchasepricequantity"
+        },
+        "mserp_purchasepricetolerancegroupid": {
+          "type": "string",
+          "title": "Purchase price tolerance group",
+          "x-ms-dataverse-attribute": "mserp_purchasepricetolerancegroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_purchasepricetolerancegroupid",
+          "maxLength": 10
+        },
+        "mserp_purchasepricingprecision": {
+          "type": "string",
+          "title": "Purchase pricing precision",
+          "x-ms-dataverse-attribute": "mserp_purchasepricingprecision",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "mserp_purchasepricingprecision"
+        },
+        "mserp_purchaserebateproductgroupid": {
+          "type": "string",
+          "title": "Vendor rebate item group",
+          "x-ms-dataverse-attribute": "mserp_purchaserebateproductgroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_purchaserebateproductgroupid",
+          "maxLength": 20
+        },
+        "mserp_purchasesalestaxitemgroupcode": {
+          "type": "string",
+          "title": "Item sales tax group for purchases",
+          "x-ms-dataverse-attribute": "mserp_purchasesalestaxitemgroupcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_purchasesalestaxitemgroupcode",
+          "maxLength": 10
+        },
+        "mserp_purchasesupplementaryproductproductgroupid": {
+          "type": "string",
+          "title": "Supplementary item group for purchases",
+          "x-ms-dataverse-attribute": "mserp_purchasesupplementaryproductproductgroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_purchasesupplementaryproductproductgroupid",
+          "maxLength": 10
+        },
+        "mserp_purchaseunderdeliverypercentage": {
+          "type": "string",
+          "title": "Underdelivery percentage for purchases",
+          "x-ms-dataverse-attribute": "mserp_purchaseunderdeliverypercentage",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_purchaseunderdeliverypercentage"
+        },
+        "mserp_purchaseunitsymbol": {
+          "type": "string",
+          "title": "Purchase unit",
+          "x-ms-dataverse-attribute": "mserp_purchaseunitsymbol",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_purchaseunitsymbol",
+          "maxLength": 10
+        },
+        "mserp_qmsallowonlyauthorizedpersonnelfordispensing": {
+          "type": "string",
+          "title": "Authorized personnel",
+          "x-ms-dataverse-attribute": "mserp_qmsallowonlyauthorizedpersonnelfordispensing",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_qmsallowonlyauthorizedpersonnelfordispensing",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_qmsallowonlyauthorizedpersonnelfordispensingname": {
+          "type": "string",
+          "title": "mserp_qmsallowonlyauthorizedpersonnelfordispensingname",
+          "x-ms-dataverse-attribute": "mserp_qmsallowonlyauthorizedpersonnelfordispensingname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_qmsallowonlyauthorizedpersonnelfordispensingName",
+          "x-ms-read-only": true
+        },
+        "mserp_qmsapprovedcustomerlistcheckmethod": {
+          "type": "string",
+          "title": "Approved customer list check method",
+          "x-ms-dataverse-attribute": "mserp_qmsapprovedcustomerlistcheckmethod",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_qmsapprovedcustomerlistcheckmethod",
+          "enum": [
+            "No check",
+            "Warning only",
+            "Not allowed"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "c5326170-0203-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Approved customer list check method (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_qmsapprovedcustomerlistcheckmethodname": {
+          "type": "string",
+          "title": "mserp_qmsapprovedcustomerlistcheckmethodname",
+          "x-ms-dataverse-attribute": "mserp_qmsapprovedcustomerlistcheckmethodname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_qmsapprovedcustomerlistcheckmethodName",
+          "x-ms-read-only": true
+        },
+        "mserp_qmsapproveditemgroupid": {
+          "type": "string",
+          "title": "Approved item group",
+          "x-ms-dataverse-attribute": "mserp_qmsapproveditemgroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_qmsapproveditemgroupid",
+          "maxLength": 10
+        },
+        "mserp_qmsisdispensingcontrolapplied": {
+          "type": "string",
+          "title": "Dispensing control",
+          "x-ms-dataverse-attribute": "mserp_qmsisdispensingcontrolapplied",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_qmsisdispensingcontrolapplied",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_qmsisdispensingcontrolappliedname": {
+          "type": "string",
+          "title": "mserp_qmsisdispensingcontrolappliedname",
+          "x-ms-dataverse-attribute": "mserp_qmsisdispensingcontrolappliedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_qmsisdispensingcontrolappliedName",
+          "x-ms-read-only": true
+        },
+        "mserp_qmsoverdispensepercentage": {
+          "type": "string",
+          "title": "Overdispense",
+          "x-ms-dataverse-attribute": "mserp_qmsoverdispensepercentage",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_qmsoverdispensepercentage"
+        },
+        "mserp_qmsunderdispensepercentage": {
+          "type": "string",
+          "title": "Underdispense",
+          "x-ms-dataverse-attribute": "mserp_qmsunderdispensepercentage",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_qmsunderdispensepercentage"
+        },
+        "mserp_rawmaterialpickingprinciple": {
+          "type": "string",
+          "title": "Material picking in license plate locations",
+          "x-ms-dataverse-attribute": "mserp_rawmaterialpickingprinciple",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_rawmaterialpickingprinciple",
+          "enum": [
+            "Staging",
+            "Order picking"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "37cfb266-7d02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Material picking in license plate locations (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_rawmaterialpickingprinciplename": {
+          "type": "string",
+          "title": "mserp_rawmaterialpickingprinciplename",
+          "x-ms-dataverse-attribute": "mserp_rawmaterialpickingprinciplename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_rawmaterialpickingprincipleName",
+          "x-ms-read-only": true
+        },
+        "mserp_rawmaterialpickingprinciplenonlicenseplatelocations": {
+          "type": "string",
+          "title": "Material picking in non-license plate locations",
+          "x-ms-dataverse-attribute": "mserp_rawmaterialpickingprinciplenonlicenseplatelocations",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_rawmaterialpickingprinciplenonlicenseplatelocations",
+          "enum": [
+            "Staging",
+            "Order picking"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "49790da7-750d-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Material picking in non-license plate locations (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_rawmaterialpickingprinciplenonlicenseplatelocationsname": {
+          "type": "string",
+          "title": "mserp_rawmaterialpickingprinciplenonlicenseplatelocationsname",
+          "x-ms-dataverse-attribute": "mserp_rawmaterialpickingprinciplenonlicenseplatelocationsname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_rawmaterialpickingprinciplenonlicenseplatelocationsName",
+          "x-ms-read-only": true
+        },
+        "mserp_revenueabccode": {
+          "type": "string",
+          "title": "ABC-code revenue",
+          "x-ms-dataverse-attribute": "mserp_revenueabccode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_revenueabccode",
+          "enum": [
+            "None",
+            "A",
+            "B",
+            "C"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "c32e32a9-7b02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "ABC code (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_revenueabccodename": {
+          "type": "string",
+          "title": "mserp_revenueabccodename",
+          "x-ms-dataverse-attribute": "mserp_revenueabccodename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_revenueabccodeName",
+          "x-ms-read-only": true
+        },
+        "mserp_revrecbundle": {
+          "type": "string",
+          "title": "Bundle",
+          "x-ms-dataverse-attribute": "mserp_revrecbundle",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_revrecbundle",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_revrecbundlename": {
+          "type": "string",
+          "title": "mserp_revrecbundlename",
+          "x-ms-dataverse-attribute": "mserp_revrecbundlename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_revrecbundleName",
+          "x-ms-read-only": true
+        },
+        "mserp_revrecdefaultrevenuerecognitionschedule": {
+          "type": "string",
+          "title": "Revenue schedule",
+          "x-ms-dataverse-attribute": "mserp_revrecdefaultrevenuerecognitionschedule",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_revrecdefaultrevenuerecognitionschedule",
+          "maxLength": 10
+        },
+        "mserp_revrecexcludefromcarveout": {
+          "type": "string",
+          "title": "Exclude from carve out",
+          "x-ms-dataverse-attribute": "mserp_revrecexcludefromcarveout",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_revrecexcludefromcarveout",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_revrecexcludefromcarveoutname": {
+          "type": "string",
+          "title": "mserp_revrecexcludefromcarveoutname",
+          "x-ms-dataverse-attribute": "mserp_revrecexcludefromcarveoutname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_revrecexcludefromcarveoutName",
+          "x-ms-read-only": true
+        },
+        "mserp_revrecmedianprice": {
+          "type": "string",
+          "title": "Median price",
+          "x-ms-dataverse-attribute": "mserp_revrecmedianprice",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_revrecmedianprice",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_revrecmedianpricemaximumtolerance": {
+          "type": "string",
+          "title": "Maximum tolerance",
+          "x-ms-dataverse-attribute": "mserp_revrecmedianpricemaximumtolerance",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_revrecmedianpricemaximumtolerance"
+        },
+        "mserp_revrecmedianpriceminimumtolerance": {
+          "type": "string",
+          "title": "Minimum tolerance",
+          "x-ms-dataverse-attribute": "mserp_revrecmedianpriceminimumtolerance",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_revrecmedianpriceminimumtolerance"
+        },
+        "mserp_revrecmedianpricename": {
+          "type": "string",
+          "title": "mserp_revrecmedianpricename",
+          "x-ms-dataverse-attribute": "mserp_revrecmedianpricename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_revrecmedianpriceName",
+          "x-ms-read-only": true
+        },
+        "mserp_revrecrevenuerecognitionenabled": {
+          "type": "string",
+          "title": "Is revenue allocation active",
+          "x-ms-dataverse-attribute": "mserp_revrecrevenuerecognitionenabled",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_revrecrevenuerecognitionenabled",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_revrecrevenuerecognitionenabledname": {
+          "type": "string",
+          "title": "mserp_revrecrevenuerecognitionenabledname",
+          "x-ms-dataverse-attribute": "mserp_revrecrevenuerecognitionenabledname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_revrecrevenuerecognitionenabledName",
+          "x-ms-read-only": true
+        },
+        "mserp_revrecrevenuetype": {
+          "type": "string",
+          "title": "Revenue type",
+          "x-ms-dataverse-attribute": "mserp_revrecrevenuetype",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_revrecrevenuetype",
+          "enum": [
+            "Essential",
+            "Nonessential",
+            "Post contract support"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "7f58bbde-e602-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Revenue type (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_revrecrevenuetypename": {
+          "type": "string",
+          "title": "mserp_revrecrevenuetypename",
+          "x-ms-dataverse-attribute": "mserp_revrecrevenuetypename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_revrecrevenuetypeName",
+          "x-ms-read-only": true
+        },
+        "mserp_sadgroup": {
+          "type": "string",
+          "title": "SAD group",
+          "x-ms-dataverse-attribute": "mserp_sadgroup",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_sadgroup",
+          "maxLength": 10
+        },
+        "mserp_saleschargeproductgroupid": {
+          "type": "string",
+          "title": "Sales charges group",
+          "x-ms-dataverse-attribute": "mserp_saleschargeproductgroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_saleschargeproductgroupid",
+          "maxLength": 10
+        },
+        "mserp_saleschargesquantity": {
+          "type": "string",
+          "title": "Sales charges quantity",
+          "x-ms-dataverse-attribute": "mserp_saleschargesquantity",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_saleschargesquantity"
+        },
+        "mserp_salesgstreliefcategorycode": {
+          "type": "string",
+          "title": "GST relief category",
+          "x-ms-dataverse-attribute": "mserp_salesgstreliefcategorycode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_salesgstreliefcategorycode",
+          "x-ms-read-only": true,
+          "maxLength": 30
+        },
+        "mserp_salesitemwithholdingtaxgroupcode": {
+          "type": "string",
+          "title": "Item withholding tax group",
+          "x-ms-dataverse-attribute": "mserp_salesitemwithholdingtaxgroupcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_salesitemwithholdingtaxgroupcode",
+          "maxLength": 10
+        },
+        "mserp_saleslinediscountproductgroupcode": {
+          "type": "string",
+          "title": "Line discount group for sales",
+          "x-ms-dataverse-attribute": "mserp_saleslinediscountproductgroupcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_saleslinediscountproductgroupcode",
+          "maxLength": 10
+        },
+        "mserp_salesmultilinediscountproductgroupcode": {
+          "type": "string",
+          "title": "Multiline discount group for sales",
+          "x-ms-dataverse-attribute": "mserp_salesmultilinediscountproductgroupcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_salesmultilinediscountproductgroupcode",
+          "maxLength": 10
+        },
+        "mserp_salesoverdeliverypercentage": {
+          "type": "string",
+          "title": "Overdelivery percentage for sales",
+          "x-ms-dataverse-attribute": "mserp_salesoverdeliverypercentage",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_salesoverdeliverypercentage"
+        },
+        "mserp_salesprice": {
+          "type": "string",
+          "title": "Sales price",
+          "x-ms-dataverse-attribute": "mserp_salesprice",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_salesprice"
+        },
+        "mserp_salespricecalculationchargespercentage": {
+          "type": "string",
+          "title": "Charges percentage to be used when calculating sales price",
+          "x-ms-dataverse-attribute": "mserp_salespricecalculationchargespercentage",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_salespricecalculationchargespercentage"
+        },
+        "mserp_salespricecalculationcontributionratio": {
+          "type": "string",
+          "title": "Contribution ratio to be used when calculating sales price",
+          "x-ms-dataverse-attribute": "mserp_salespricecalculationcontributionratio",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_salespricecalculationcontributionratio"
+        },
+        "mserp_salespricecalculationmodel": {
+          "type": "string",
+          "title": "Sales price model",
+          "x-ms-dataverse-attribute": "mserp_salespricecalculationmodel",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_salespricecalculationmodel",
+          "enum": [
+            "None",
+            "Contribution ratio",
+            "Charges percentage"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "2acfb266-7d02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "SalesPriceModel (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_salespricecalculationmodelname": {
+          "type": "string",
+          "title": "mserp_salespricecalculationmodelname",
+          "x-ms-dataverse-attribute": "mserp_salespricecalculationmodelname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_salespricecalculationmodelName",
+          "x-ms-read-only": true
+        },
+        "mserp_salespricedate": {
+          "type": "string",
+          "title": "Date of sales price",
+          "x-ms-dataverse-attribute": "mserp_salespricedate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_salespricedate"
+        },
+        "mserp_salespricequantity": {
+          "type": "string",
+          "title": "Sales price quantity",
+          "x-ms-dataverse-attribute": "mserp_salespricequantity",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_salespricequantity"
+        },
+        "mserp_salespricingprecision": {
+          "type": "string",
+          "title": "Sales pricing precision",
+          "x-ms-dataverse-attribute": "mserp_salespricingprecision",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "mserp_salespricingprecision"
+        },
+        "mserp_salesrebateproductgroupid": {
+          "type": "string",
+          "title": "Customer rebate item group",
+          "x-ms-dataverse-attribute": "mserp_salesrebateproductgroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_salesrebateproductgroupid",
+          "maxLength": 10
+        },
+        "mserp_salesretailinventoryavailabilitybuffer": {
+          "type": "string",
+          "title": "Inventory buffer",
+          "x-ms-dataverse-attribute": "mserp_salesretailinventoryavailabilitybuffer",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_salesretailinventoryavailabilitybuffer"
+        },
+        "mserp_salesretailinventoryavailabilitylevelprofile": {
+          "type": "string",
+          "title": "Inventory level profile",
+          "x-ms-dataverse-attribute": "mserp_salesretailinventoryavailabilitylevelprofile",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_salesretailinventoryavailabilitylevelprofile",
+          "maxLength": 10
+        },
+        "mserp_salessalestaxitemgroupcode": {
+          "type": "string",
+          "title": "Item sales tax group for sales",
+          "x-ms-dataverse-attribute": "mserp_salessalestaxitemgroupcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_salessalestaxitemgroupcode",
+          "maxLength": 10
+        },
+        "mserp_salessupplementaryproductproductgroupid": {
+          "type": "string",
+          "title": "Supplementary item group for sales",
+          "x-ms-dataverse-attribute": "mserp_salessupplementaryproductproductgroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_salessupplementaryproductproductgroupid",
+          "maxLength": 10
+        },
+        "mserp_salesunderdeliverypercentage": {
+          "type": "string",
+          "title": "Underdelivery percentage for sales",
+          "x-ms-dataverse-attribute": "mserp_salesunderdeliverypercentage",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_salesunderdeliverypercentage"
+        },
+        "mserp_salesunitsymbol": {
+          "type": "string",
+          "title": "Sales unit",
+          "x-ms-dataverse-attribute": "mserp_salesunitsymbol",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_salesunitsymbol",
+          "maxLength": 10
+        },
+        "mserp_satcode": {
+          "type": "string",
+          "title": "SAT code",
+          "x-ms-dataverse-attribute": "mserp_satcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_satcode",
+          "maxLength": 10
+        },
+        "mserp_scaleindicator": {
+          "type": "string",
+          "title": "Scale indicator",
+          "x-ms-dataverse-attribute": "mserp_scaleindicator",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_scaleindicator",
+          "enum": [
+            "Relevant scale",
+            "Non relevant scale"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "38e4e87a-7f02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Scale indicator (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_scaleindicatorname": {
+          "type": "string",
+          "title": "mserp_scaleindicatorname",
+          "x-ms-dataverse-attribute": "mserp_scaleindicatorname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_scaleindicatorName",
+          "x-ms-read-only": true
+        },
+        "mserp_searchname": {
+          "type": "string",
+          "title": "Search name",
+          "x-ms-dataverse-attribute": "mserp_searchname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_searchname",
+          "maxLength": 20
+        },
+        "mserp_secondproductfiltercode": {
+          "type": "string",
+          "title": "Filter code",
+          "x-ms-dataverse-attribute": "mserp_secondproductfiltercode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_secondproductfiltercode",
+          "maxLength": 10
+        },
+        "mserp_secondproductfiltergroupid": {
+          "type": "string",
+          "title": "SecondProductFilterGroupId",
+          "x-ms-dataverse-attribute": "mserp_secondproductfiltergroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_secondproductfiltergroupid",
+          "x-ms-read-only": true,
+          "maxLength": 60
+        },
+        "mserp_sellenddate": {
+          "type": "string",
+          "title": "Sell end date",
+          "x-ms-dataverse-attribute": "mserp_sellenddate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_sellenddate"
+        },
+        "mserp_sellstartdate": {
+          "type": "string",
+          "title": "Sell start date",
+          "x-ms-dataverse-attribute": "mserp_sellstartdate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_sellstartdate"
+        },
+        "mserp_serialnumbergroupcode": {
+          "type": "string",
+          "title": "Serial number group",
+          "x-ms-dataverse-attribute": "mserp_serialnumbergroupcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_serialnumbergroupcode",
+          "maxLength": 10
+        },
+        "mserp_serviceaccountingcode": {
+          "type": "string",
+          "title": "Service accounting codes",
+          "x-ms-dataverse-attribute": "mserp_serviceaccountingcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_serviceaccountingcode",
+          "maxLength": 10
+        },
+        "mserp_servicefiscalinformationcode": {
+          "type": "string",
+          "title": "Service code",
+          "x-ms-dataverse-attribute": "mserp_servicefiscalinformationcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_servicefiscalinformationcode",
+          "maxLength": 10
+        },
+        "mserp_servicetype": {
+          "type": "string",
+          "title": "Product service type",
+          "x-ms-dataverse-attribute": "mserp_servicetype",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_servicetype",
+          "enum": [
+            "Not specified",
+            "Warranty"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "6752b12f-7d02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Product service type (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_servicetypename": {
+          "type": "string",
+          "title": "mserp_servicetypename",
+          "x-ms-dataverse-attribute": "mserp_servicetypename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_servicetypeName",
+          "x-ms-read-only": true
+        },
+        "mserp_seventhproductfiltercode": {
+          "type": "string",
+          "title": "Filter code",
+          "x-ms-dataverse-attribute": "mserp_seventhproductfiltercode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_seventhproductfiltercode",
+          "maxLength": 10
+        },
+        "mserp_shelfadviceperioddays": {
+          "type": "string",
+          "title": "Shelf advice period in days",
+          "x-ms-dataverse-attribute": "mserp_shelfadviceperioddays",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "mserp_shelfadviceperioddays"
+        },
+        "mserp_shelflifeperioddays": {
+          "type": "string",
+          "title": "Shelf life period in days",
+          "x-ms-dataverse-attribute": "mserp_shelflifeperioddays",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "mserp_shelflifeperioddays"
+        },
+        "mserp_shippingandreceivingsortordercode": {
+          "type": "string",
+          "title": "Shipping and receiving sort code",
+          "x-ms-dataverse-attribute": "mserp_shippingandreceivingsortordercode",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "mserp_shippingandreceivingsortordercode"
+        },
+        "mserp_shipstartdate": {
+          "type": "string",
+          "title": "Ship start date",
+          "x-ms-dataverse-attribute": "mserp_shipstartdate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_shipstartdate"
+        },
+        "mserp_sixthproductfiltercode": {
+          "type": "string",
+          "title": "Filter code",
+          "x-ms-dataverse-attribute": "mserp_sixthproductfiltercode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_sixthproductfiltercode",
+          "maxLength": 10
+        },
+        "mserp_storagedimensiongroupname": {
+          "type": "string",
+          "title": "Storage dimension group",
+          "x-ms-dataverse-attribute": "mserp_storagedimensiongroupname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_storagedimensiongroupname",
+          "maxLength": 10
+        },
+        "mserp_tareproductweight": {
+          "type": "string",
+          "title": "Tare weight",
+          "x-ms-dataverse-attribute": "mserp_tareproductweight",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_tareproductweight"
+        },
+        "mserp_taxratetype": {
+          "type": "string",
+          "title": "Name",
+          "x-ms-dataverse-attribute": "mserp_taxratetype",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_taxratetype",
+          "maxLength": 60
+        },
+        "mserp_taxsubstitutioncode": {
+          "type": "string",
+          "title": "CEST",
+          "x-ms-dataverse-attribute": "mserp_taxsubstitutioncode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_taxsubstitutioncode",
+          "maxLength": 9
+        },
+        "mserp_tenthproductfiltercode": {
+          "type": "string",
+          "title": "Filter code",
+          "x-ms-dataverse-attribute": "mserp_tenthproductfiltercode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_tenthproductfiltercode",
+          "maxLength": 10
+        },
+        "mserp_thirdproductfiltercode": {
+          "type": "string",
+          "title": "Filter code",
+          "x-ms-dataverse-attribute": "mserp_thirdproductfiltercode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_thirdproductfiltercode",
+          "maxLength": 10
+        },
+        "mserp_trackedcomponentspolicyid": {
+          "type": "string",
+          "title": "Tracked components policy",
+          "x-ms-dataverse-attribute": "mserp_trackedcomponentspolicyid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_trackedcomponentspolicyid",
+          "maxLength": 10
+        },
+        "mserp_trackingdimensiongroupname": {
+          "type": "string",
+          "title": "Tracking dimension group",
+          "x-ms-dataverse-attribute": "mserp_trackingdimensiongroupname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_trackingdimensiongroupname",
+          "maxLength": 10
+        },
+        "mserp_transferorderlandedcostgroupid": {
+          "type": "string",
+          "title": "Transfer order cost group",
+          "x-ms-dataverse-attribute": "mserp_transferorderlandedcostgroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_transferorderlandedcostgroupid",
+          "maxLength": 10
+        },
+        "mserp_transferorderoverdeliverypercentage": {
+          "type": "string",
+          "title": "Overdelivery percentage for transfer orders",
+          "x-ms-dataverse-attribute": "mserp_transferorderoverdeliverypercentage",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_transferorderoverdeliverypercentage"
+        },
+        "mserp_transferorderunderdeliverypercentage": {
+          "type": "string",
+          "title": "Underdelivery percentage for transfer orders",
+          "x-ms-dataverse-attribute": "mserp_transferorderunderdeliverypercentage",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_transferorderunderdeliverypercentage"
+        },
+        "mserp_unitconversionsequencegroupid": {
+          "type": "string",
+          "title": "Unit sequence group ID",
+          "x-ms-dataverse-attribute": "mserp_unitconversionsequencegroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_unitconversionsequencegroupid",
+          "maxLength": 20
+        },
+        "mserp_unitcost": {
+          "type": "string",
+          "title": "Cost",
+          "x-ms-dataverse-attribute": "mserp_unitcost",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_unitcost"
+        },
+        "mserp_unitcostdate": {
+          "type": "string",
+          "title": "Date of cost",
+          "x-ms-dataverse-attribute": "mserp_unitcostdate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_unitcostdate"
+        },
+        "mserp_unitcostquantity": {
+          "type": "string",
+          "title": "Cost quantity",
+          "x-ms-dataverse-attribute": "mserp_unitcostquantity",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_unitcostquantity"
+        },
+        "mserp_updateproductvariantlifecyclestate": {
+          "type": "string",
+          "title": "Update Product Variant Lifecycle State",
+          "x-ms-dataverse-attribute": "mserp_updateproductvariantlifecyclestate",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_updateproductvariantlifecyclestate",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_updateproductvariantlifecyclestatename": {
+          "type": "string",
+          "title": "mserp_updateproductvariantlifecyclestatename",
+          "x-ms-dataverse-attribute": "mserp_updateproductvariantlifecyclestatename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_updateproductvariantlifecyclestateName",
+          "x-ms-read-only": true
+        },
+        "mserp_upperwarrantablepricerangelimit": {
+          "type": "string",
+          "title": "Upper limit",
+          "x-ms-dataverse-attribute": "mserp_upperwarrantablepricerangelimit",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_upperwarrantablepricerangelimit"
+        },
+        "mserp_valueabccode": {
+          "type": "string",
+          "title": "ABC-code value",
+          "x-ms-dataverse-attribute": "mserp_valueabccode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_valueabccode",
+          "enum": [
+            "None",
+            "A",
+            "B",
+            "C"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "c32e32a9-7b02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "ABC code (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_valueabccodename": {
+          "type": "string",
+          "title": "mserp_valueabccodename",
+          "x-ms-dataverse-attribute": "mserp_valueabccodename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_valueabccodeName",
+          "x-ms-read-only": true
+        },
+        "mserp_variablescrappercentage": {
+          "type": "string",
+          "title": "Variable scrap",
+          "x-ms-dataverse-attribute": "mserp_variablescrappercentage",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_variablescrappercentage"
+        },
+        "mserp_vendorinvoicelinematchingpolicy": {
+          "type": "string",
+          "title": "Vendor invoice line matching policy",
+          "x-ms-dataverse-attribute": "mserp_vendorinvoicelinematchingpolicy",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_vendorinvoicelinematchingpolicy",
+          "enum": [
+            "Company policy",
+            "Three-way matching",
+            "Two-way matching",
+            "Not required"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "967957c5-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Line matching policy (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_vendorinvoicelinematchingpolicyname": {
+          "type": "string",
+          "title": "mserp_vendorinvoicelinematchingpolicyname",
+          "x-ms-dataverse-attribute": "mserp_vendorinvoicelinematchingpolicyname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_vendorinvoicelinematchingpolicyName",
+          "x-ms-read-only": true
+        },
+        "mserp_voyagearrivalgroupid": {
+          "type": "string",
+          "title": "Arrival group",
+          "x-ms-dataverse-attribute": "mserp_voyagearrivalgroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_voyagearrivalgroupid",
+          "maxLength": 10
+        },
+        "mserp_warehousebatchdetailscapturepolicy": {
+          "type": "string",
+          "title": "Batch details capture policy",
+          "x-ms-dataverse-attribute": "mserp_warehousebatchdetailscapturepolicy",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_warehousebatchdetailscapturepolicy",
+          "maxLength": 10
+        },
+        "mserp_warehousebomreleasereservationrequirementrule": {
+          "type": "string",
+          "title": "Release to warehouse",
+          "x-ms-dataverse-attribute": "mserp_warehousebomreleasereservationrequirementrule",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_warehousebomreleasereservationrequirementrule",
+          "enum": [
+            "Allow partial reservation",
+            "Require full reservation"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "5408e8b2-a902-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Release to warehouse (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_warehousebomreleasereservationrequirementrulename": {
+          "type": "string",
+          "title": "mserp_warehousebomreleasereservationrequirementrulename",
+          "x-ms-dataverse-attribute": "mserp_warehousebomreleasereservationrequirementrulename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_warehousebomreleasereservationrequirementruleName",
+          "x-ms-read-only": true
+        },
+        "mserp_warehousefiltercode": {
+          "type": "string",
+          "title": "Filter code",
+          "x-ms-dataverse-attribute": "mserp_warehousefiltercode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_warehousefiltercode",
+          "x-ms-read-only": true,
+          "maxLength": 10
+        },
+        "mserp_warehousefiltergroup": {
+          "type": "string",
+          "title": "WarehouseFilterGroup",
+          "x-ms-dataverse-attribute": "mserp_warehousefiltergroup",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_warehousefiltergroup",
+          "x-ms-read-only": true,
+          "maxLength": 60
+        },
+        "mserp_warehousemobiledevicedescriptionline1": {
+          "type": "string",
+          "title": "Warehouse mobile device description line 1",
+          "x-ms-dataverse-attribute": "mserp_warehousemobiledevicedescriptionline1",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_warehousemobiledevicedescriptionline1",
+          "maxLength": 20
+        },
+        "mserp_warehousemobiledevicedescriptionline2": {
+          "type": "string",
+          "title": "Warehouse mobile device description line 2",
+          "x-ms-dataverse-attribute": "mserp_warehousemobiledevicedescriptionline2",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_warehousemobiledevicedescriptionline2",
+          "maxLength": 20
+        },
+        "mserp_warehousereleasesalesunitrestricted": {
+          "type": "string",
+          "title": "Restrict to unit",
+          "x-ms-dataverse-attribute": "mserp_warehousereleasesalesunitrestricted",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_warehousereleasesalesunitrestricted",
+          "enum": [
+            "No restrictions",
+            "Sales unit"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "37790da7-750d-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Restrict to unit (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_warehousereleasesalesunitrestrictedname": {
+          "type": "string",
+          "title": "mserp_warehousereleasesalesunitrestrictedname",
+          "x-ms-dataverse-attribute": "mserp_warehousereleasesalesunitrestrictedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_warehousereleasesalesunitrestrictedName",
+          "x-ms-read-only": true
+        },
+        "mserp_warrantablepricerangebasetype": {
+          "type": "string",
+          "title": "Price range base",
+          "x-ms-dataverse-attribute": "mserp_warrantablepricerangebasetype",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_warrantablepricerangebasetype",
+          "enum": [
+            "None",
+            "Base price",
+            "Selling price"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "7752b12f-7d02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Price range base (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_warrantablepricerangebasetypename": {
+          "type": "string",
+          "title": "mserp_warrantablepricerangebasetypename",
+          "x-ms-dataverse-attribute": "mserp_warrantablepricerangebasetypename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_warrantablepricerangebasetypeName",
+          "x-ms-read-only": true
+        },
+        "mserp_warrantydurationtime": {
+          "type": "string",
+          "title": "Length of time",
+          "x-ms-dataverse-attribute": "mserp_warrantydurationtime",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "mserp_warrantydurationtime"
+        },
+        "mserp_warrantydurationtimeunit": {
+          "type": "string",
+          "title": "Unit of time",
+          "x-ms-dataverse-attribute": "mserp_warrantydurationtimeunit",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_warrantydurationtimeunit",
+          "enum": [
+            "Day(s)",
+            "Week(s)",
+            "Month(s)",
+            "Year(s)"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "7252b12f-7d02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Unit of time (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_warrantydurationtimeunitname": {
+          "type": "string",
+          "title": "mserp_warrantydurationtimeunitname",
+          "x-ms-dataverse-attribute": "mserp_warrantydurationtimeunitname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_warrantydurationtimeunitName",
+          "x-ms-read-only": true
+        },
+        "mserp_willinventoryissueautomaticallyreportasfinished": {
+          "type": "string",
+          "title": "Auto-report as finished",
+          "x-ms-dataverse-attribute": "mserp_willinventoryissueautomaticallyreportasfinished",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_willinventoryissueautomaticallyreportasfinished",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_willinventoryissueautomaticallyreportasfinishedname": {
+          "type": "string",
+          "title": "mserp_willinventoryissueautomaticallyreportasfinishedname",
+          "x-ms-dataverse-attribute": "mserp_willinventoryissueautomaticallyreportasfinishedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_willinventoryissueautomaticallyreportasfinishedName",
+          "x-ms-read-only": true
+        },
+        "mserp_willinventoryreceiptignoreflushingprinciple": {
+          "type": "string",
+          "title": "Ignore flushing principle on receipt",
+          "x-ms-dataverse-attribute": "mserp_willinventoryreceiptignoreflushingprinciple",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_willinventoryreceiptignoreflushingprinciple",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_willinventoryreceiptignoreflushingprinciplename": {
+          "type": "string",
+          "title": "mserp_willinventoryreceiptignoreflushingprinciplename",
+          "x-ms-dataverse-attribute": "mserp_willinventoryreceiptignoreflushingprinciplename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_willinventoryreceiptignoreflushingprincipleName",
+          "x-ms-read-only": true
+        },
+        "mserp_willpickingworkbenchapplyboxinglogic": {
+          "type": "string",
+          "title": "Apply boxing logic for picking work bench",
+          "x-ms-dataverse-attribute": "mserp_willpickingworkbenchapplyboxinglogic",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_willpickingworkbenchapplyboxinglogic",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_willpickingworkbenchapplyboxinglogicname": {
+          "type": "string",
+          "title": "mserp_willpickingworkbenchapplyboxinglogicname",
+          "x-ms-dataverse-attribute": "mserp_willpickingworkbenchapplyboxinglogicname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_willpickingworkbenchapplyboxinglogicName",
+          "x-ms-read-only": true
+        },
+        "mserp_willtotalpurchasediscountcalculationincludeproduct": {
+          "type": "string",
+          "title": "Include in total purchase discount",
+          "x-ms-dataverse-attribute": "mserp_willtotalpurchasediscountcalculationincludeproduct",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_willtotalpurchasediscountcalculationincludeproduct",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_willtotalpurchasediscountcalculationincludeproductname": {
+          "type": "string",
+          "title": "mserp_willtotalpurchasediscountcalculationincludeproductname",
+          "x-ms-dataverse-attribute": "mserp_willtotalpurchasediscountcalculationincludeproductname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_willtotalpurchasediscountcalculationincludeproductName",
+          "x-ms-read-only": true
+        },
+        "mserp_willtotalsalesdiscountcalculationincludeproduct": {
+          "type": "string",
+          "title": "Include in total sales discount",
+          "x-ms-dataverse-attribute": "mserp_willtotalsalesdiscountcalculationincludeproduct",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_willtotalsalesdiscountcalculationincludeproduct",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_willtotalsalesdiscountcalculationincludeproductname": {
+          "type": "string",
+          "title": "mserp_willtotalsalesdiscountcalculationincludeproductname",
+          "x-ms-dataverse-attribute": "mserp_willtotalsalesdiscountcalculationincludeproductname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_willtotalsalesdiscountcalculationincludeproductName",
+          "x-ms-read-only": true
+        },
+        "mserp_willworkcenterpickingallownegativeinventory": {
+          "type": "string",
+          "title": "Allow negative picking at work center",
+          "x-ms-dataverse-attribute": "mserp_willworkcenterpickingallownegativeinventory",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_willworkcenterpickingallownegativeinventory",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_willworkcenterpickingallownegativeinventoryname": {
+          "type": "string",
+          "title": "mserp_willworkcenterpickingallownegativeinventoryname",
+          "x-ms-dataverse-attribute": "mserp_willworkcenterpickingallownegativeinventoryname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_willworkcenterpickingallownegativeinventoryName",
+          "x-ms-read-only": true
+        },
+        "mserp_yieldpercentage": {
+          "type": "string",
+          "title": "Yield percent",
+          "x-ms-dataverse-attribute": "mserp_yieldpercentage",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_yieldpercentage"
+        }
+      },
+      "required": [
+        "mserp_ecoresreleasedproductv2entityid",
+        "mserp_itemnumber",
+        "mserp_productnumber"
+      ]
+    }
+  }
+}

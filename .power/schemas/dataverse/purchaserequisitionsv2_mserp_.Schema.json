@@ -1,0 +1,217 @@
+{
+  "name": "mserp_purchaserequisitionheaderv2entity",
+  "title": "Purchase requisitions V2 (mserp)",
+  "schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "x-ms-dataverse-entity": true,
+      "x-ms-dataverse-entityset": "mserp_purchaserequisitionheaderv2entities",
+      "x-ms-dataverse-primary-id": "mserp_purchaserequisitionheaderv2entityid",
+      "x-ms-dataverse-primary-name": "mserp_requisitionnumber",
+      "properties": {
+        "mserp_defaultaccountingdate": {
+          "type": "string",
+          "title": "Accounting date",
+          "x-ms-dataverse-attribute": "mserp_defaultaccountingdate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_defaultaccountingdate"
+        },
+        "mserp_defaultbusinessjustificationcode": {
+          "type": "string",
+          "title": "Business justification",
+          "x-ms-dataverse-attribute": "mserp_defaultbusinessjustificationcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaultbusinessjustificationcode",
+          "maxLength": 10
+        },
+        "mserp_defaultbusinessjustificationdetails": {
+          "type": "string",
+          "title": "Details",
+          "x-ms-dataverse-attribute": "mserp_defaultbusinessjustificationdetails",
+          "x-ms-dataverse-type": "MemoType",
+          "x-ms-schema-name": "mserp_defaultbusinessjustificationdetails",
+          "maxLength": 1048576
+        },
+        "mserp_defaultprojectid": {
+          "type": "string",
+          "title": "Project ID",
+          "x-ms-dataverse-attribute": "mserp_defaultprojectid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaultprojectid",
+          "maxLength": 20
+        },
+        "mserp_defaultrequesteddate": {
+          "type": "string",
+          "title": "Requested date",
+          "x-ms-dataverse-attribute": "mserp_defaultrequesteddate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_defaultrequesteddate"
+        },
+        "mserp_ispurchaserequisitiononhold": {
+          "type": "string",
+          "title": "On hold",
+          "x-ms-dataverse-attribute": "mserp_ispurchaserequisitiononhold",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_ispurchaserequisitiononhold",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_ispurchaserequisitiononholdname": {
+          "type": "string",
+          "title": "mserp_ispurchaserequisitiononholdname",
+          "x-ms-dataverse-attribute": "mserp_ispurchaserequisitiononholdname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_ispurchaserequisitiononholdName",
+          "x-ms-read-only": true
+        },
+        "mserp_onholdexplanation": {
+          "type": "string",
+          "title": "Explanation",
+          "x-ms-dataverse-attribute": "mserp_onholdexplanation",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_onholdexplanation",
+          "maxLength": 566
+        },
+        "mserp_preparerpersonnelnumber": {
+          "type": "string",
+          "title": "Preparer",
+          "x-ms-dataverse-attribute": "mserp_preparerpersonnelnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_preparerpersonnelnumber",
+          "maxLength": 25
+        },
+        "mserp_projectbuyinglegalentityid": {
+          "type": "string",
+          "title": "Buying legal entity",
+          "x-ms-dataverse-attribute": "mserp_projectbuyinglegalentityid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_projectbuyinglegalentityid",
+          "maxLength": 4
+        },
+        "mserp_purchaserequisitionheaderv2entityid": {
+          "type": "string",
+          "title": "Purchase requisitions V2 (mserp)",
+          "x-ms-dataverse-attribute": "mserp_purchaserequisitionheaderv2entityid",
+          "x-ms-dataverse-type": "UniqueidentifierType",
+          "x-ms-schema-name": "mserp_purchaserequisitionheaderv2entityId",
+          "x-ms-dataverse-primary-id": true,
+          "required": true,
+          "x-ms-keyType": "primary"
+        },
+        "mserp_requisitionname": {
+          "type": "string",
+          "title": "Name",
+          "x-ms-dataverse-attribute": "mserp_requisitionname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_requisitionname",
+          "maxLength": 60
+        },
+        "mserp_requisitionnumber": {
+          "type": "string",
+          "title": "Purchase requisition",
+          "x-ms-dataverse-attribute": "mserp_requisitionnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_requisitionnumber",
+          "x-ms-dataverse-primary-name": true,
+          "maxLength": 25
+        },
+        "mserp_requisitionpurpose": {
+          "type": "string",
+          "title": "Requisition purpose",
+          "x-ms-dataverse-attribute": "mserp_requisitionpurpose",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_requisitionpurpose",
+          "enum": [
+            "Consumption",
+            "Replenishment"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "d704c941-af02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Requisition purpose (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_requisitionpurposename": {
+          "type": "string",
+          "title": "mserp_requisitionpurposename",
+          "x-ms-dataverse-attribute": "mserp_requisitionpurposename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_requisitionpurposeName",
+          "x-ms-read-only": true
+        },
+        "mserp_requisitionstatus": {
+          "type": "string",
+          "title": "Status",
+          "x-ms-dataverse-attribute": "mserp_requisitionstatus",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_requisitionstatus",
+          "x-ms-read-only": true,
+          "enum": [
+            "Draft",
+            "In review",
+            "Rejected",
+            "Approved",
+            "Cancelled",
+            "Closed",
+            "Budget reserved"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003,
+            200000004,
+            200000005,
+            200000006
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "db04c941-af02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Status (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_requisitionstatusname": {
+          "type": "string",
+          "title": "mserp_requisitionstatusname",
+          "x-ms-dataverse-attribute": "mserp_requisitionstatusname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_requisitionstatusName",
+          "x-ms-read-only": true
+        }
+      },
+      "required": [
+        "mserp_purchaserequisitionheaderv2entityid"
+      ]
+    }
+  }
+}

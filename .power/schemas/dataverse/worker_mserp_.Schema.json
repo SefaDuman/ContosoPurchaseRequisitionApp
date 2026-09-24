@@ -1,0 +1,1401 @@
+{
+  "name": "mserp_hcmworkerentity",
+  "title": "Worker (mserp)",
+  "schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "x-ms-dataverse-entity": true,
+      "x-ms-dataverse-entityset": "mserp_hcmworkerentities",
+      "x-ms-dataverse-primary-id": "mserp_hcmworkerentityid",
+      "x-ms-dataverse-primary-name": "mserp_personnelnumber",
+      "properties": {
+        "mserp_addressbooks": {
+          "type": "string",
+          "title": "Address books",
+          "x-ms-dataverse-attribute": "mserp_addressbooks",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addressbooks",
+          "maxLength": 1000
+        },
+        "mserp_addresscity": {
+          "type": "string",
+          "title": "City",
+          "x-ms-dataverse-attribute": "mserp_addresscity",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addresscity",
+          "maxLength": 60
+        },
+        "mserp_addresscountryregionid": {
+          "type": "string",
+          "title": "Country/region",
+          "x-ms-dataverse-attribute": "mserp_addresscountryregionid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addresscountryregionid",
+          "maxLength": 10
+        },
+        "mserp_addresscountryregionisocode": {
+          "type": "string",
+          "title": "Country/region ISO",
+          "x-ms-dataverse-attribute": "mserp_addresscountryregionisocode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addresscountryregionisocode",
+          "maxLength": 2
+        },
+        "mserp_addresscounty": {
+          "type": "string",
+          "title": "County",
+          "x-ms-dataverse-attribute": "mserp_addresscounty",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addresscounty",
+          "maxLength": 30
+        },
+        "mserp_addressdistrictname": {
+          "type": "string",
+          "title": "District",
+          "x-ms-dataverse-attribute": "mserp_addressdistrictname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addressdistrictname",
+          "maxLength": 60
+        },
+        "mserp_addresslocationid": {
+          "type": "string",
+          "title": "Location ID",
+          "x-ms-dataverse-attribute": "mserp_addresslocationid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addresslocationid",
+          "maxLength": 40
+        },
+        "mserp_addressnamedescription": {
+          "type": "string",
+          "title": "Address name or description",
+          "x-ms-dataverse-attribute": "mserp_addressnamedescription",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addressnamedescription",
+          "maxLength": 60
+        },
+        "mserp_addresspurpose": {
+          "type": "string",
+          "title": "Address purpose",
+          "x-ms-dataverse-attribute": "mserp_addresspurpose",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addresspurpose",
+          "maxLength": 1000
+        },
+        "mserp_addressstate": {
+          "type": "string",
+          "title": "State",
+          "x-ms-dataverse-attribute": "mserp_addressstate",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addressstate",
+          "maxLength": 10
+        },
+        "mserp_addressstreet": {
+          "type": "string",
+          "title": "Street",
+          "x-ms-dataverse-attribute": "mserp_addressstreet",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addressstreet",
+          "maxLength": 250
+        },
+        "mserp_addressvalidfrom": {
+          "type": "string",
+          "title": "Address effective",
+          "x-ms-dataverse-attribute": "mserp_addressvalidfrom",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_addressvalidfrom"
+        },
+        "mserp_addressvalidto": {
+          "type": "string",
+          "title": "Address expiration",
+          "x-ms-dataverse-attribute": "mserp_addressvalidto",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_addressvalidto"
+        },
+        "mserp_addresszipcode": {
+          "type": "string",
+          "title": "ZIP/postal code",
+          "x-ms-dataverse-attribute": "mserp_addresszipcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addresszipcode",
+          "maxLength": 10
+        },
+        "mserp_allowrehire": {
+          "type": "string",
+          "title": "Rehire",
+          "x-ms-dataverse-attribute": "mserp_allowrehire",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_allowrehire",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_allowrehirename": {
+          "type": "string",
+          "title": "mserp_allowrehirename",
+          "x-ms-dataverse-attribute": "mserp_allowrehirename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_allowrehireName",
+          "x-ms-read-only": true
+        },
+        "mserp_anniversarydatetime": {
+          "type": "string",
+          "title": "Anniversary date",
+          "x-ms-dataverse-attribute": "mserp_anniversarydatetime",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_anniversarydatetime"
+        },
+        "mserp_birthdate": {
+          "type": "string",
+          "title": "Birth date",
+          "x-ms-dataverse-attribute": "mserp_birthdate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_birthdate"
+        },
+        "mserp_citizenshipcountryregion": {
+          "type": "string",
+          "title": "Citizenship country/region",
+          "x-ms-dataverse-attribute": "mserp_citizenshipcountryregion",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_citizenshipcountryregion",
+          "maxLength": 50
+        },
+        "mserp_deceaseddate": {
+          "type": "string",
+          "title": "Deceased date",
+          "x-ms-dataverse-attribute": "mserp_deceaseddate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_deceaseddate"
+        },
+        "mserp_disabledverificationdate": {
+          "type": "string",
+          "title": "Verification date",
+          "x-ms-dataverse-attribute": "mserp_disabledverificationdate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_disabledverificationdate"
+        },
+        "mserp_education": {
+          "type": "string",
+          "title": "Education",
+          "x-ms-dataverse-attribute": "mserp_education",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_education",
+          "maxLength": 30
+        },
+        "mserp_electroniclocationid": {
+          "type": "string",
+          "title": "Location ID",
+          "x-ms-dataverse-attribute": "mserp_electroniclocationid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_electroniclocationid",
+          "maxLength": 40
+        },
+        "mserp_ethnicoriginid": {
+          "type": "string",
+          "title": "Ethnic origin",
+          "x-ms-dataverse-attribute": "mserp_ethnicoriginid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_ethnicoriginid",
+          "maxLength": 15
+        },
+        "mserp_expatriaterulingvalidfrom": {
+          "type": "string",
+          "title": "Expatriate ruling valid from",
+          "x-ms-dataverse-attribute": "mserp_expatriaterulingvalidfrom",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_expatriaterulingvalidfrom"
+        },
+        "mserp_expatriaterulingvalidto": {
+          "type": "string",
+          "title": "Expatriate ruling valid to",
+          "x-ms-dataverse-attribute": "mserp_expatriaterulingvalidto",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_expatriaterulingvalidto"
+        },
+        "mserp_fatherbirthcountryregion": {
+          "type": "string",
+          "title": "Father country/region of birth",
+          "x-ms-dataverse-attribute": "mserp_fatherbirthcountryregion",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_fatherbirthcountryregion",
+          "maxLength": 10
+        },
+        "mserp_firstname": {
+          "type": "string",
+          "title": "First name",
+          "x-ms-dataverse-attribute": "mserp_firstname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_firstname",
+          "maxLength": 50
+        },
+        "mserp_fk_person_id": {
+          "type": "string",
+          "title": "People",
+          "x-ms-dataverse-attribute": "mserp_fk_person_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_Person_id"
+        },
+        "mserp_fk_person_idname": {
+          "type": "string",
+          "title": "mserp_fk_person_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_person_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_Person_idName",
+          "x-ms-read-only": true,
+          "maxLength": 40
+        },
+        "mserp_gender": {
+          "type": "string",
+          "title": "Gender",
+          "x-ms-dataverse-attribute": "mserp_gender",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_gender",
+          "enum": [
+            "None",
+            "Male",
+            "Female",
+            "Non-Specific"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "709c889f-8402-f111-8406-7ced8d6dc9ee",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Gender (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_gendername": {
+          "type": "string",
+          "title": "mserp_gendername",
+          "x-ms-dataverse-attribute": "mserp_gendername",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_genderName",
+          "x-ms-read-only": true
+        },
+        "mserp_hcmworkerentityid": {
+          "type": "string",
+          "title": "Worker (mserp)",
+          "x-ms-dataverse-attribute": "mserp_hcmworkerentityid",
+          "x-ms-dataverse-type": "UniqueidentifierType",
+          "x-ms-schema-name": "mserp_hcmworkerentityId",
+          "x-ms-dataverse-primary-id": true,
+          "required": true,
+          "x-ms-keyType": "primary"
+        },
+        "mserp_identityemail": {
+          "type": "string",
+          "title": "Identity Email",
+          "x-ms-dataverse-attribute": "mserp_identityemail",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_identityemail",
+          "x-ms-read-only": true,
+          "maxLength": 255
+        },
+        "mserp_identityprovider": {
+          "type": "string",
+          "title": "Identity Provider",
+          "x-ms-dataverse-attribute": "mserp_identityprovider",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_identityprovider",
+          "x-ms-read-only": true,
+          "maxLength": 255
+        },
+        "mserp_isdisabled": {
+          "type": "string",
+          "title": "Person with disabilities",
+          "x-ms-dataverse-attribute": "mserp_isdisabled",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isdisabled",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isdisabledname": {
+          "type": "string",
+          "title": "mserp_isdisabledname",
+          "x-ms-dataverse-attribute": "mserp_isdisabledname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isdisabledName",
+          "x-ms-read-only": true
+        },
+        "mserp_isdisabledveteran": {
+          "type": "string",
+          "title": "Disabled veteran",
+          "x-ms-dataverse-attribute": "mserp_isdisabledveteran",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isdisabledveteran",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isdisabledveteranname": {
+          "type": "string",
+          "title": "mserp_isdisabledveteranname",
+          "x-ms-dataverse-attribute": "mserp_isdisabledveteranname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isdisabledveteranName",
+          "x-ms-read-only": true
+        },
+        "mserp_isexpatriaterulingapplicable": {
+          "type": "string",
+          "title": "Expatriate ruling",
+          "x-ms-dataverse-attribute": "mserp_isexpatriaterulingapplicable",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isexpatriaterulingapplicable",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isexpatriaterulingapplicablename": {
+          "type": "string",
+          "title": "mserp_isexpatriaterulingapplicablename",
+          "x-ms-dataverse-attribute": "mserp_isexpatriaterulingapplicablename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isexpatriaterulingapplicableName",
+          "x-ms-read-only": true
+        },
+        "mserp_isfulltimestudent": {
+          "type": "string",
+          "title": "Full-time student",
+          "x-ms-dataverse-attribute": "mserp_isfulltimestudent",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isfulltimestudent",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isfulltimestudentname": {
+          "type": "string",
+          "title": "mserp_isfulltimestudentname",
+          "x-ms-dataverse-attribute": "mserp_isfulltimestudentname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isfulltimestudentName",
+          "x-ms-read-only": true
+        },
+        "mserp_knownas": {
+          "type": "string",
+          "title": "Known as",
+          "x-ms-dataverse-attribute": "mserp_knownas",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_knownas",
+          "maxLength": 160
+        },
+        "mserp_languageid": {
+          "type": "string",
+          "title": "Language",
+          "x-ms-dataverse-attribute": "mserp_languageid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_languageid",
+          "maxLength": 7
+        },
+        "mserp_lastname": {
+          "type": "string",
+          "title": "Last name",
+          "x-ms-dataverse-attribute": "mserp_lastname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_lastname",
+          "maxLength": 50
+        },
+        "mserp_lastnameprefix": {
+          "type": "string",
+          "title": "Last name prefix",
+          "x-ms-dataverse-attribute": "mserp_lastnameprefix",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_lastnameprefix",
+          "maxLength": 25
+        },
+        "mserp_maritalstatus": {
+          "type": "string",
+          "title": "Marital status",
+          "x-ms-dataverse-attribute": "mserp_maritalstatus",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_maritalstatus",
+          "enum": [
+            "None",
+            "Married",
+            "Single",
+            "Widowed",
+            "Divorced",
+            "Cohabiting",
+            "Registered partnership",
+            "Separated",
+            "Civil partnership"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003,
+            200000004,
+            200000005,
+            200000006,
+            200000007,
+            200000008
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "819c889f-8402-f111-8406-7ced8d6dc9ee",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Marital status (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_maritalstatusname": {
+          "type": "string",
+          "title": "mserp_maritalstatusname",
+          "x-ms-dataverse-attribute": "mserp_maritalstatusname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_maritalstatusName",
+          "x-ms-read-only": true
+        },
+        "mserp_middlename": {
+          "type": "string",
+          "title": "Middle name",
+          "x-ms-dataverse-attribute": "mserp_middlename",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_middlename",
+          "maxLength": 50
+        },
+        "mserp_militaryserviceenddate": {
+          "type": "string",
+          "title": "Military service end date",
+          "x-ms-dataverse-attribute": "mserp_militaryserviceenddate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_militaryserviceenddate"
+        },
+        "mserp_militaryservicestartdate": {
+          "type": "string",
+          "title": "Military service start date",
+          "x-ms-dataverse-attribute": "mserp_militaryservicestartdate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_militaryservicestartdate"
+        },
+        "mserp_motherbirthcountryregion": {
+          "type": "string",
+          "title": "Mother country/region of birth",
+          "x-ms-dataverse-attribute": "mserp_motherbirthcountryregion",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_motherbirthcountryregion",
+          "maxLength": 10
+        },
+        "mserp_name": {
+          "type": "string",
+          "title": "Name",
+          "x-ms-dataverse-attribute": "mserp_name",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_name",
+          "x-ms-read-only": true,
+          "maxLength": 160
+        },
+        "mserp_namealias": {
+          "type": "string",
+          "title": "Search name",
+          "x-ms-dataverse-attribute": "mserp_namealias",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_namealias",
+          "maxLength": 20
+        },
+        "mserp_namesequencedisplayas": {
+          "type": "string",
+          "title": "Display as",
+          "x-ms-dataverse-attribute": "mserp_namesequencedisplayas",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_namesequencedisplayas",
+          "maxLength": 20
+        },
+        "mserp_nationalitycountryregion": {
+          "type": "string",
+          "title": "Nationality country region",
+          "x-ms-dataverse-attribute": "mserp_nationalitycountryregion",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_nationalitycountryregion",
+          "maxLength": 10
+        },
+        "mserp_nativelanguageid": {
+          "type": "string",
+          "title": "Native language",
+          "x-ms-dataverse-attribute": "mserp_nativelanguageid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_nativelanguageid",
+          "maxLength": 15
+        },
+        "mserp_numberofdependents": {
+          "type": "string",
+          "title": "Number of dependents",
+          "x-ms-dataverse-attribute": "mserp_numberofdependents",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "mserp_numberofdependents"
+        },
+        "mserp_objectid": {
+          "type": "string",
+          "title": "ObjectId",
+          "x-ms-dataverse-attribute": "mserp_objectid",
+          "x-ms-dataverse-type": "MemoType",
+          "x-ms-schema-name": "mserp_objectid",
+          "x-ms-read-only": true,
+          "maxLength": 1048576
+        },
+        "mserp_officelocation": {
+          "type": "string",
+          "title": "Office location",
+          "x-ms-dataverse-attribute": "mserp_officelocation",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_officelocation",
+          "maxLength": 255
+        },
+        "mserp_officelocationid": {
+          "type": "string",
+          "title": "Location ID",
+          "x-ms-dataverse-attribute": "mserp_officelocationid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_officelocationid",
+          "maxLength": 40
+        },
+        "mserp_originalhiredatetime": {
+          "type": "string",
+          "title": "Original hire date",
+          "x-ms-dataverse-attribute": "mserp_originalhiredatetime",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_originalhiredatetime"
+        },
+        "mserp_partynumber": {
+          "type": "string",
+          "title": "Party ID",
+          "x-ms-dataverse-attribute": "mserp_partynumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_partynumber",
+          "maxLength": 40
+        },
+        "mserp_partytype": {
+          "type": "string",
+          "title": "Record type",
+          "x-ms-dataverse-attribute": "mserp_partytype",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_partytype",
+          "x-ms-read-only": true,
+          "maxLength": 13
+        },
+        "mserp_personalsuffix": {
+          "type": "string",
+          "title": "Personal suffix",
+          "x-ms-dataverse-attribute": "mserp_personalsuffix",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_personalsuffix",
+          "maxLength": 100
+        },
+        "mserp_personaltitle": {
+          "type": "string",
+          "title": "Personal title",
+          "x-ms-dataverse-attribute": "mserp_personaltitle",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_personaltitle",
+          "maxLength": 100
+        },
+        "mserp_personbirthcity": {
+          "type": "string",
+          "title": "Birth city",
+          "x-ms-dataverse-attribute": "mserp_personbirthcity",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_personbirthcity",
+          "maxLength": 60
+        },
+        "mserp_personbirthcountryregion": {
+          "type": "string",
+          "title": "Country/region of birth",
+          "x-ms-dataverse-attribute": "mserp_personbirthcountryregion",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_personbirthcountryregion",
+          "maxLength": 10
+        },
+        "mserp_persondetailsvalidfrom": {
+          "type": "string",
+          "title": "Personal information effective",
+          "x-ms-dataverse-attribute": "mserp_persondetailsvalidfrom",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_persondetailsvalidfrom"
+        },
+        "mserp_persondetailsvalidto": {
+          "type": "string",
+          "title": "Personal information expiration",
+          "x-ms-dataverse-attribute": "mserp_persondetailsvalidto",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_persondetailsvalidto"
+        },
+        "mserp_personnelnumber": {
+          "type": "string",
+          "title": "Personnel number",
+          "x-ms-dataverse-attribute": "mserp_personnelnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_personnelnumber",
+          "x-ms-dataverse-primary-name": true,
+          "maxLength": 25
+        },
+        "mserp_personuservalidfrom": {
+          "type": "string",
+          "title": "Person to user relationship effective",
+          "x-ms-dataverse-attribute": "mserp_personuservalidfrom",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_personuservalidfrom",
+          "x-ms-read-only": true
+        },
+        "mserp_personuservalidto": {
+          "type": "string",
+          "title": "Person to user relationship expiration",
+          "x-ms-dataverse-attribute": "mserp_personuservalidto",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_personuservalidto",
+          "x-ms-read-only": true
+        },
+        "mserp_phoneticfirstname": {
+          "type": "string",
+          "title": "Phonetic first",
+          "x-ms-dataverse-attribute": "mserp_phoneticfirstname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_phoneticfirstname",
+          "maxLength": 50
+        },
+        "mserp_phoneticlastname": {
+          "type": "string",
+          "title": "Phonetic last",
+          "x-ms-dataverse-attribute": "mserp_phoneticlastname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_phoneticlastname",
+          "maxLength": 50
+        },
+        "mserp_phoneticmiddlename": {
+          "type": "string",
+          "title": "Phonetic middle",
+          "x-ms-dataverse-attribute": "mserp_phoneticmiddlename",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_phoneticmiddlename",
+          "maxLength": 50
+        },
+        "mserp_primaryaddresslocation": {
+          "type": "string",
+          "title": "Location",
+          "x-ms-dataverse-attribute": "mserp_primaryaddresslocation",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_primaryaddresslocation"
+        },
+        "mserp_primaryaddresslocation_bigint": {
+          "type": "string",
+          "title": "Location",
+          "x-ms-dataverse-attribute": "mserp_primaryaddresslocation_bigint",
+          "x-ms-dataverse-type": "BigIntType",
+          "x-ms-schema-name": "mserp_primaryaddresslocation_bigint"
+        },
+        "mserp_primarycontactemail": {
+          "type": "string",
+          "title": "Primary email",
+          "x-ms-dataverse-attribute": "mserp_primarycontactemail",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarycontactemail",
+          "maxLength": 255
+        },
+        "mserp_primarycontactemaildescription": {
+          "type": "string",
+          "title": "Primary email description",
+          "x-ms-dataverse-attribute": "mserp_primarycontactemaildescription",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarycontactemaildescription",
+          "maxLength": 60
+        },
+        "mserp_primarycontactemailisim": {
+          "type": "string",
+          "title": "Email is instant message",
+          "x-ms-dataverse-attribute": "mserp_primarycontactemailisim",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_primarycontactemailisim",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_primarycontactemailisimname": {
+          "type": "string",
+          "title": "mserp_primarycontactemailisimname",
+          "x-ms-dataverse-attribute": "mserp_primarycontactemailisimname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_primarycontactemailisimName",
+          "x-ms-read-only": true
+        },
+        "mserp_primarycontactemailisprivate": {
+          "type": "string",
+          "title": "Private email",
+          "x-ms-dataverse-attribute": "mserp_primarycontactemailisprivate",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_primarycontactemailisprivate",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_primarycontactemailisprivatename": {
+          "type": "string",
+          "title": "mserp_primarycontactemailisprivatename",
+          "x-ms-dataverse-attribute": "mserp_primarycontactemailisprivatename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_primarycontactemailisprivateName",
+          "x-ms-read-only": true
+        },
+        "mserp_primarycontactemailpurpose": {
+          "type": "string",
+          "title": "Primary email purpose",
+          "x-ms-dataverse-attribute": "mserp_primarycontactemailpurpose",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarycontactemailpurpose",
+          "maxLength": 1000
+        },
+        "mserp_primarycontactfacebook": {
+          "type": "string",
+          "title": "Primary Facebook",
+          "x-ms-dataverse-attribute": "mserp_primarycontactfacebook",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarycontactfacebook",
+          "maxLength": 255
+        },
+        "mserp_primarycontactfacebookdescription": {
+          "type": "string",
+          "title": "Primary Facebook description",
+          "x-ms-dataverse-attribute": "mserp_primarycontactfacebookdescription",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarycontactfacebookdescription",
+          "maxLength": 60
+        },
+        "mserp_primarycontactfacebookisprivate": {
+          "type": "string",
+          "title": "Private Facebook",
+          "x-ms-dataverse-attribute": "mserp_primarycontactfacebookisprivate",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_primarycontactfacebookisprivate",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_primarycontactfacebookisprivatename": {
+          "type": "string",
+          "title": "mserp_primarycontactfacebookisprivatename",
+          "x-ms-dataverse-attribute": "mserp_primarycontactfacebookisprivatename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_primarycontactfacebookisprivateName",
+          "x-ms-read-only": true
+        },
+        "mserp_primarycontactfacebookpurpose": {
+          "type": "string",
+          "title": "Primary Facebook purpose",
+          "x-ms-dataverse-attribute": "mserp_primarycontactfacebookpurpose",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarycontactfacebookpurpose",
+          "maxLength": 1000
+        },
+        "mserp_primarycontactfax": {
+          "type": "string",
+          "title": "Primary fax",
+          "x-ms-dataverse-attribute": "mserp_primarycontactfax",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarycontactfax",
+          "maxLength": 255
+        },
+        "mserp_primarycontactfaxdescription": {
+          "type": "string",
+          "title": "Primary fax description",
+          "x-ms-dataverse-attribute": "mserp_primarycontactfaxdescription",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarycontactfaxdescription",
+          "maxLength": 60
+        },
+        "mserp_primarycontactfaxextension": {
+          "type": "string",
+          "title": "Primary fax extension",
+          "x-ms-dataverse-attribute": "mserp_primarycontactfaxextension",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarycontactfaxextension",
+          "maxLength": 10
+        },
+        "mserp_primarycontactfaxisprivate": {
+          "type": "string",
+          "title": "Private fax",
+          "x-ms-dataverse-attribute": "mserp_primarycontactfaxisprivate",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_primarycontactfaxisprivate",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_primarycontactfaxisprivatename": {
+          "type": "string",
+          "title": "mserp_primarycontactfaxisprivatename",
+          "x-ms-dataverse-attribute": "mserp_primarycontactfaxisprivatename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_primarycontactfaxisprivateName",
+          "x-ms-read-only": true
+        },
+        "mserp_primarycontactfaxpurpose": {
+          "type": "string",
+          "title": "Primary fax purpose",
+          "x-ms-dataverse-attribute": "mserp_primarycontactfaxpurpose",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarycontactfaxpurpose",
+          "maxLength": 1000
+        },
+        "mserp_primarycontactlinkedin": {
+          "type": "string",
+          "title": "Primary LinkedIn",
+          "x-ms-dataverse-attribute": "mserp_primarycontactlinkedin",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarycontactlinkedin",
+          "maxLength": 255
+        },
+        "mserp_primarycontactlinkedindescription": {
+          "type": "string",
+          "title": "Primary LinkedIn description",
+          "x-ms-dataverse-attribute": "mserp_primarycontactlinkedindescription",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarycontactlinkedindescription",
+          "maxLength": 60
+        },
+        "mserp_primarycontactlinkedinisprivate": {
+          "type": "string",
+          "title": "Private LinkedIn",
+          "x-ms-dataverse-attribute": "mserp_primarycontactlinkedinisprivate",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_primarycontactlinkedinisprivate",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_primarycontactlinkedinisprivatename": {
+          "type": "string",
+          "title": "mserp_primarycontactlinkedinisprivatename",
+          "x-ms-dataverse-attribute": "mserp_primarycontactlinkedinisprivatename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_primarycontactlinkedinisprivateName",
+          "x-ms-read-only": true
+        },
+        "mserp_primarycontactlinkedinpurpose": {
+          "type": "string",
+          "title": "Primary LinkedIn purpose",
+          "x-ms-dataverse-attribute": "mserp_primarycontactlinkedinpurpose",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarycontactlinkedinpurpose",
+          "maxLength": 1000
+        },
+        "mserp_primarycontactphone": {
+          "type": "string",
+          "title": "Primary phone",
+          "x-ms-dataverse-attribute": "mserp_primarycontactphone",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarycontactphone",
+          "maxLength": 255
+        },
+        "mserp_primarycontactphonedescription": {
+          "type": "string",
+          "title": "Primary phone description",
+          "x-ms-dataverse-attribute": "mserp_primarycontactphonedescription",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarycontactphonedescription",
+          "maxLength": 60
+        },
+        "mserp_primarycontactphoneextension": {
+          "type": "string",
+          "title": "Primary phone extension",
+          "x-ms-dataverse-attribute": "mserp_primarycontactphoneextension",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarycontactphoneextension",
+          "maxLength": 10
+        },
+        "mserp_primarycontactphoneismobile": {
+          "type": "string",
+          "title": "Phone is mobile",
+          "x-ms-dataverse-attribute": "mserp_primarycontactphoneismobile",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_primarycontactphoneismobile",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_primarycontactphoneismobilename": {
+          "type": "string",
+          "title": "mserp_primarycontactphoneismobilename",
+          "x-ms-dataverse-attribute": "mserp_primarycontactphoneismobilename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_primarycontactphoneismobileName",
+          "x-ms-read-only": true
+        },
+        "mserp_primarycontactphoneisprivate": {
+          "type": "string",
+          "title": "Private phone",
+          "x-ms-dataverse-attribute": "mserp_primarycontactphoneisprivate",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_primarycontactphoneisprivate",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_primarycontactphoneisprivatename": {
+          "type": "string",
+          "title": "mserp_primarycontactphoneisprivatename",
+          "x-ms-dataverse-attribute": "mserp_primarycontactphoneisprivatename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_primarycontactphoneisprivateName",
+          "x-ms-read-only": true
+        },
+        "mserp_primarycontactphonepurpose": {
+          "type": "string",
+          "title": "Primary phone purpose",
+          "x-ms-dataverse-attribute": "mserp_primarycontactphonepurpose",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarycontactphonepurpose",
+          "maxLength": 1000
+        },
+        "mserp_primarycontacttwitter": {
+          "type": "string",
+          "title": "Primary Twitter",
+          "x-ms-dataverse-attribute": "mserp_primarycontacttwitter",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarycontacttwitter",
+          "maxLength": 255
+        },
+        "mserp_primarycontacttwitterdescription": {
+          "type": "string",
+          "title": "Primary Twitter description",
+          "x-ms-dataverse-attribute": "mserp_primarycontacttwitterdescription",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarycontacttwitterdescription",
+          "maxLength": 60
+        },
+        "mserp_primarycontacttwitterisprivate": {
+          "type": "string",
+          "title": "Private Twitter",
+          "x-ms-dataverse-attribute": "mserp_primarycontacttwitterisprivate",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_primarycontacttwitterisprivate",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_primarycontacttwitterisprivatename": {
+          "type": "string",
+          "title": "mserp_primarycontacttwitterisprivatename",
+          "x-ms-dataverse-attribute": "mserp_primarycontacttwitterisprivatename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_primarycontacttwitterisprivateName",
+          "x-ms-read-only": true
+        },
+        "mserp_primarycontacttwitterpurpose": {
+          "type": "string",
+          "title": "Primary Twitter description",
+          "x-ms-dataverse-attribute": "mserp_primarycontacttwitterpurpose",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarycontacttwitterpurpose",
+          "maxLength": 1000
+        },
+        "mserp_primarycontacturl": {
+          "type": "string",
+          "title": "Primary URL",
+          "x-ms-dataverse-attribute": "mserp_primarycontacturl",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarycontacturl",
+          "maxLength": 255
+        },
+        "mserp_primarycontacturldescription": {
+          "type": "string",
+          "title": "Primary URL description",
+          "x-ms-dataverse-attribute": "mserp_primarycontacturldescription",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarycontacturldescription",
+          "maxLength": 60
+        },
+        "mserp_primarycontacturlisprivate": {
+          "type": "string",
+          "title": "Private URL",
+          "x-ms-dataverse-attribute": "mserp_primarycontacturlisprivate",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_primarycontacturlisprivate",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_primarycontacturlisprivatename": {
+          "type": "string",
+          "title": "mserp_primarycontacturlisprivatename",
+          "x-ms-dataverse-attribute": "mserp_primarycontacturlisprivatename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_primarycontacturlisprivateName",
+          "x-ms-read-only": true
+        },
+        "mserp_primarycontacturlpurpose": {
+          "type": "string",
+          "title": "Primary URL purpose",
+          "x-ms-dataverse-attribute": "mserp_primarycontacturlpurpose",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarycontacturlpurpose",
+          "maxLength": 1000
+        },
+        "mserp_professionalsuffix": {
+          "type": "string",
+          "title": "Professional suffix",
+          "x-ms-dataverse-attribute": "mserp_professionalsuffix",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_professionalsuffix",
+          "maxLength": 100
+        },
+        "mserp_professionaltitle": {
+          "type": "string",
+          "title": "Professional title",
+          "x-ms-dataverse-attribute": "mserp_professionaltitle",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_professionaltitle",
+          "maxLength": 100
+        },
+        "mserp_senioritydate": {
+          "type": "string",
+          "title": "Seniority date",
+          "x-ms-dataverse-attribute": "mserp_senioritydate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_senioritydate"
+        },
+        "mserp_summaryvalidfrom": {
+          "type": "string",
+          "title": "Summary effective",
+          "x-ms-dataverse-attribute": "mserp_summaryvalidfrom",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_summaryvalidfrom"
+        },
+        "mserp_summaryvalidto": {
+          "type": "string",
+          "title": "Summary expiration",
+          "x-ms-dataverse-attribute": "mserp_summaryvalidto",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_summaryvalidto"
+        },
+        "mserp_titleid": {
+          "type": "string",
+          "title": "Title",
+          "x-ms-dataverse-attribute": "mserp_titleid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_titleid",
+          "maxLength": 65
+        },
+        "mserp_user": {
+          "type": "string",
+          "title": "ID",
+          "x-ms-dataverse-attribute": "mserp_user",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_user",
+          "x-ms-read-only": true,
+          "maxLength": 20
+        },
+        "mserp_veteranstatusid": {
+          "type": "string",
+          "title": "Veteran status",
+          "x-ms-dataverse-attribute": "mserp_veteranstatusid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_veteranstatusid",
+          "maxLength": 15
+        },
+        "mserp_workerstatus": {
+          "type": "string",
+          "title": "Status",
+          "x-ms-dataverse-attribute": "mserp_workerstatus",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_workerstatus",
+          "x-ms-read-only": true,
+          "enum": [
+            "Pending",
+            "Employed",
+            "Terminated"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "3fc791a5-8402-f111-8406-7ced8d6dc9ee",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Status (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_workerstatusname": {
+          "type": "string",
+          "title": "mserp_workerstatusname",
+          "x-ms-dataverse-attribute": "mserp_workerstatusname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_workerstatusName",
+          "x-ms-read-only": true
+        },
+        "mserp_workertype": {
+          "type": "string",
+          "title": "Worker type",
+          "x-ms-dataverse-attribute": "mserp_workertype",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_workertype",
+          "x-ms-read-only": true,
+          "enum": [
+            "Both",
+            "Employee",
+            "Contractor"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "34c791a5-8402-f111-8406-7ced8d6dc9ee",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Worker type (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_workertypename": {
+          "type": "string",
+          "title": "mserp_workertypename",
+          "x-ms-dataverse-attribute": "mserp_workertypename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_workertypeName",
+          "x-ms-read-only": true
+        },
+        "mserp_worksfromhome": {
+          "type": "string",
+          "title": "Works from home",
+          "x-ms-dataverse-attribute": "mserp_worksfromhome",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_worksfromhome",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_worksfromhomename": {
+          "type": "string",
+          "title": "mserp_worksfromhomename",
+          "x-ms-dataverse-attribute": "mserp_worksfromhomename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_worksfromhomeName",
+          "x-ms-read-only": true
+        }
+      },
+      "required": [
+        "mserp_hcmworkerentityid"
+      ]
+    }
+  }
+}

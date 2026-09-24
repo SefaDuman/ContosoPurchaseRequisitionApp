@@ -1,0 +1,137 @@
+{
+  "version": "1.0",
+  "appId": "00000000-0000-0000-0000-000000000000",
+  "appDisplayName": "Purchase Requisition App",
+  "region": "prod",
+  "environmentId": "00000000-0000-0000-0000-000000000000",
+  "description": " ",
+  "buildPath": "./dist",
+  "buildEntryPoint": "index.html",
+  "localAppUrl": "http://localhost:3000",
+  "logoPath": "Default",
+  "connectionReferences": {
+    "b5cbf481-9473-4f1e-8d16-fab86c18d666": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_office365users",
+      "displayName": "Office 365 Users",
+      "dataSources": [
+        "office365users"
+      ],
+      "dataSets": {}
+    },
+    "113e27bd-90ed-4d7f-928f-4e8447acef6a": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_microsoftcopilotstudio",
+      "displayName": "Microsoft Copilot Studio",
+      "dataSources": [
+        "microsoftcopilotstudio"
+      ],
+      "dataSets": {}
+    }
+  },
+  "databaseReferences": {
+    "default.cds": {
+      "dataSources": {
+        "legalentities_mserp_": {
+          "entitySetName": "mserp_omlegalentities",
+          "logicalName": "mserp_omlegalentity"
+        },
+        "operatingunit_mserp_": {
+          "entitySetName": "mserp_omoperatingunitentities",
+          "logicalName": "mserp_omoperatingunitentity"
+        },
+        "productcategories_mserp_": {
+          "entitySetName": "mserp_ecoresproductcategoryentities",
+          "logicalName": "mserp_ecoresproductcategoryentity"
+        },
+        "productcategoryassignments_mserp_": {
+          "entitySetName": "mserp_ecoresproductcategoryassignmententities",
+          "logicalName": "mserp_ecoresproductcategoryassignmententity"
+        },
+        "productcategoryhierarchyroles_mserp_": {
+          "entitySetName": "mserp_ecoresproductcategoryhierarchyroleentities",
+          "logicalName": "mserp_ecoresproductcategoryhierarchyroleentity"
+        },
+        "productmastercolors_mserp_": {
+          "entitySetName": "mserp_ecoresproductmastercolorentities",
+          "logicalName": "mserp_ecoresproductmastercolorentity"
+        },
+        "productmasterconfigurations_mserp_": {
+          "entitySetName": "mserp_ecoresproductmasterconfigurationentities",
+          "logicalName": "mserp_ecoresproductmasterconfigurationentity"
+        },
+        "productmastersizes_mserp_": {
+          "entitySetName": "mserp_ecoresproductmastersizeentities",
+          "logicalName": "mserp_ecoresproductmastersizeentity"
+        },
+        "productmasterstyles_mserp_": {
+          "entitySetName": "mserp_ecoresproductmasterstyleentities",
+          "logicalName": "mserp_ecoresproductmasterstyleentity"
+        },
+        "productsv2_mserp_": {
+          "entitySetName": "mserp_ecoresproductv2entities",
+          "logicalName": "mserp_ecoresproductv2entity"
+        },
+        "purchaserequisitionlinesv2_mserp_": {
+          "entitySetName": "mserp_purchaserequisitionlinev2entities",
+          "logicalName": "mserp_purchaserequisitionlinev2entity"
+        },
+        "purchaserequisitionsv2_mserp_": {
+          "entitySetName": "mserp_purchaserequisitionheaderv2entities",
+          "logicalName": "mserp_purchaserequisitionheaderv2entity"
+        },
+        "releasedproductdocumentattachments_mserp_": {
+          "entitySetName": "mserp_ecoresreleasedproductdocumentattachmententities",
+          "logicalName": "mserp_ecoresreleasedproductdocumentattachmententity"
+        },
+        "releasedproductsv2_mserp_": {
+          "entitySetName": "mserp_ecoresreleasedproductv2entities",
+          "logicalName": "mserp_ecoresreleasedproductv2entity"
+        },
+        "sitesv2_mserp_": {
+          "entitySetName": "mserp_inventoperationalsitev2entities",
+          "logicalName": "mserp_inventoperationalsitev2entity"
+        },
+        "warehouses_mserp_": {
+          "entitySetName": "mserp_inventwarehouseentities",
+          "logicalName": "mserp_inventwarehouseentity"
+        },
+        "worker_mserp_": {
+          "entitySetName": "mserp_hcmworkerentities",
+          "logicalName": "mserp_hcmworkerentity"
+        },
+        "people_mserp_": {
+          "entitySetName": "mserp_dirpersonentities",
+          "logicalName": "mserp_dirpersonentity"
+        },
+        "personname_mserp_": {
+          "entitySetName": "mserp_dirpersonnamecdrentities",
+          "logicalName": "mserp_dirpersonnamecdrentity"
+        },
+        "usertopersonrelationship_mserp_": {
+          "entitySetName": "mserp_dirpersonuserentities",
+          "logicalName": "mserp_dirpersonuserentity"
+        },
+        "employeev2_mserp_": {
+          "entitySetName": "mserp_hcmemployeev2entities",
+          "logicalName": "mserp_hcmemployeev2entity"
+        },
+        "requisitioncomments": {
+          "entitySetName": "sd_requisitioncomments",
+          "logicalName": "sd_requisitioncomment"
+        },
+        "goodsreceiptconfirmations": {
+          "entitySetName": "sd_goodsreceipts",
+          "logicalName": "sd_goodsreceipt"
+        },
+        "purchaseorderheadersv2_mserp_": {
+          "entitySetName": "mserp_purchpurchaseorderheaderv2entities",
+          "logicalName": "mserp_purchpurchaseorderheaderv2entity"
+        },
+        "purchaseorderlinesv2_mserp_": {
+          "entitySetName": "mserp_purchpurchaseorderlinev2entities",
+          "logicalName": "mserp_purchpurchaseorderlinev2entity"
+        }
+      },
+      "environmentVariableName": ""
+    }
+  }
+}

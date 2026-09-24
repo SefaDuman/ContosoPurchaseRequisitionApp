@@ -1,0 +1,80 @@
+{
+  "name": "mserp_ecoresproductmasterstyleentity",
+  "title": "Product master styles (mserp)",
+  "schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "x-ms-dataverse-entity": true,
+      "x-ms-dataverse-entityset": "mserp_ecoresproductmasterstyleentities",
+      "x-ms-dataverse-primary-id": "mserp_ecoresproductmasterstyleentityid",
+      "x-ms-dataverse-primary-name": "mserp_primaryfield",
+      "properties": {
+        "mserp_displaysequencenumber": {
+          "type": "string",
+          "title": "Display order",
+          "x-ms-dataverse-attribute": "mserp_displaysequencenumber",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_displaysequencenumber"
+        },
+        "mserp_ecoresproductmasterstyleentityid": {
+          "type": "string",
+          "title": "Product master styles (mserp)",
+          "x-ms-dataverse-attribute": "mserp_ecoresproductmasterstyleentityid",
+          "x-ms-dataverse-type": "UniqueidentifierType",
+          "x-ms-schema-name": "mserp_ecoresproductmasterstyleentityId",
+          "x-ms-dataverse-primary-id": true,
+          "required": true,
+          "x-ms-keyType": "primary"
+        },
+        "mserp_primaryfield": {
+          "type": "string",
+          "title": "Primary Field",
+          "x-ms-dataverse-attribute": "mserp_primaryfield",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryfield",
+          "x-ms-dataverse-primary-name": true,
+          "maxLength": 256
+        },
+        "mserp_productmasternumber": {
+          "type": "string",
+          "title": "Product number",
+          "x-ms-dataverse-attribute": "mserp_productmasternumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productmasternumber",
+          "required": true,
+          "maxLength": 70
+        },
+        "mserp_productstyleid": {
+          "type": "string",
+          "title": "Style",
+          "x-ms-dataverse-attribute": "mserp_productstyleid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productstyleid",
+          "required": true,
+          "maxLength": 10
+        },
+        "mserp_replenishmentweight": {
+          "type": "string",
+          "title": "Replenishment weight",
+          "x-ms-dataverse-attribute": "mserp_replenishmentweight",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "mserp_replenishmentweight"
+        },
+        "versionnumber": {
+          "type": "string",
+          "title": "Version Number",
+          "x-ms-dataverse-attribute": "versionnumber",
+          "x-ms-dataverse-type": "BigIntType",
+          "x-ms-schema-name": "VersionNumber",
+          "x-ms-read-only": true
+        }
+      },
+      "required": [
+        "mserp_ecoresproductmasterstyleentityid",
+        "mserp_productmasternumber",
+        "mserp_productstyleid"
+      ]
+    }
+  }
+}

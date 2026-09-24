@@ -1,0 +1,152 @@
+{
+  "name": "mserp_dirpersonnamecdrentity",
+  "title": "Person name (mserp)",
+  "schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "x-ms-dataverse-entity": true,
+      "x-ms-dataverse-entityset": "mserp_dirpersonnamecdrentities",
+      "x-ms-dataverse-primary-id": "mserp_dirpersonnamecdrentityid",
+      "x-ms-dataverse-primary-name": "mserp_primaryfield",
+      "properties": {
+        "mserp_cdrdataareaid": {
+          "type": "string",
+          "title": "CDRDataAreaId",
+          "x-ms-dataverse-attribute": "mserp_cdrdataareaid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_cdrdataareaid",
+          "maxLength": 4
+        },
+        "mserp_countrylawreference": {
+          "type": "string",
+          "title": "Country law reference",
+          "x-ms-dataverse-attribute": "mserp_countrylawreference",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_countrylawreference",
+          "maxLength": 2
+        },
+        "mserp_dirpersonnamecdrentityid": {
+          "type": "string",
+          "title": "Person name (mserp)",
+          "x-ms-dataverse-attribute": "mserp_dirpersonnamecdrentityid",
+          "x-ms-dataverse-type": "UniqueidentifierType",
+          "x-ms-schema-name": "mserp_dirpersonnamecdrentityId",
+          "x-ms-dataverse-primary-id": true,
+          "required": true,
+          "x-ms-keyType": "primary"
+        },
+        "mserp_firstname": {
+          "type": "string",
+          "title": "First name",
+          "x-ms-dataverse-attribute": "mserp_firstname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_firstname",
+          "maxLength": 50
+        },
+        "mserp_lastname": {
+          "type": "string",
+          "title": "Last name",
+          "x-ms-dataverse-attribute": "mserp_lastname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_lastname",
+          "maxLength": 50
+        },
+        "mserp_lastnameprefix": {
+          "type": "string",
+          "title": "Last name prefix",
+          "x-ms-dataverse-attribute": "mserp_lastnameprefix",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_lastnameprefix",
+          "maxLength": 25
+        },
+        "mserp_middlename": {
+          "type": "string",
+          "title": "Middle name",
+          "x-ms-dataverse-attribute": "mserp_middlename",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_middlename",
+          "maxLength": 50
+        },
+        "mserp_person": {
+          "type": "string",
+          "title": "Reference",
+          "x-ms-dataverse-attribute": "mserp_person",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_person"
+        },
+        "mserp_person_bigint": {
+          "type": "string",
+          "title": "Reference",
+          "x-ms-dataverse-attribute": "mserp_person_bigint",
+          "x-ms-dataverse-type": "BigIntType",
+          "x-ms-schema-name": "mserp_person_bigint"
+        },
+        "mserp_primaryfield": {
+          "type": "string",
+          "title": "Primary Field",
+          "x-ms-dataverse-attribute": "mserp_primaryfield",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryfield",
+          "x-ms-dataverse-primary-name": true,
+          "maxLength": 256
+        },
+        "mserp_retentionenddate": {
+          "type": "string",
+          "title": "Retention end date",
+          "x-ms-dataverse-attribute": "mserp_retentionenddate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_retentionenddate"
+        },
+        "mserp_retentionstartdate": {
+          "type": "string",
+          "title": "Retention start date",
+          "x-ms-dataverse-attribute": "mserp_retentionstartdate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_retentionstartdate"
+        },
+        "mserp_sourcekey": {
+          "type": "string",
+          "title": "SourceKey",
+          "x-ms-dataverse-attribute": "mserp_sourcekey",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_sourcekey",
+          "x-ms-read-only": true
+        },
+        "mserp_sourcekey_bigint": {
+          "type": "string",
+          "title": "SourceKey",
+          "x-ms-dataverse-attribute": "mserp_sourcekey_bigint",
+          "x-ms-dataverse-type": "BigIntType",
+          "x-ms-schema-name": "mserp_sourcekey_bigint",
+          "x-ms-read-only": true
+        },
+        "mserp_validfrom": {
+          "type": "string",
+          "title": "Effective",
+          "x-ms-dataverse-attribute": "mserp_validfrom",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_validfrom"
+        },
+        "mserp_validto": {
+          "type": "string",
+          "title": "Expiration",
+          "x-ms-dataverse-attribute": "mserp_validto",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_validto"
+        },
+        "versionnumber": {
+          "type": "string",
+          "title": "Version Number",
+          "x-ms-dataverse-attribute": "versionnumber",
+          "x-ms-dataverse-type": "BigIntType",
+          "x-ms-schema-name": "VersionNumber",
+          "x-ms-read-only": true
+        }
+      },
+      "required": [
+        "mserp_dirpersonnamecdrentityid"
+      ]
+    }
+  }
+}

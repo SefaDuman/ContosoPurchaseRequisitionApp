@@ -1,0 +1,272 @@
+{
+  "name": "mserp_ecoresproductcategoryentity",
+  "title": "Product categories (mserp)",
+  "schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "x-ms-dataverse-entity": true,
+      "x-ms-dataverse-entityset": "mserp_ecoresproductcategoryentities",
+      "x-ms-dataverse-primary-id": "mserp_ecoresproductcategoryentityid",
+      "x-ms-dataverse-primary-name": "mserp_primaryfield",
+      "properties": {
+        "mserp_categorycode": {
+          "type": "string",
+          "title": "Product category code",
+          "x-ms-dataverse-attribute": "mserp_categorycode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_categorycode",
+          "maxLength": 20
+        },
+        "mserp_categorydescription": {
+          "type": "string",
+          "title": "Description",
+          "x-ms-dataverse-attribute": "mserp_categorydescription",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_categorydescription",
+          "maxLength": 1000
+        },
+        "mserp_categorykeywords": {
+          "type": "string",
+          "title": "Search text",
+          "x-ms-dataverse-attribute": "mserp_categorykeywords",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_categorykeywords",
+          "maxLength": 254
+        },
+        "mserp_categoryname": {
+          "type": "string",
+          "title": "Product category name",
+          "x-ms-dataverse-attribute": "mserp_categoryname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_categoryname",
+          "required": true,
+          "maxLength": 254
+        },
+        "mserp_categoryrecordid": {
+          "type": "string",
+          "title": "Category record ID",
+          "x-ms-dataverse-attribute": "mserp_categoryrecordid",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_categoryrecordid",
+          "x-ms-read-only": true
+        },
+        "mserp_categoryrecordid_bigint": {
+          "type": "string",
+          "title": "Category record ID",
+          "x-ms-dataverse-attribute": "mserp_categoryrecordid_bigint",
+          "x-ms-dataverse-type": "BigIntType",
+          "x-ms-schema-name": "mserp_categoryrecordid_bigint",
+          "x-ms-read-only": true
+        },
+        "mserp_defaultprojectglobalcategoryid": {
+          "type": "string",
+          "title": "Category ID",
+          "x-ms-dataverse-attribute": "mserp_defaultprojectglobalcategoryid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaultprojectglobalcategoryid",
+          "maxLength": 30
+        },
+        "mserp_ecoresproductcategoryentityid": {
+          "type": "string",
+          "title": "Product categories (mserp)",
+          "x-ms-dataverse-attribute": "mserp_ecoresproductcategoryentityid",
+          "x-ms-dataverse-type": "UniqueidentifierType",
+          "x-ms-schema-name": "mserp_ecoresproductcategoryentityId",
+          "x-ms-dataverse-primary-id": true,
+          "required": true,
+          "x-ms-keyType": "primary"
+        },
+        "mserp_externalid": {
+          "type": "string",
+          "title": "External Id",
+          "x-ms-dataverse-attribute": "mserp_externalid",
+          "x-ms-dataverse-type": "MemoType",
+          "x-ms-schema-name": "mserp_externalid",
+          "maxLength": 1048576
+        },
+        "mserp_fk_parentproductcategory_id": {
+          "type": "string",
+          "title": "Product categories",
+          "x-ms-dataverse-attribute": "mserp_fk_parentproductcategory_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_ParentProductCategory_id"
+        },
+        "mserp_fk_parentproductcategory_idname": {
+          "type": "string",
+          "title": "mserp_fk_parentproductcategory_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_parentproductcategory_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_ParentProductCategory_idName",
+          "x-ms-read-only": true,
+          "maxLength": 256
+        },
+        "mserp_friendlycategoryname": {
+          "type": "string",
+          "title": "Friendly name",
+          "x-ms-dataverse-attribute": "mserp_friendlycategoryname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_friendlycategoryname",
+          "maxLength": 254
+        },
+        "mserp_iscategoryinheritingparentcategoryattributes": {
+          "type": "string",
+          "title": "Inherit category attributes",
+          "x-ms-dataverse-attribute": "mserp_iscategoryinheritingparentcategoryattributes",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_iscategoryinheritingparentcategoryattributes",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_iscategoryinheritingparentcategoryattributesname": {
+          "type": "string",
+          "title": "mserp_iscategoryinheritingparentcategoryattributesname",
+          "x-ms-dataverse-attribute": "mserp_iscategoryinheritingparentcategoryattributesname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_iscategoryinheritingparentcategoryattributesName",
+          "x-ms-read-only": true
+        },
+        "mserp_iscategoryinheritingparentproductattributes": {
+          "type": "string",
+          "title": "Inherit product attributes",
+          "x-ms-dataverse-attribute": "mserp_iscategoryinheritingparentproductattributes",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_iscategoryinheritingparentproductattributes",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_iscategoryinheritingparentproductattributesname": {
+          "type": "string",
+          "title": "mserp_iscategoryinheritingparentproductattributesname",
+          "x-ms-dataverse-attribute": "mserp_iscategoryinheritingparentproductattributesname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_iscategoryinheritingparentproductattributesName",
+          "x-ms-read-only": true
+        },
+        "mserp_istangibleproduct": {
+          "type": "string",
+          "title": "Classify as tangible product",
+          "x-ms-dataverse-attribute": "mserp_istangibleproduct",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_istangibleproduct",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_istangibleproductname": {
+          "type": "string",
+          "title": "mserp_istangibleproductname",
+          "x-ms-dataverse-attribute": "mserp_istangibleproductname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_istangibleproductName",
+          "x-ms-read-only": true
+        },
+        "mserp_parentproductcategorycode": {
+          "type": "string",
+          "title": "Parent product category code",
+          "x-ms-dataverse-attribute": "mserp_parentproductcategorycode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_parentproductcategorycode",
+          "maxLength": 20
+        },
+        "mserp_parentproductcategoryhierarchyname": {
+          "type": "string",
+          "title": "Parent product category hierarchy name",
+          "x-ms-dataverse-attribute": "mserp_parentproductcategoryhierarchyname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_parentproductcategoryhierarchyname",
+          "x-ms-read-only": true,
+          "maxLength": 128
+        },
+        "mserp_parentproductcategoryname": {
+          "type": "string",
+          "title": "Parent product category name",
+          "x-ms-dataverse-attribute": "mserp_parentproductcategoryname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_parentproductcategoryname",
+          "maxLength": 254
+        },
+        "mserp_pkwiucode": {
+          "type": "string",
+          "title": "PKWiU",
+          "x-ms-dataverse-attribute": "mserp_pkwiucode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_pkwiucode",
+          "maxLength": 20
+        },
+        "mserp_primaryfield": {
+          "type": "string",
+          "title": "Primary Field",
+          "x-ms-dataverse-attribute": "mserp_primaryfield",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryfield",
+          "x-ms-dataverse-primary-name": true,
+          "maxLength": 256
+        },
+        "mserp_productcategoryhierarchyname": {
+          "type": "string",
+          "title": "Product category hierarchy name",
+          "x-ms-dataverse-attribute": "mserp_productcategoryhierarchyname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productcategoryhierarchyname",
+          "required": true,
+          "maxLength": 128
+        },
+        "mserp_projectcategoryname": {
+          "type": "string",
+          "title": "Project category name",
+          "x-ms-dataverse-attribute": "mserp_projectcategoryname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_projectcategoryname",
+          "maxLength": 60
+        }
+      },
+      "required": [
+        "mserp_categoryname",
+        "mserp_ecoresproductcategoryentityid",
+        "mserp_productcategoryhierarchyname"
+      ]
+    }
+  }
+}

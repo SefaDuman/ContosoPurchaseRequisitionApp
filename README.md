@@ -10,14 +10,83 @@ just the access surface. The demo legal entity is **USMF**.
 
 ## Screens
 
-1. **Catalog** (home) — category tree, product cards, search, add‑to‑cart with a
-   quantity selector, and a non‑catalog free‑text request option.
-2. **Cart / Create requisition** — review cart lines, pick the requester, set the
-   business justification and requested date, then submit a purchase requisition
-   header + lines.
-3. **My requisitions** — the current user's requisitions with status, total, lines
-   and an approval‑progress indicator.
-4. **Approvals** — approver queue with Approve / Reject / Request‑change and a comment.
+Buy@Contoso is organised as a **left-sidebar workspace** (Contoso Coffee — Procurement Hub) with five primary areas — Catalog, Cart, My requisitions, Orders & receipts, and Approvals — plus a product-detail dialog and a docked **Procurement Assistant** (Copilot Studio) that is reachable from every screen via the *Ask Assistant* button. A legal-entity switcher (default **USMF**) in the top bar scopes all data on every screen.
+
+### 1. Catalog
+
+![Catalog screen](docs/screenshots/catalog.png)
+
+The home screen — a guided, e-commerce-like way to browse what can be purchased.
+
+- **Category tree (left):** the F&O procurement category hierarchy, read from `mserp_ecoresproductcategoryentities` and filtered to the procurement hierarchy role. Selecting a node scopes the product grid.
+- **Product grid:** released products from `mserp_ecoresreleasedproductv2entities`, mapped to clean cards showing the product name, number, purchase unit (`ea`, `Box`, …), and an **INDICATIVE** price badge. Products without a resolved image fall back to a generated initials tile (e.g. `WV`, `VB`).
+- **Search:** the search box queries by product name or number and re-renders the grid; paging is handled with OData skip-tokens.
+- **Add to cart:** each card has a quantity stepper and an **Add to cart** button that pushes the line into the in-memory cart (React context in `state/AppState`) — nothing is written to Dataverse yet.
+- **Non-catalog request:** `+ Non-catalog request` opens a free-text line for items that are not in the released-product catalog.
+
+*Process:* Catalog → pick category / search → set quantity → **Add to cart**. Prices shown here are indicative only; the binding price is set by D365 trade agreements when the purchase order is created.
+
+### 2. Product detail
+
+![Product detail dialog](docs/screenshots/product-detail.png)
+
+Clicking a product card (or its title) opens a detail dialog for a closer look before adding it.
+
+- **Specifications:** product number, item number, company, purchase unit, and category, mapped from the released-product record.
+- **Product dimensions:** where the master defines them, **Color / Size / Configuration / Style** selectors are populated from the corresponding product-master entities (`mserp_ecoresproductmastercolor/size/configuration/style`). The chosen dimension travels with the cart line.
+- **Add to cart:** the same quantity + **Add to cart** action as the grid, so the dialog is a drop-in replacement for the quick card action.
+
+*Process:* Open product → choose dimensions (if any) → set quantity → **Add to cart** → close dialog and continue shopping.
+
+### 3. Cart / Create requisition
+
+![Cart and create-requisition screen](docs/screenshots/cart-create-requisition.png)
+
+The cart doubles as the requisition builder. Cart lines are on the left; the requisition header form is on the right.
+
+- **Cart lines:** item, category, editable quantity, indicative unit price, line total, and a **Remove** action, with a running indicative total.
+- **Requisition details:** requisition name, **Requester**, **Purpose** (Consumption / Replenishment), **Requested date**, **Site**, **Warehouse**, **Receiving operating unit**, and a **Business justification**. The company is fixed to the active legal entity (USMF).
+- **Requester constraint:** F&O rejects a requisition whose preparer is not a current worker. `createRequisition` resolves and validates the personnel number against `mserp_hcmworkerentities` first and blocks submit with a clear message if it cannot be resolved (demo default `000001`).
+
+*Process:* **Submit requisition** writes a header to `mserp_purchaserequisitionheaderv2entities` and one line per cart item to `mserp_purchaserequisitionlinev2entities`, each stamped with `buyinglegalentityid = USMF`. Purpose/status are remapped to the Dataverse option-set integers, and the user is routed to **My requisitions** with a confirmation flash showing the new requisition number.
+
+### 4. My requisitions & collaboration
+
+![My requisitions activity thread](docs/screenshots/my-requisitions-activity.png)
+
+A list of the requisitions the current user has raised — each with status, total, lines, and an approval-progress indicator — and, when expanded, a full **Activity** collaboration thread.
+
+- **Composer:** add a comment, clarification, or budget note. `Type @ to mention someone` triggers an inline people picker (resolved via the mention service against `mserp_dirperson*` / worker entities). A **Type** and **Line** selector scope the note (e.g. General vs. a specific line), and a file can be attached.
+- **Threaded activity:** comments render as an avatar timeline with author, badge, timestamp, threaded **Reply**, @mention highlighting, and inline attachment chips (e.g. `Designer (12).png`).
+
+*Process:* Comments, mentions, and attachments are persisted to a custom Dataverse table, `sd_requisitioncomment` (provisioned by `scripts/provision-requisitioncomment.ps1`), and are keyed back to the requisition (and optionally a line), so the conversation lives alongside the F&O requisition without changing the system of record.
+
+### 5. Orders & receipts
+
+![Orders and receipts screen](docs/screenshots/orders-receipts.png)
+
+Once a requisition converts to a purchase order in F&O, it appears here for the preparer to follow through delivery.
+
+- **Order cards:** purchase orders from `mserp_purchpurchaseorderheaderv2entities` / `...linev2entities`, filtered to orders originating from the current user's requisitions. Each card shows the PO number, vendor, header amount, and a status pill (Ordered → **Partially received** → Received → **Invoiced**), plus the source requisition and confirmed-delivery state.
+- **Lines:** description, category, quantity, unit price, line total, and per-line status.
+- **Confirm receipt:** **Confirm receipt** records that a delivery or service milestone arrived and lets you attach the supporting evidence.
+
+*Process:* A receipt is written to the custom `sd_goodsreceipt` table (provisioned by `scripts/provision-goodsreceipt.ps1`) recorded against the order/line, so goods-received confirmation and its evidence are captured in Dataverse and reflected in the order's progress.
+
+### 6. Approvals
+
+![Approvals queue](docs/screenshots/approvals.png)
+
+The approver's queue — requisitions that are waiting on the signed-in user's decision.
+
+- **Queue cards:** each pending requisition shows its number, name, requester, purpose, requested date, a status progress indicator (Draft → **In review** → Approved), and the full line detail (description, category, quantity, unit price, line total).
+- **Decision:** a **Comment** box (required to reject or request changes) with **Approve**, **Reject**, and **Request change** actions.
+
+*Process:* `getPendingApprovals` loads requisitions in the *In review* state; `decideApproval` writes the chosen outcome back through the virtual entity (Approved / Rejected / change requested) together with the comment. Approval is workflow-driven in F&O, so any workflow restriction is surfaced to the user through centralised error handling.
+
+### Procurement Assistant
+
+Every screen carries an **Ask Assistant** button that opens a docked chat drawer backed by a **Microsoft Copilot Studio** agent (via the `microsoftcopilotstudio` connection). It gives users a conversational way to ask procurement questions without leaving the app.
 
 ## Architecture
 

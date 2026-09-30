@@ -12,12 +12,12 @@ import { useAppState } from './state/AppState';
 
 type Screen = 'catalog' | 'cart' | 'mine' | 'orders' | 'approvals';
 
-const NAV: { key: Screen; label: string; icon: string }[] = [
-  { key: 'catalog', label: 'Catalog', icon: '🛍️' },
-  { key: 'cart', label: 'Cart', icon: '🛒' },
-  { key: 'mine', label: 'My requisitions', icon: '📄' },
-  { key: 'orders', label: 'Orders & receipts', icon: '📦' },
-  { key: 'approvals', label: 'Approvals', icon: '✅' },
+const NAV: { key: Screen; label: string; icon: string; title: string; sub: string }[] = [
+  { key: 'catalog', label: 'Catalog', icon: '🛍️', title: 'Catalog', sub: 'Browse products and build a requisition' },
+  { key: 'cart', label: 'Cart', icon: '🛒', title: 'Your cart', sub: 'Review lines and submit for approval' },
+  { key: 'mine', label: 'My requisitions', icon: '📄', title: 'My requisitions', sub: 'Track the requisitions you have raised' },
+  { key: 'orders', label: 'Orders & receipts', icon: '📦', title: 'Orders & receipts', sub: 'Purchase orders and goods receipts' },
+  { key: 'approvals', label: 'Approvals', icon: '✅', title: 'Approvals', sub: 'Requisitions waiting on your decision' },
 ];
 
 function App() {
@@ -25,17 +25,18 @@ function App() {
   const [flash, setFlash] = useState<string>();
   const { cartCount } = useAppState();
 
+  const active = NAV.find((item) => item.key === screen) ?? NAV[0];
+
   return (
     <div className="app-shell">
-      <header className="app-header">
+      <aside className="app-sidebar">
         <div className="brand">
           <span className="brand-logo" aria-hidden="true">☕</span>
           <span className="brand-text">
             <span className="brand-mark">Contoso Coffee</span>
-            <span className="brand-sub">Procurement</span>
+            <span className="brand-sub">Procurement Hub</span>
           </span>
         </div>
-        <LegalEntitySelect />
         <nav className="app-nav" aria-label="Primary">
           {NAV.map((item) => (
             <button
@@ -45,38 +46,54 @@ function App() {
               aria-current={screen === item.key ? 'page' : undefined}
               onClick={() => setScreen(item.key)}
             >
-              <span aria-hidden="true">{item.icon}</span>
-              {item.label}
+              <span className="nav-icon" aria-hidden="true">{item.icon}</span>
+              <span className="nav-label">{item.label}</span>
               {item.key === 'cart' && cartCount > 0 && <span className="nav-badge">{cartCount}</span>}
             </button>
           ))}
         </nav>
-        <UserChip />
-      </header>
-
-      {flash && (
-        <div className="flash" role="status">
-          {flash}
-          <button className="flash-close" type="button" onClick={() => setFlash(undefined)} aria-label="Dismiss">
-            ×
-          </button>
+        <div className="sidebar-foot">
+          <span className="sidebar-foot-dot" aria-hidden="true" />
+          Source-to-pay workspace
         </div>
-      )}
+      </aside>
 
-      <main className="app-main">
-        {screen === 'catalog' && <CatalogScreen onGoToCart={() => setScreen('cart')} />}
-        {screen === 'cart' && (
-          <CartScreen
-            onSubmitted={(requisitionNumber) => {
-              setFlash(`Requisition ${requisitionNumber} submitted.`);
-              setScreen('mine');
-            }}
-          />
+      <div className="app-body">
+        <header className="topbar">
+          <div className="topbar-title">
+            <h1>{active.title}</h1>
+            <p className="topbar-sub">{active.sub}</p>
+          </div>
+          <div className="topbar-right">
+            <LegalEntitySelect />
+            <UserChip />
+          </div>
+        </header>
+
+        {flash && (
+          <div className="flash" role="status">
+            {flash}
+            <button className="flash-close" type="button" onClick={() => setFlash(undefined)} aria-label="Dismiss">
+              ×
+            </button>
+          </div>
         )}
-        {screen === 'mine' && <MyRequisitionsScreen />}
-        {screen === 'orders' && <OrdersScreen />}
-        {screen === 'approvals' && <ApprovalsScreen />}
-      </main>
+
+        <main className="app-main">
+          {screen === 'catalog' && <CatalogScreen onGoToCart={() => setScreen('cart')} />}
+          {screen === 'cart' && (
+            <CartScreen
+              onSubmitted={(requisitionNumber) => {
+                setFlash(`Requisition ${requisitionNumber} submitted.`);
+                setScreen('mine');
+              }}
+            />
+          )}
+          {screen === 'mine' && <MyRequisitionsScreen />}
+          {screen === 'orders' && <OrdersScreen />}
+          {screen === 'approvals' && <ApprovalsScreen />}
+        </main>
+      </div>
 
       <AssistantDrawer />
     </div>

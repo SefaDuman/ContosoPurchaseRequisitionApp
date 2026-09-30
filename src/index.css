@@ -1,41 +1,42 @@
 :root {
-  font-family: 'Segoe UI', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', 'Segoe UI Variable', 'Segoe UI', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: #2c231d;
-  background-color: #f6efe6;
+  color: #16221f;
+  background-color: #eef1f0;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* Contoso Coffee (COCO) palette */
-  --espresso: #2e1f17;
-  --coffee: #6f4e37;
-  --coffee-dark: #4a342a;
-  --crema: #c98a46;
-  --crema-strong: #b5762f;
-  --crema-soft: #f0e4d2;
-  --cream: #f6efe6;
+  /* Contoso Coffee — Procurement Hub palette (teal + amber) */
+  --espresso: #0f1512;
+  --coffee: #0f766e;
+  --coffee-dark: #0b5a54;
+  --crema: #f59e0b;
+  --crema-strong: #d97706;
+  --crema-soft: #e7f2f0;
+  --cream: #eef1f0;
 
   --brand: var(--coffee);
   --brand-dark: var(--coffee-dark);
   --accent: var(--crema);
   --accent-soft: var(--crema-soft);
 
-  --ink: #2c231d;
-  --muted: #927f70;
-  --line: #e8ddd0;
+  --ink: #16221f;
+  --muted: #6b7b77;
+  --line: #e2e8e6;
   --surface: #ffffff;
-  --bg: #f6efe6;
+  --bg: #eef1f0;
 
-  --radius: 14px;
+  --radius: 16px;
   --radius-sm: 10px;
-  --shadow: 0 1px 2px rgba(46, 31, 23, 0.08), 0 4px 12px rgba(46, 31, 23, 0.06);
-  --shadow-lg: 0 16px 40px rgba(46, 31, 23, 0.16);
-  --brand-gradient: linear-gradient(135deg, #7a5540 0%, #4a342a 100%);
-  --header-gradient: linear-gradient(115deg, #2e1f17 0%, #4a342a 45%, #6f4e37 100%);
-  --brand-shadow: 0 8px 20px rgba(111, 78, 55, 0.35);
+  --shadow: 0 1px 2px rgba(15, 21, 18, 0.06), 0 8px 20px rgba(15, 21, 18, 0.05);
+  --shadow-lg: 0 24px 50px rgba(15, 21, 18, 0.16);
+  --brand-gradient: linear-gradient(135deg, #14857b 0%, #0b5a54 100%);
+  --sidebar-gradient: linear-gradient(180deg, #14201d 0%, #0c1512 100%);
+  --header-gradient: linear-gradient(115deg, #0f766e 0%, #0b5a54 100%);
+  --brand-shadow: 0 10px 24px rgba(15, 118, 110, 0.28);
 }
 
 * {
@@ -47,21 +48,25 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background: var(--bg);
-  background-image: radial-gradient(1200px 600px at 100% -10%, #efe2d1 0%, rgba(239, 226, 209, 0) 60%),
-    radial-gradient(900px 500px at -10% 0%, #f3e7d7 0%, rgba(243, 231, 215, 0) 55%);
+  background-image: radial-gradient(1100px 560px at 100% -10%, #e3ece9 0%, rgba(227, 236, 233, 0) 60%),
+    radial-gradient(820px 460px at -10% 0%, #e8efec 0%, rgba(232, 239, 236, 0) 55%);
   background-attachment: fixed;
   color: var(--ink);
 }
 
 h1 {
-  font-size: 1.6rem;
-  line-height: 1.2;
+  font-size: 1.55rem;
+  line-height: 1.15;
   margin: 0 0 0.25rem;
+  letter-spacing: -0.02em;
+  font-weight: 800;
 }
 
 h2 {
   font-size: 1.1rem;
   margin: 0 0 0.75rem;
+  letter-spacing: -0.01em;
+  font-weight: 700;
 }
 
 .sr-only {
